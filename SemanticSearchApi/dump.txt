@@ -1,0 +1,124 @@
+[HttpPost("query_old")]
+//public async Task<IActionResult> Query([FromBody] string query)
+public async Task<IActionResult> Query_Old([FromBody] QueryRequest request)
+{
+    var queryEmbedding = await _embedService.GetEmbeddingAsync(request.Query);
+    var queryVector = new Vector(queryEmbedding);
+
+    var matches = await _repo.SearchTopNAsync(queryVector, request.TopN);
+
+    //var bestMatch = await _repo.SearchClosestAsync(queryVector);
+
+    /*var documents = await _repo.GetAllDocumentsAsync();
+    float maxScore = float.MinValue;
+
+    foreach (var doc in documents)
+    {
+        var score = CosineSimilarity(queryVector, doc.Embedding);
+        if (score > maxScore)
+        {
+            maxScore = score;
+            bestMatch = doc;
+        }
+    }*/
+
+    return Ok(matches);
+}
+
+private float CosineSimilarity(Vector v1, Vector v2)
+{
+    var arr1 = v1.ToArray();
+    var arr2 = v2.ToArray();
+
+    float dot = 0f, normA = 0f, normB = 0f;
+    for (int i = 0; i < arr1.Length; i++)
+    {
+        dot += arr1[i] * arr2[i];
+        normA += arr1[i] * arr1[i];
+        normB += arr2[i] * arr2[i];
+    }
+    return dot / (float)(Math.Sqrt(normA) * Math.Sqrt(normB));
+}
+
+
+
+    /*public async Task<object> ExecuteCustomSQLAsync(string sql)
+    {
+        await using var conn = await _dataSource.OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = sql;
+
+        var result = await cmd.ExecuteScalarAsync();
+        return result;
+    }*/
+
+
+
+Synonyms:
+- henna → Mehandi
+- black tea → Red Label Tea
+- blueberry → Blueberry Soda
+- lemon drink → Lemon Soda
+
+
+
+var searchRequest = new SearchRequest
+{
+    // Use RawQuery only if 'query' is a valid query body (not the full request with "index" or "body")
+    Query = new RawQuery(testQuery)
+    //Query = new RawQuery(JsonDocument.Parse(JsonDocument.Parse(query).RootElement.GetProperty("body").GetRawText()).RootElement.GetProperty("query").GetRawText())
+};
+
+var credentials = new Elasticsearch.Net.ApiKeyAuthenticationCredentials(apiKey);
+var settings = new ConnectionSettings(new Uri(elasticUri)).DefaultIndex("").ApiKeyAuthentication(credentials);
+var client = new ElasticClient(settings);
+/*var response = await client.SearchAsync<object>(searchRequest);
+if (!response.IsValid)
+    return StatusCode(500, response.OriginalException.Message);*/
+
+            prompt = $@"
+You are an assistant that converts natural language into Elasticsearch DSL (Query DSL).
+Schema: documents(documentId, countryId, parentGlobalExporterId, parentGlobalImporterId, productDesc, productDescEnglish, productDescription, unitPrice)
+Only generate Elasticsearch JSON queries using the 'documents' index.
+Known product names: Lemon Soda, Blueberry Soda, Mehandi, Green Tea, Red Label Tea, Coffee
+Exporter Mapping:
+    1 - Oceanic Tea House Pvt. Ltd., 3 - Saffron Valley Traders, 5 - Trident Agro Exports, 7 - Evergreen Beverages Co, 9 - Global Spices Ltd
+Importer Mapping
+    2 - Wellness World Trade Co, 4 - Leaf & Bean Imports, 6 - SavorLine Global Imports, 8 - United Natural Goods Inc, 10 - EuroFlora Essentials, 12 - Bluewave Imports Ltd, 14 - FreshMart International
+Rules:
+- Do not apply sort unless explicitly asked.
+- If the query asks for specific fields (e.g., unitPrice), include a ""_source"" block listing only those fields.
+- Avoid returning all fields unless the user asks for full details.
+Synonyms and Matching:
+- Map any synonyms or variations of known products to their official name.
+- Ensure the query string is valid JSON for Elasticsearch
+- The query string should be the inner JSON, e.g.:
+- {{ ""query"": {{ ""match"": {{ ""productDescEnglish"": ""Mehandi"" }} }}, ""sort"": [ ... ], ""size"": 5 }}
+- Not wrapped in {{ ""index"": ..., ""body"": ... }}
+
+Respond in JSON:
+{{
+  ""dsl"": {{ body: {{...}} }},
+  ""chart"": ""...""
+}}
+
+    Query:
+""{userQuery}""";
+
+
+- Ensure the query string is valid JSON for Elasticsearch
+- The query string should be the inner JSON, e.g.:
+- {{ ""query"": {{ ""match"": {{ ""productDescEnglish"": ""Mehandi"" }} }}, ""sort"": [ ... ], ""size"": 5 }}
+
+Exporter Name to ID Mapping:
+- Global Spices → 9
+- Evergreen Beverages Co. → 7
+...
+
+Importer Name to ID Mapping:
+- Wellness World Trade → 14
+- FreshMart International → 2
+...
+
+
+- If the query refers to a company name, convert it to the corresponding numeric ID using the mapping.

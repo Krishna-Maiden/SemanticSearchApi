@@ -1,0 +1,51 @@
+SemanticSearchApi/
+├── Controllers/
+│   └── SearchController.cs
+├── Services/
+│   ├── EmbeddingService.cs
+│   └── VectorSearchService.cs
+├── Models/
+│   └── Document.cs
+├── Data/
+│   └── SqlDataService.cs
+├── Program.cs
+└── appsettings.json
+
+https://localhost:7213/api/search/init
+
+{
+  "query": "How many cool drink transactions"
+}
+
+{
+    "sql": "SELECT COUNT(*) \nFROM documents \nWHERE product_type = 'Cool Drink';",
+    "result": 343
+}
+
+{
+  "query": "Display top 5 BlueBerry Transactions"
+}
+// error - returning count only and not rows... 
+// status - fixed
+
+{
+  "query": "Display top 5 Henna Transactions"
+}
+// Henna is converted to mehandi in sql
+
+{
+  "query": "Display top 3 rust-coloured Transactions"
+}
+// error - returning 5.. need to get 3
+// status - fixed
+
+{
+  "query": "How many rust-coloured Transactions"
+}
+// error - it is retuning rows when I have asked for count.
+// status - fixed
+// solution - added code to use count in vector
+
+{
+  "query": "Display line chart with product name on x axis and transaction count on y axis"
+}

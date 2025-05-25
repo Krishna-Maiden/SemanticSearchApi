@@ -1,0 +1,292 @@
+
+{
+  "track_total_hits": true,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "bool": {
+            "should": [
+              {
+                "multi_match": {
+                  "query": "car",
+                  "operator": "and",
+                  "fields": [
+                    "productDesc",
+                    "productDescription",
+                    "productDescEnglish"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "must": [],
+      "must_not": [],
+      "should": []
+    }
+  },
+  "sort": {
+    "date": {
+      "order": "desc"
+    }
+  },
+  "size": 5,
+  "from": 0,
+  "aggs": {
+    "Top_5_Suupliers": {
+      "terms": {
+        "field": "parentGlobalExporterId",
+        "size": 5
+      }
+    }
+  }
+}
+
+2. https://volza-app:SCTLiK7h%236G2Us6@157.180.11.17:9200/globalcompanies/
+{
+  "_source": {
+    "includes": [
+      "customValue",
+      "companyId"
+    ]
+  },
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "terms": {
+            "companyId": [
+              "63007888",
+              "100832629",
+              "100832629",
+              "100803365",
+              "100808933"
+            ]
+          }
+        }
+      ],
+      "must_not": [],
+      "should": []
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "sort": [],
+  "aggs": {}
+}
+
+
+	DataType: {
+		Undefined: 0,
+		Type1: 1,
+		Type2: 2,
+		Type3: 3,
+		USData: 4,
+		Type1SEZ: 5,
+		UniversalSearch: 6,
+		Argentina: 53178,
+		Bolivia: 53179,
+		Chile: 53180,
+		China: 53181,
+		Columbia: 53182,
+		CostaRica: 53183,
+		Ecuador: 53184,
+		Mexico: 53185,
+		Pakistan: 53186,
+		Panama: 53187,
+		Paraguay: 53188,
+		Peru: 53189,
+		Philippines: 53190,
+		Russia: 53191,
+		Srilanka: 53192,
+		Ukraine: 53193,
+		Uruguay: 53194,
+		USA: 53195,
+		Venezuela: 53196,
+		Brazil: 53207,
+		Ethiopia: 53208,
+		Singapore: 53209,
+		Malaysia: 53210,
+		Egypt: 53211,
+		Bangladesh: 53212,
+		Iran: 53213,
+		Iraq: 53214,
+		Kuwait: 53215,
+		Oman: 53216,
+		SaudiArabia: 53246,
+		UAE: 53247,
+		Austria: 53217,
+		Belgium: 53218,
+		Bulgaria: 53219,
+		Croatia: 53220,
+		Cyprus: 53221,
+		CzechRepublic: 53222,
+		Denmark: 53223,
+		Estonia: 53224,
+		Finland: 53225,
+		France: 53226,
+		Germany: 53227,
+		Greece: 53228,
+		Hungary: 53229,
+		Ireland: 53230,
+		Italy: 53231,
+		Latvia: 53232,
+		Lithuania: 53233,
+		Luxembourg: 53234,
+		Malta: 53235,
+		Netherlands: 53236,
+		Poland: 53237,
+		Portugal: 53238,
+		Romania: 53239,
+		Slovakia: 53240,
+		Slovenia: 53241,
+		Spain: 53242,
+		Sweden: 53243,
+		UnitedKingdom: 53244,
+		Europe: 53245,
+		Turkey: 53248,
+		Netherlandst3: 53250,
+		Germanyt3: 53251,
+		Belgiumt3: 53249,
+		ArgentinaT1: 53252,
+		ColumbiaT1: 53253,
+		BoliviaT1: 53254,
+		ChileT1: 53255,
+		CostaRicaT1: 53256,
+		EcuadorT1: 53257,
+		EthiopiaT1: 53258,
+		Spaint3: 53259,
+		MexicoT1: 53260,
+		PanamaT1: 53262,
+		PakistanT1: 53261,
+		ParaguayT1: 53263,
+		PhilippinesT1: 53265,
+		UruguayT1: 53267,
+		VenezuelaT1: 53269,
+		PeruT1: 53264,
+		SrilankaT1: 53266,
+		USAT1: 53268,
+		Chinat3: 53270,
+		Perut2: 53271,
+		Thailand: 55082,
+		Kazakhstan: 55083,
+		Uganda: 55085,
+		Kenya: 55086,
+		Guatemala: 55093,
+		Algeria: 55095,
+		Australia: 55096,
+		Bahrain: 55097,
+		Canada: 55098,
+		Djibouti: 55099,
+		Ghana: 55100,
+		Indonesia: 55101,
+		Japan: 55102,
+		Korea: 55103,
+		Norway: 55104,
+		Qatar: 55105,
+		Taiwan: 55106,
+		Vietnam: 55107,
+		Denmarkt3: 55108,
+		Finlandt3: 55109,
+		Francet3: 55110,
+		Greecet3: 55111,
+		Italyt3: 55112,
+		Philippinest3: 55113,
+		UKt3: 55114,
+		Indonesiat3: 55143,
+		India: 55151,
+		Srilankat3: 55153,
+		Vietnamt3: 56129,
+		PhilippinesCompletet3: 56158,
+		Pakistant3: 56164,
+		Bangladesht3: 56165,
+		Namibiat3: 56177,
+		GlobalShipmentSearch: -9999,
+		IvoryCoast: 56193,
+		Botswana: 56194,
+		Lesotho: 56195,
+		Nigeria: 56201,
+		Brazilt3: 56202,
+		Turkeyt3: 56203,
+		Ghanat3: 56208,
+		CentralAfricat3: 56206,
+		Cameroont3: 56207,
+		Zimbabwet3: 56205,
+		Tanzaniat3: 56209,
+		Fijit3: 56210,
+		Moldovat3: 56211,
+		Uzbekistant3: 56216,
+		Congot3: 56248,
+		Malawit3: 56277,
+		Burundit3: 56293,
+		Rwandat3: 56294,
+		SaoTomet3: 56295,
+		SouthSudant3: 56297,
+		CentralAmericat3: 56296,
+		Malaysiat3: 56355,
+		Afghanistant3: 56384,
+		SilkRoutet3: 56391,
+		Armeniat3: 56398
+	}
+	
+	
+	
+{
+  "track_total_hits": true,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "bool": {
+            "should": [
+              {
+                "multi_match": {
+                  "query": "car",
+                  "operator": "and",
+                  "fields": [
+                    "productDesc",
+                    "productDescription",
+                    "productDescEnglish"
+                  ]
+                }
+              },
+              {
+                "term": {
+                  "countryId": 
+                    "56391"
+                  
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "must": [],
+      "must_not": [],
+      "should": []
+    }
+  },
+  "sort": {
+    "date": {
+      "order": "desc"
+    }
+  },
+  "size": 5,
+  "from": 0,
+  "aggs": {
+    "Top_5_Suupliers": {
+      "terms": {
+        "field": "parentGlobalExporterId",
+        "size": 5
+      }
+    },
+    "Top_5_Buyers": {
+      "terms": {
+        "field": "parentGlobalImporterId",
+        "size": 5
+      }
+    }
+  }
+}

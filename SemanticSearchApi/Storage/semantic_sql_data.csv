@@ -1,0 +1,1001 @@
+TransactionId,ExporterName,ProductName,PriceInInr,ProductType
+8863c42c-4ae4-4466-b23a-4f6aa2ad6d04,"Baldwin, Sellers and Garcia",Red Label Tea,308.81,Hot Drink
+0ac67401-d1e7-4533-a38f-07ebb02824f5,"Smith, Cannon and Hart",Lemon Soda,77.86,Cool Drink
+9130f8b4-6c62-47c4-9f1d-875ef8e8a789,Pena Inc,Coffee,95.24,Hot Drink
+43ce68e0-df34-4c0d-8013-909580301316,"Brown, Guerrero and Escobar",Green Tea,498.43,Hot Drink
+5111abf2-647e-4708-abd7-5c9341d67dfc,"Bailey, Rodriguez and Johnson",Blueberry Soda,250.4,Cool Drink
+5df4c315-f4a9-415a-8692-41773bf6f135,"Hernandez, Burns and Hamilton",Coffee,114.23,Hot Drink
+c5cb3dd9-788f-476b-a258-04094043d914,Lopez-Crawford,Red Label Tea,160.29,Hot Drink
+2de746dc-1d03-41d3-aaaa-6b24698bc8e2,Smith-Larson,Lemon Soda,230.24,Cool Drink
+f5f744eb-70ac-4ab3-89ba-fdb3ceb392b2,Park-Williams,Lemon Soda,381.33,Cool Drink
+8bf7783e-bd46-40dc-951f-37a4d3e91f26,"Reilly, Rollins and Hudson",Blueberry Soda,54.42,Cool Drink
+027ce705-73c0-41ed-8942-55e9eb769391,Thompson Group,Red Label Tea,144.97,Hot Drink
+44dd4433-f95e-4230-a5f0-418944f861ed,Fuller-Ross,Blueberry Soda,249.98,Cool Drink
+3ad9a5c0-df12-45ea-a06d-f20080561c16,Clarke-Mays,Blueberry Soda,156.1,Cool Drink
+d0d948f4-9bee-4f90-9bac-3d7872bfaf77,Clarke-Baker,Blueberry Soda,294.8,Cool Drink
+788d343e-d0e5-489e-8d8f-bcbf64d45e15,"Moreno, Butler and Campbell",Mehandi,91.97,Powder
+ec2627d0-2ad4-45f4-a807-258fc3eb0fcb,"Brooks, Hodges and Sanchez",Blueberry Soda,238.32,Cool Drink
+0eb0cdb3-cb0f-4dee-b1d8-2dacf9bb6d64,"Henry, Glenn and Garner",Lemon Soda,246.32,Cool Drink
+39ca549b-6bc8-4f84-95dc-d857785a5983,"Floyd, Wright and Krueger",Coffee,440.27,Hot Drink
+0d428e06-381b-43a7-a9ed-d997ec38446f,Wilson and Sons,Mehandi,479.78,Powder
+b1974db9-c4e0-4170-ae0c-bb8205226066,Williams-Barnett,Blueberry Soda,53.25,Cool Drink
+68c5834d-4f28-45fa-8c04-bbe1ecfe3f07,"Gonzales, Roy and Sloan",Coffee,130.01,Hot Drink
+0d715664-82fc-459e-a011-0c8259840169,Perkins Ltd,Green Tea,434.91,Hot Drink
+c7e12f1c-54d4-4e04-9987-79c88a731de3,Bailey-Robinson,Mehandi,428.22,Powder
+070668ff-794d-4538-8f29-5f54ed381d5f,"Wright, Khan and James",Lemon Soda,166.0,Cool Drink
+346bc801-3777-42cd-9128-7f328b796da1,Smith LLC,Red Label Tea,284.77,Hot Drink
+e57b64fa-6637-4361-a40b-893bd30913d2,Farmer-Thornton,Red Label Tea,466.58,Hot Drink
+ce67cab4-5742-444a-bf11-1c113c24a981,Castro-Farrell,Blueberry Soda,281.9,Cool Drink
+baa5a582-705e-42e7-bb71-a6d3d410a2b0,Clark-Richards,Red Label Tea,318.34,Hot Drink
+2edabfef-6c24-4f24-8334-98243261a1b0,Carey LLC,Red Label Tea,215.85,Hot Drink
+33d4cb6b-c92b-4c20-9885-28984206ce74,Diaz-Graham,Red Label Tea,485.72,Hot Drink
+fea704bd-cfb6-4238-a2cd-3ea02ee0dda6,"Rosales, Nguyen and Moore",Blueberry Soda,272.84,Cool Drink
+cf80a065-cb3c-41a8-8293-21f944d6c237,"Houston, Smith and Robinson",Blueberry Soda,365.31,Cool Drink
+edc80983-81ec-4cff-a57d-579270a20f8d,Bradley-Frank,Green Tea,289.31,Hot Drink
+20b0838c-ace0-452f-8432-91ce1bd6a337,Avery-Thompson,Green Tea,419.78,Hot Drink
+22017f19-68b9-4f31-bbb6-dc6d1f40104a,Stout Group,Blueberry Soda,174.95,Cool Drink
+3f6aaf31-5ad6-44d0-acdb-073869ef94f0,Salazar-Woodard,Mehandi,249.32,Powder
+da51a389-ab12-4efb-9c57-54bba5694151,Williams-Gregory,Red Label Tea,475.66,Hot Drink
+2729d1e8-0ed9-416d-9b98-931d938140da,Gibson-Kim,Red Label Tea,164.93,Hot Drink
+2e61c403-d1a6-4453-80cf-f989210c2c00,Nelson-Turner,Mehandi,166.61,Powder
+f3d976a7-87fa-420e-a4bb-28d8c79d7f30,Reyes-Holmes,Green Tea,314.93,Hot Drink
+3e952848-d310-4f60-a6ee-b6f9fdc1f325,"Martin, Thomas and Lewis",Mehandi,402.79,Powder
+0de6db7f-8ff2-460f-8205-7a665ddd3625,"Morales, Ochoa and Hale",Green Tea,458.2,Hot Drink
+f077d7a4-a455-48a9-af41-55c8d31fb6c9,"Garcia, Carpenter and Mcintosh",Blueberry Soda,437.08,Cool Drink
+074ce552-d517-4c7a-b9b0-ec8be06f127f,"Reid, Yates and Smith",Blueberry Soda,265.42,Cool Drink
+50f0affb-8c9d-430c-81e2-5cd744c7be42,Diaz-Klein,Lemon Soda,294.64,Cool Drink
+a4ea46d9-09cc-43c0-ab7d-2d5c445d6976,Hood Group,Mehandi,400.37,Powder
+2bcae0db-8d59-46d6-a49c-a293474fd85e,Miller-Nguyen,Red Label Tea,62.49,Hot Drink
+0a2c49f3-ab10-4d4a-bdaa-050c72136130,"Arnold, Hendricks and Taylor",Green Tea,177.0,Hot Drink
+8f311bd9-de44-4eaf-8fe2-d65427e819bf,Thomas-Barton,Mehandi,141.31,Powder
+04bd4ded-27ea-4d51-be30-5561e41591c8,Norman-Flores,Red Label Tea,270.91,Hot Drink
+a34c6409-82d4-407b-8c28-acb4e32fefdc,Martinez-Carter,Lemon Soda,166.03,Cool Drink
+f69ffdbb-2461-447e-b62e-9c015aaf1710,"Drake, Woods and Miller",Blueberry Soda,196.01,Cool Drink
+eae65a4c-85e9-4bcf-8ec3-80f775778e9d,"Mays, Powell and Grimes",Green Tea,385.29,Hot Drink
+cf4a16fa-f470-4b4b-91e8-4d630e9d86ae,"Cannon, Jones and Perez",Coffee,392.87,Hot Drink
+fb6bb51e-3121-4d40-b5d9-11171c17184d,"Sanders, Mason and Turner",Coffee,240.13,Hot Drink
+15f01de8-a726-4a6a-9739-6225e25fb8a5,Thomas LLC,Green Tea,371.34,Hot Drink
+5d6bd7fe-76b3-4f45-82cf-535e3319bc12,King-Johnson,Lemon Soda,301.98,Cool Drink
+c16003d0-07c3-4e32-bec6-4785ff9530d0,"Jensen, Rivera and Lawson",Lemon Soda,187.19,Cool Drink
+f78e9071-76a9-451d-b338-d6f2593d189f,Carrillo LLC,Mehandi,231.65,Powder
+008ab987-4445-4470-a69d-ca5ebaae905e,Roberts and Sons,Coffee,393.72,Hot Drink
+b2da3043-8d76-467b-b620-cdf2f8e26108,Mann-Romero,Coffee,349.42,Hot Drink
+3d34c702-cb91-4bc6-9a12-02c49c8926fb,Turner-White,Red Label Tea,297.92,Hot Drink
+4ae897bf-6378-4d36-b441-129c00d62644,Davies-West,Mehandi,412.83,Powder
+32574a2a-13ac-4e4e-a0fa-f24aa8458531,Miller Ltd,Green Tea,269.93,Hot Drink
+2dce2bfb-9e18-45bf-a90a-0f7a64dc2308,Bryan-Mckinney,Red Label Tea,243.48,Hot Drink
+13603a6f-9725-47fe-a026-d808d26e8b16,"Lopez, Roberts and Lewis",Green Tea,129.79,Hot Drink
+b63f3201-494c-4197-bbe2-b65889d46b75,Gilbert Group,Red Label Tea,495.34,Hot Drink
+40b95e11-ec86-4db9-b491-5bbccc80ce2f,"Keith, Rios and Frank",Green Tea,155.45,Hot Drink
+b941fa0f-8953-4229-a32e-7c8497534199,Anderson and Sons,Mehandi,425.97,Powder
+074ecbc3-537c-4e16-b0b2-3f4562d392e7,"Best, Foster and Moore",Blueberry Soda,228.02,Cool Drink
+a9dbdc51-91ed-4770-a32a-cef6c3044c48,Barrett and Sons,Blueberry Soda,497.0,Cool Drink
+ffe0a81a-5f56-4eb2-aafe-dc1f052924cd,Miller PLC,Coffee,415.37,Hot Drink
+a8972ec5-a0b3-4b5a-b7a1-71c0f70b6382,Cruz-Simmons,Coffee,296.05,Hot Drink
+560c018f-37a4-438a-baf9-f3c46b8df975,Larsen-Miles,Lemon Soda,364.28,Cool Drink
+d2fb700e-ba34-49ba-aeca-da17e69562f2,"Walters, Armstrong and Haynes",Green Tea,341.32,Hot Drink
+77d7ea86-2fd3-46a8-99e8-9cdd6d8ea9ee,Ramirez Ltd,Green Tea,237.76,Hot Drink
+e4fefdce-9298-4e88-b968-379e62329d16,"Taylor, Clay and Gay",Green Tea,407.94,Hot Drink
+2cbd59ea-8e65-4bdb-9bde-5d19372265ef,Bradley and Sons,Green Tea,462.81,Hot Drink
+5d3b8dc1-4cd8-4ed9-9070-daca6ff74d27,Herrera Group,Red Label Tea,314.04,Hot Drink
+a44399f2-ce4a-4698-b43a-66f6b83ec560,Nelson-Rodgers,Coffee,470.47,Hot Drink
+0c2f0d69-1b84-496d-b6d7-efe2d3f61368,Taylor Group,Lemon Soda,297.5,Cool Drink
+6082995f-de73-4310-b769-8807d41fdcc1,"Clark, Cook and Norton",Coffee,332.94,Hot Drink
+1f70f56a-04fa-47d8-ab4b-0689483afcd8,Meyer-Turner,Coffee,432.74,Hot Drink
+15a3969d-2449-490b-bbbc-a91001a7eddd,"Tapia, Tran and Arias",Coffee,452.71,Hot Drink
+962fe696-c6c4-4434-bdd8-5ddb2a5d87dc,"Jones, Velasquez and Richards",Mehandi,462.85,Powder
+ada9fd8c-9a19-4d1e-b059-e3f31025039e,"Jensen, Brown and Barton",Red Label Tea,274.03,Hot Drink
+8357b696-ae73-4254-866f-6cca8d6b3f78,Holt LLC,Coffee,135.21,Hot Drink
+21a4eccd-9443-46c5-8292-ac9565eeb3f3,Munoz Ltd,Red Label Tea,139.31,Hot Drink
+53088260-8022-4368-95ae-aa0ebdab25bb,"Martinez, Arellano and Graves",Blueberry Soda,205.58,Cool Drink
+22d3f2d4-2530-48e0-a8e7-c78794ec0ee2,"Hendrix, Clarke and Gomez",Lemon Soda,205.64,Cool Drink
+e00cd039-ff9a-473e-84ba-ba8e7cc39383,"Hutchinson, Jones and Ballard",Lemon Soda,458.86,Cool Drink
+414d99ed-7159-42df-a89b-3a25bb174f4f,Black and Sons,Lemon Soda,358.71,Cool Drink
+8098a3a5-a513-4393-92c0-97112ba1d97d,Barrett-Merritt,Mehandi,156.99,Powder
+f0ad46ee-a43d-4961-8659-2abad1a7ae93,"Clark, Green and Small",Coffee,51.89,Hot Drink
+85a06267-72d8-4d01-84d2-e289b116d6cc,"French, Cox and Ritter",Green Tea,168.49,Hot Drink
+c3fa6c48-a39a-4616-9e05-6340b7a2c1b3,Vargas PLC,Lemon Soda,420.65,Cool Drink
+1c87a89d-9263-4a52-91fc-417ff5aaa456,Neal and Sons,Green Tea,277.21,Hot Drink
+62dd4d1e-d967-448e-bc12-3652c01c4ccd,"Reyes, Lane and Quinn",Green Tea,186.03,Hot Drink
+785913e7-cc05-497d-b9c9-b197540d4d14,"Watson, Novak and Hogan",Blueberry Soda,262.68,Cool Drink
+dc238ac2-3707-4983-91d8-4a778195f8ad,"Jimenez, Mooney and Williams",Blueberry Soda,419.79,Cool Drink
+1a7402fb-f995-48e9-8a72-40a30500979a,Castillo-Montes,Green Tea,244.41,Hot Drink
+d6ba8d06-12ad-4825-adbb-4a8254a7e5e0,"Avery, Williams and Page",Mehandi,334.56,Powder
+536f1497-610b-4bbe-8990-39b1e10cc471,Carpenter Ltd,Blueberry Soda,343.14,Cool Drink
+ae9d3d42-7749-41cf-b226-6332d26e44ff,Smith Inc,Green Tea,419.51,Hot Drink
+c91891a8-56e7-44a6-b2f0-3f576541de21,Knapp-Warner,Blueberry Soda,382.8,Cool Drink
+ec119b56-bdb2-44c8-bac0-1d52b184e9bf,"Walker, Wolfe and Cherry",Mehandi,343.71,Powder
+3d4a7e9e-b795-4b3c-baee-bc046ee3a4f8,Smith-Clark,Red Label Tea,197.08,Hot Drink
+b8dc88ff-dee3-44b4-9b49-1cdba2eb1b8b,"Thompson, Mendez and Davis",Green Tea,417.39,Hot Drink
+dc42ca94-fa52-4c5c-8add-195f89570060,"Waters, Rodriguez and Reeves",Lemon Soda,81.74,Cool Drink
+3c726613-cc3c-49ba-a63a-f82db2034a71,Yates Ltd,Mehandi,306.02,Powder
+41250e53-b8ef-48ff-890d-ebf766238895,"Rhodes, Sanders and Parker",Lemon Soda,179.64,Cool Drink
+5be6acd9-ee89-4d07-ba0d-176d85918af8,"Taylor, Hines and Malone",Red Label Tea,354.35,Hot Drink
+113e706b-f366-401d-b553-0583453f38e2,Cochran-Hall,Green Tea,374.3,Hot Drink
+1b4c9c84-583a-4b1c-87ec-60a9281c0160,Schwartz-Hebert,Mehandi,69.44,Powder
+e3076f54-3e07-4229-96ab-1549d1e56aed,Anderson-Grimes,Green Tea,158.04,Hot Drink
+3687882f-c697-4c4b-a1f1-7a3fef0899c5,Pierce Group,Red Label Tea,269.67,Hot Drink
+d77436e2-58f2-4284-8f0e-69e686932c1c,Ramos LLC,Lemon Soda,357.27,Cool Drink
+d9a98cf9-9c12-4cb9-84f2-65329747a7fd,Garcia Inc,Blueberry Soda,140.8,Cool Drink
+cd5f7cbd-cd0f-436f-a141-de5b89a3580b,"Hammond, Gardner and Austin",Blueberry Soda,238.92,Cool Drink
+c638a347-7c19-478e-a9dd-a2b73ba3ffa4,Owen-Alvarado,Blueberry Soda,386.32,Cool Drink
+cf1529bc-4851-4d11-bd4a-f4d7390e2086,Anderson PLC,Blueberry Soda,459.7,Cool Drink
+1b2a1da2-f0d2-4306-add9-a72cac7854c5,Daugherty-Johnson,Coffee,301.68,Hot Drink
+0fbff38d-7341-43b5-961e-40fe68176621,Coleman-Taylor,Mehandi,455.28,Powder
+90903f8e-c204-4d0f-bb39-923d4d26d001,"Chavez, Velasquez and Lang",Blueberry Soda,104.76,Cool Drink
+5807cddf-e78a-44d9-a7a4-2e6203ceba94,King-Wilson,Blueberry Soda,131.92,Cool Drink
+aa0ccf53-5b8a-4345-b34f-058b1c06795f,Larson-Richardson,Green Tea,202.72,Hot Drink
+d1515d6c-9182-44ff-a677-ce09169b06f0,Larson Ltd,Mehandi,119.24,Powder
+7de83250-d75c-4eb7-b2c1-2d4f1155a2fc,Zimmerman-Larsen,Lemon Soda,389.09,Cool Drink
+438c4309-2243-400e-b428-25f9b52a6473,"Reynolds, Taylor and Garrison",Lemon Soda,264.37,Cool Drink
+f9b4b414-4360-449e-872a-08af75fb6d46,"Acevedo, Bradshaw and Robertson",Red Label Tea,261.28,Hot Drink
+f3b1e011-8658-4b1c-bf14-288787e1992d,Barrett LLC,Blueberry Soda,287.07,Cool Drink
+a77949e8-ccf7-45ed-b383-935e056052f9,Snyder PLC,Mehandi,344.65,Powder
+cdd6919c-c81c-489e-b2a8-97cb67c17550,Gillespie-Lin,Blueberry Soda,193.7,Cool Drink
+5337e0cb-43a4-4c91-8148-ead1d4e7428a,Miller and Sons,Blueberry Soda,94.76,Cool Drink
+1c183835-f0b3-45ef-a23d-bdfcff9249cd,"Montoya, Gonzalez and Fischer",Red Label Tea,278.46,Hot Drink
+1cd23a29-26a9-45da-aa34-ff76f8fb7270,Lee-Jackson,Mehandi,201.38,Powder
+b44d79fa-3d12-4207-bf8d-1649a9dbf393,Schmidt LLC,Mehandi,377.33,Powder
+c8c582fa-63a8-4f2d-b586-2cbba6262486,"Carney, Smith and Stanton",Mehandi,396.72,Powder
+692c7063-bc97-421e-8692-aac20ef34798,"Holloway, Gibson and Cruz",Green Tea,104.46,Hot Drink
+03caad4d-b29f-48c8-b4f8-7bdd5bd40b89,"Brown, Landry and Ramos",Coffee,381.34,Hot Drink
+9fc0d37e-5449-42b1-a83e-7bf19f11be3f,King and Sons,Red Label Tea,130.36,Hot Drink
+b89544c3-3917-44fc-ae5f-cbec09bed5b0,Irwin-Browning,Blueberry Soda,80.95,Cool Drink
+ac2dd329-5293-4656-bab1-079fdf2bb0ec,"Collins, Jones and Hart",Coffee,460.52,Hot Drink
+937432e8-0ee6-466f-a437-613aeed9584f,"Hudson, Thomas and Marks",Coffee,489.8,Hot Drink
+ec3ad8a5-d782-4fb9-ac08-7af58b74498b,Smith-Harris,Mehandi,283.56,Powder
+f9be53b7-c9b0-4f27-9549-c2f6b8dafb5a,"Walters, Lee and Ross",Lemon Soda,477.75,Cool Drink
+2ad1e6ff-8879-4c15-a174-0259b333ea5d,Brown-White,Coffee,324.46,Hot Drink
+a3d59025-c2e7-4d05-bd1e-57d5c51cd2c9,Wilson LLC,Coffee,194.87,Hot Drink
+d43f5791-79a4-4de6-9b08-89ca1b776d7e,"Lynn, Wilson and Jordan",Blueberry Soda,488.93,Cool Drink
+84292b78-fef8-483a-ad47-f97650495d91,Holmes Ltd,Lemon Soda,488.47,Cool Drink
+454731a7-5504-4ef8-97e5-123a900835b1,"Melendez, Williams and Lynch",Mehandi,143.26,Powder
+74c38bcd-b45f-4eab-bf05-14256ffd99f4,Lara-Brooks,Red Label Tea,168.6,Hot Drink
+459d32a2-e49c-438c-8b77-3690fc73e0ef,"Anderson, Thomas and Allen",Red Label Tea,164.1,Hot Drink
+84af902d-a222-4e06-b5c3-02fe0d3fe55e,"Welch, Kaiser and Howard",Coffee,209.94,Hot Drink
+cf8efa37-1c01-4fe3-a041-a87cae8e3a60,Ware LLC,Green Tea,232.38,Hot Drink
+0a12cf1c-173a-47bd-9b82-7493917b5d46,"Ward, Kim and Blake",Mehandi,266.97,Powder
+13e65e19-9703-4a35-b2f0-a248ca57f801,"Skinner, Chung and Gomez",Green Tea,355.03,Hot Drink
+b03e056f-235e-437b-b8ef-bfb52cc245a6,Bates-Smith,Lemon Soda,236.16,Cool Drink
+a9648946-c729-40ea-909c-32d606569784,Murphy-Jones,Coffee,359.63,Hot Drink
+8a6afba6-c1a3-4582-b9c9-fbac18c9fe74,Gomez-Gates,Green Tea,437.97,Hot Drink
+4d283849-63e1-4643-bdf9-b16e3f9ae02a,"Green, Riddle and Herrera",Red Label Tea,97.59,Hot Drink
+9a5a05ba-7885-4c18-b260-8184a4bdd9e0,Li Ltd,Lemon Soda,246.13,Cool Drink
+1cda33c7-4fa6-4829-b9ab-592365d27d49,Martinez-Sullivan,Coffee,315.95,Hot Drink
+99431d3e-45d1-4b70-b5f7-bea1fcf7985e,Campbell-Mack,Red Label Tea,486.66,Hot Drink
+0391b403-4d6b-476d-9f19-869cb3dfc468,Dalton-Kim,Blueberry Soda,451.07,Cool Drink
+71ef79dd-cbba-4e44-ba73-3f5c23743676,"Ortiz, Rice and Nguyen",Coffee,487.73,Hot Drink
+32b9e47f-2702-4eaa-bd97-cdc0ae175ec4,Wu-Kaiser,Coffee,171.5,Hot Drink
+0e2a5d5d-9e20-47b8-9ddf-3b796e7e7ec7,"Gray, Moore and Cruz",Blueberry Soda,66.17,Cool Drink
+82ddc121-4a22-4d0e-9cb4-292970d6f8a9,Pugh Ltd,Green Tea,289.67,Hot Drink
+ee3a0b05-28cb-4a8f-9927-b053a9717308,Webb LLC,Mehandi,276.24,Powder
+f85518b0-814b-4256-9fe9-24cdca49f8fa,"Cameron, Booker and Flores",Coffee,291.81,Hot Drink
+07739557-c4b8-4d7d-a5e4-8b7e7b6fd4bf,"Morris, Perry and Kramer",Coffee,92.21,Hot Drink
+439aa2c8-04ce-4330-97f5-9bc2341ad9fc,Miller Ltd,Mehandi,189.56,Powder
+6b4fda9f-ade6-44d6-a2e0-1750d15a99df,Willis LLC,Green Tea,400.92,Hot Drink
+71b03081-6d08-427c-ac0c-d6c920b2f88b,Lewis-Singh,Coffee,423.39,Hot Drink
+15e1b9fd-12b0-47a2-8f00-2ed78368a345,Knox-Thomas,Mehandi,395.95,Powder
+2a366391-d789-4194-a5ad-0576c486187d,Mclaughlin-Nelson,Lemon Soda,66.66,Cool Drink
+b34362ec-83b8-4946-9b57-65916303d00d,Bowman and Sons,Mehandi,230.43,Powder
+385eac64-5ec3-4af1-af86-247381b1594e,Reed Inc,Green Tea,58.52,Hot Drink
+c91822ce-3b3e-4dbc-91db-df48a5e636db,Weber Ltd,Coffee,388.77,Hot Drink
+9320c012-7fca-4c56-80d7-4fb069919798,Allen Inc,Lemon Soda,257.27,Cool Drink
+e1176e22-cc21-4002-b328-7e839a0f7dcd,"Hamilton, Malone and Rodriguez",Mehandi,330.61,Powder
+ee928728-b30c-4ce2-bac4-ba0515401c59,"Morris, Burch and Reed",Mehandi,276.95,Powder
+4533fb88-03ef-43d9-85e9-e9945f5b0515,Dawson Ltd,Coffee,463.06,Hot Drink
+06d52396-8ffd-462b-9e5e-6d041cdb8097,"Pitts, Smith and Bowman",Green Tea,436.01,Hot Drink
+ccce33ac-8da7-4cbf-92ff-9d1091889d0f,Webb and Sons,Red Label Tea,102.02,Hot Drink
+d53ad6ee-5360-4919-a93d-8891969e9f57,Saunders-Lewis,Mehandi,167.1,Powder
+99900e39-d414-44ee-89a0-a01c8dea1dab,Kemp-Sanders,Red Label Tea,312.51,Hot Drink
+ecf2ec9b-b416-48c0-aa88-71b199e3c6a9,Gibson and Sons,Coffee,440.99,Hot Drink
+c8361d8d-7b40-4916-a36e-3ff5eb39deda,Gibson-Green,Mehandi,498.41,Powder
+27d87b6c-a56b-4699-a00a-410bdae2b020,Lyons Group,Green Tea,327.11,Hot Drink
+c87c1985-6112-4cf6-8cc7-d63b7f916ae6,Davis LLC,Green Tea,115.28,Hot Drink
+96ad8b14-dd5d-4a7c-9b0c-f58bc6c72ab5,"Gonzales, Campos and Marsh",Green Tea,53.34,Hot Drink
+ca68fe69-dc7b-4838-b222-1745f4f9dc07,Hunt Inc,Green Tea,249.45,Hot Drink
+946248f2-0f81-49cf-b9c1-ae7fbbc0184e,"White, Ellis and Perez",Red Label Tea,267.46,Hot Drink
+84a0b5fd-30ae-4f5e-8fda-60d7587064ef,"Harmon, Butler and Hunter",Red Label Tea,78.62,Hot Drink
+f45e4dbb-7b4d-4612-b463-b910832931df,Trujillo PLC,Red Label Tea,51.95,Hot Drink
+232cc03e-c6e6-4f37-8d3e-14a8aa1fbda2,Moore Group,Red Label Tea,494.36,Hot Drink
+45e2e68c-f8e5-4883-b032-314abef17d2c,Hayes Ltd,Lemon Soda,343.53,Cool Drink
+adfc408d-c32f-4b8c-a6d5-b136812cfde6,Edwards-Rodriguez,Blueberry Soda,477.75,Cool Drink
+792a92ee-d06e-4fc2-96a2-fc4f79dcd886,"Garcia, Bradley and Rose",Coffee,394.23,Hot Drink
+6e4a98a8-945b-4935-bd6a-ed824621efd8,Bryant-Huynh,Green Tea,317.25,Hot Drink
+a9222af5-1a7c-46a5-bae3-f3daf4a62990,"Peters, Marquez and Lee",Mehandi,177.2,Powder
+988c5db7-07f8-4192-9a60-61c82dc6b6a5,Fry-Lopez,Blueberry Soda,80.52,Cool Drink
+fd2fd434-c098-4655-8752-83e2c2bc028c,Flowers and Sons,Lemon Soda,220.9,Cool Drink
+bb64f4c8-34b6-48dc-9c6e-eb29b717ac92,Jordan Inc,Blueberry Soda,150.61,Cool Drink
+7c49cba9-18cc-4be6-b5a4-676a47638504,"Yoder, Carr and Harris",Lemon Soda,238.22,Cool Drink
+8e89faec-b62c-4c09-b6f1-11d8c65ffb45,Martinez PLC,Coffee,308.2,Hot Drink
+cf7a8359-21fc-4f20-a671-9574ba058899,Coleman Ltd,Red Label Tea,402.41,Hot Drink
+02dd5b27-b587-4926-99a4-3650e20fac28,Hawkins-Blake,Coffee,374.62,Hot Drink
+b4a334a0-83eb-4123-8b9a-f0be25a65025,Martin-Dixon,Blueberry Soda,135.91,Cool Drink
+8c496a23-556b-417a-b94e-9beb988faa9b,Lopez Group,Coffee,94.58,Hot Drink
+226d2712-16db-44a7-87c9-e83cfd34079d,"Alvarez, Lowery and Ortega",Lemon Soda,333.75,Cool Drink
+34058865-14e5-4b89-a253-47c83bcd6597,"Richards, Gregory and Taylor",Blueberry Soda,192.83,Cool Drink
+48473a73-6697-47cd-bcd5-8a19ac56b83f,Reyes PLC,Coffee,183.34,Hot Drink
+ca044bd6-94ae-4658-8cbb-fc629da120af,"Johnson, Ewing and Murray",Lemon Soda,389.98,Cool Drink
+0cab883e-937d-4b6d-b545-595bb0f845ca,"Sutton, Williams and Bowman",Red Label Tea,307.41,Hot Drink
+a67b6aa1-9506-48f2-870e-0a4f3e059a69,Young-Davis,Green Tea,457.79,Hot Drink
+c3667ecb-e5e1-4a8c-b931-10d6d43f1c2a,"Baker, Burch and Sandoval",Blueberry Soda,338.81,Cool Drink
+9228c01a-2df4-47eb-8772-3cdc6a180b81,Soto-Williams,Red Label Tea,279.22,Hot Drink
+effad365-45b2-4075-b12f-c695aeaba7fe,"Shields, Freeman and Burke",Mehandi,467.7,Powder
+f8952cf6-06b0-4919-89bf-c4f3db055352,Carter-Knight,Blueberry Soda,406.96,Cool Drink
+519d4874-c189-4276-9242-528abaee9442,"Craig, Adams and Ruiz",Mehandi,382.16,Powder
+02fe3c96-69b8-4f63-9e33-59f3dad423fa,"Jimenez, Webb and Shepherd",Blueberry Soda,110.79,Cool Drink
+5c3f5835-8eba-4fd6-aa9e-e6606978952d,Adams LLC,Blueberry Soda,291.35,Cool Drink
+839810ca-45c3-47ad-bdfc-01b583edfd30,Scott LLC,Blueberry Soda,223.93,Cool Drink
+78a4567f-1b7f-485d-83fb-2ac2e0205f63,Pace and Sons,Red Label Tea,67.3,Hot Drink
+75781048-a92b-44b5-b383-62cea57d6885,Wong Ltd,Green Tea,405.22,Hot Drink
+a45c74bc-2219-4afb-952a-f92edf8d04a0,Clark-Jackson,Red Label Tea,345.8,Hot Drink
+074c788d-c9fc-4cec-a669-2d69de934341,"Cook, Jenkins and Ramirez",Lemon Soda,389.4,Cool Drink
+b3a85d11-8456-4c31-8f40-96eaa6c17f30,Baker PLC,Blueberry Soda,217.92,Cool Drink
+8658a212-2391-458c-bd4a-71fda1adaeae,Pacheco and Sons,Coffee,248.36,Hot Drink
+26c7c72a-7b35-472a-994e-606ddc53e731,Brewer-Booker,Blueberry Soda,83.39,Cool Drink
+75a9d335-67bf-4f06-b44d-f60a8cc92110,Bauer PLC,Green Tea,141.05,Hot Drink
+53707687-8901-44ed-ba0b-c30a76714ff8,Martinez Ltd,Green Tea,221.96,Hot Drink
+8226999d-bc9a-4f5d-84f1-47b32f633471,"Ross, Miller and Johnson",Red Label Tea,256.03,Hot Drink
+e4f7ea31-aeac-48c3-8500-35b7463a2a21,"Ross, Fisher and Lindsey",Red Label Tea,142.31,Hot Drink
+8ded6e27-d6f3-4d9a-bed6-5f6be8a0eedd,Murray Inc,Red Label Tea,144.8,Hot Drink
+1f49fcd8-c3f2-4094-983c-b6fece2bf22f,Parker LLC,Blueberry Soda,52.79,Cool Drink
+2dfadd2c-25ea-4895-8975-88117c59371a,Thomas-Davidson,Mehandi,167.77,Powder
+96007a01-15b5-412f-879e-1c8ab9f298bf,Gonzalez PLC,Green Tea,207.23,Hot Drink
+9f8f5199-86ad-4e29-a9a1-100368c9cecb,Russell LLC,Coffee,342.65,Hot Drink
+5aee61f6-7331-4498-bfa1-5b62858cb748,Wood Group,Coffee,375.36,Hot Drink
+ac2f5739-1a0c-42a4-94d1-dd702d76f45a,Barnes-White,Mehandi,190.13,Powder
+3153d870-7dc6-4075-af56-1dec8d8b33d8,Turner-Curry,Green Tea,119.4,Hot Drink
+6566ee20-4820-4eb5-83d5-ade8b5e6b9c6,Turner-Gill,Red Label Tea,62.39,Hot Drink
+78d98464-d724-47cc-ba79-7de2cab181ca,Clay-Craig,Lemon Soda,274.96,Cool Drink
+7f7cccb0-302e-4b3e-82f6-f04720b9bf49,Grant-Miller,Lemon Soda,142.52,Cool Drink
+dacdd1ad-b679-4749-a1cb-42dc943e6f01,Tucker-Smith,Blueberry Soda,356.33,Cool Drink
+251ba5e3-c03a-407b-b605-992bd2bab653,Jones-Underwood,Blueberry Soda,256.78,Cool Drink
+0162c02a-2ab4-4a9a-b864-1ec00b7be772,Trevino-Norman,Lemon Soda,93.94,Cool Drink
+5c41824c-526a-4469-ad61-92d933c22fcd,Thomas LLC,Lemon Soda,297.1,Cool Drink
+020940e4-a9c6-411a-9736-f95fc79229dc,"Fox, Pollard and Collins",Coffee,89.64,Hot Drink
+fe3d05e4-2b02-49ec-a050-06b63b6281db,"Yu, Marsh and Schneider",Blueberry Soda,160.68,Cool Drink
+efacc003-4fe3-4076-b452-ee1db7b4e7b9,"Morales, Sharp and Odonnell",Green Tea,277.25,Hot Drink
+22742633-9b49-43dd-baaa-258e6f08a9b1,"Johnson, Tapia and Burton",Blueberry Soda,242.59,Cool Drink
+f2c6b793-97f0-4f87-94c0-d4116a26a84a,"Ruiz, Davis and Mcdonald",Green Tea,481.13,Hot Drink
+7bd0a65a-f7fb-40b6-ba96-9a49aa0655f7,"Bennett, Schmidt and Dodson",Coffee,265.31,Hot Drink
+b5c7ad26-06f2-486b-b291-a4e20c4b0a79,Rodriguez Inc,Red Label Tea,380.06,Hot Drink
+f1372605-abab-481b-9563-2ea476fc9094,Weeks-Brown,Mehandi,443.95,Powder
+d0f66330-defa-4189-a326-c94ed7a85ea5,"Baker, Armstrong and Rivera",Green Tea,169.02,Hot Drink
+178d9aba-2c02-4bc6-8b86-ce7fc7aa126c,Flores-King,Red Label Tea,480.63,Hot Drink
+3dc2c8c7-accc-4763-ae00-7a28c09ccb2e,Johnson PLC,Lemon Soda,171.72,Cool Drink
+719e7c69-5ca6-40bc-8f30-3d93464c89ef,"Zimmerman, Rodriguez and Parker",Green Tea,249.86,Hot Drink
+db9d4f2e-0e5f-4256-bfb3-e8942f466102,Estrada-Lam,Lemon Soda,274.22,Cool Drink
+e6fe7e2e-d70a-4580-8eff-bedd827350b8,"Arias, Davis and Payne",Red Label Tea,67.36,Hot Drink
+28c06665-f4b7-4fe4-aac3-6e89d5155367,Hancock-Sparks,Green Tea,439.29,Hot Drink
+50650928-bcea-4e97-8da4-61449488d11e,Fitzgerald PLC,Red Label Tea,292.94,Hot Drink
+a426be84-f67a-44f6-ae91-dc453f7cb446,"Higgins, West and Carson",Blueberry Soda,205.74,Cool Drink
+7431877a-248d-414e-8ca6-330573286240,"Clark, Thomas and Williams",Green Tea,204.93,Hot Drink
+4826b63a-2cb6-4339-a967-56568be4d1c3,Reeves Inc,Mehandi,177.24,Powder
+e4117cab-c2ec-4df3-a4bc-1f24a2ce4904,Lee-Patterson,Lemon Soda,489.59,Cool Drink
+6346eb92-f524-4d35-9849-3762b2f3f670,Morgan-Davis,Red Label Tea,310.29,Hot Drink
+70f34e7a-f776-49f8-8098-d15f9b34f9e0,"Roberson, Hernandez and Parks",Mehandi,294.07,Powder
+310e96a5-46d5-464a-971a-92e156a29d6b,Schwartz-Morales,Lemon Soda,344.46,Cool Drink
+0f5bac24-5a11-4e29-af48-a8adeffea863,Michael-Hubbard,Green Tea,326.89,Hot Drink
+ab779937-3f1e-4d8d-aed9-6a95139f06b5,Turner Ltd,Coffee,417.97,Hot Drink
+2505c830-3f0d-41ed-a095-2ae1d988317b,Gomez-Scott,Lemon Soda,294.19,Cool Drink
+3cb85275-1fd1-405f-b499-402746163e33,Smith-Ball,Coffee,97.59,Hot Drink
+a2930a07-7680-47ee-9dc8-907319d0b357,"Fernandez, Perez and Adams",Blueberry Soda,310.86,Cool Drink
+f5dece39-5aa8-4436-9443-d7d0b596327a,"King, Stevenson and Dixon",Red Label Tea,484.01,Hot Drink
+1018d16a-5843-46c9-a0c1-48cc49383083,Hill-Jackson,Coffee,202.02,Hot Drink
+03b3017e-35f8-45d6-a61c-c639c97892cf,Walker-Anderson,Red Label Tea,163.72,Hot Drink
+e1c1b77b-1c37-48c6-8e72-e202e01cebf4,Avila and Sons,Mehandi,406.99,Powder
+bf4385cf-f5ad-4eec-8dff-aa265ef00867,Brown LLC,Coffee,338.97,Hot Drink
+58b47855-7f2f-434e-be56-c6df76d80a61,"Reeves, Adams and Riddle",Green Tea,280.05,Hot Drink
+79f3defb-683b-4f4f-8014-b8e214235d7d,Blankenship-Rollins,Red Label Tea,254.2,Hot Drink
+23154aa7-35f2-45db-8b81-71534e6a06a7,"Wells, Hernandez and Warren",Lemon Soda,174.59,Cool Drink
+b797c661-2232-46ff-ba27-7a7e053bfac9,Santiago LLC,Coffee,449.43,Hot Drink
+a81e5d8a-af3a-433e-9c4d-fb74ea0719e7,Hill Ltd,Coffee,372.1,Hot Drink
+dd73aa86-d652-4c84-b121-ad027f6c31c5,Carney and Sons,Coffee,358.49,Hot Drink
+4f39f198-4933-4548-acb4-5b5bfd952a69,Moore LLC,Green Tea,457.03,Hot Drink
+adc2d4c5-7874-4f4f-8a35-427aa2e1981e,Franklin LLC,Blueberry Soda,417.7,Cool Drink
+28624142-aac1-4497-963d-e2faca7e341a,"Yates, Perez and Pennington",Coffee,183.61,Hot Drink
+02decc99-1277-4d64-9d68-01e609bb2b60,"Harding, Myers and Fitzpatrick",Red Label Tea,285.96,Hot Drink
+886b863e-2ed3-4c1b-ba6d-9d488f4148c1,Glenn and Sons,Red Label Tea,155.0,Hot Drink
+5dad6bc6-4f92-4b40-b55f-f63b3e67baea,Pennington Group,Blueberry Soda,213.74,Cool Drink
+4c900178-2b25-437a-9ec9-0fc039f8c225,Jordan-Garcia,Red Label Tea,424.93,Hot Drink
+2fb5135d-12ae-45d9-b226-2e8a12c89289,"Bennett, Walker and Wall",Blueberry Soda,412.66,Cool Drink
+5e221837-2dae-421b-82e8-0b5376ef34af,Moran-Jones,Red Label Tea,356.31,Hot Drink
+a990b4c3-62c9-4892-88ed-5906a4451893,"Morton, Martin and Stone",Red Label Tea,193.14,Hot Drink
+094b7600-595f-4a97-bf63-2b79a21deca7,Mayo-Duncan,Green Tea,430.53,Hot Drink
+9f6d97e4-8ff8-4f02-93e2-511e222c87cd,Silva-Montgomery,Lemon Soda,410.9,Cool Drink
+cd81f1ed-5390-4365-ad1f-90ac86dd9500,Phillips Group,Red Label Tea,476.53,Hot Drink
+a5da7dc4-c04c-4814-a0e1-74336d7c6e9d,Hernandez PLC,Green Tea,185.19,Hot Drink
+30f3a823-0644-4485-906e-75d93b502d6f,Scott Inc,Green Tea,101.66,Hot Drink
+9664cc7d-0f65-4dbf-9ece-8af890ce5967,Hall and Sons,Blueberry Soda,213.57,Cool Drink
+1e09748f-df12-4cbf-91d2-4ebe3a7c71fe,Franklin-Turner,Red Label Tea,152.01,Hot Drink
+4afca654-26d8-4640-9adb-34f6d0f10c42,Johnson PLC,Lemon Soda,340.64,Cool Drink
+536571ce-88f0-41aa-86ad-6d6fd4b82fdc,Jordan Ltd,Mehandi,130.89,Powder
+095c145e-c71f-4c5d-b99c-dc70237ecbbc,James-Martin,Blueberry Soda,221.62,Cool Drink
+a5e1ab66-5a7a-4c19-ab53-d75fc18684b2,Odonnell Inc,Mehandi,281.63,Powder
+76a62366-a099-431a-b729-633038c29b19,"Scott, Mason and Edwards",Coffee,218.05,Hot Drink
+0d3eaa5e-b4a5-4e0c-b66b-8fd7c3a03ed3,"Williams, Velazquez and Chandler",Red Label Tea,206.95,Hot Drink
+c4e3a308-6481-45d8-93bd-a109bc2072df,Alexander-Gilmore,Coffee,146.98,Hot Drink
+ee34b564-6803-49e7-82c5-0594d8eb36ad,Davis-Thompson,Mehandi,312.03,Powder
+67e97483-93c6-4598-933c-9ed09bdb10fb,"Tucker, Turner and Cohen",Coffee,411.37,Hot Drink
+332c3192-eacd-4842-8696-5989435f2e94,"Mclaughlin, Strong and Roth",Red Label Tea,116.68,Hot Drink
+280da1fe-be18-44ea-87ea-560e4c9e7796,Bennett-Stevens,Blueberry Soda,105.11,Cool Drink
+747addaf-bc68-4da2-b069-f6dc92424391,Davis-Davis,Blueberry Soda,76.97,Cool Drink
+dcd56ab7-d805-435f-9e83-54a1fdde8cf1,"Lee, Nichols and Newman",Red Label Tea,421.32,Hot Drink
+24ebf4c7-c846-4362-a637-d4219e69cc73,Garcia-Black,Blueberry Soda,499.47,Cool Drink
+44bc9b77-8de0-4fe7-bd67-9bae19be2403,"Martin, Campbell and Martin",Lemon Soda,338.53,Cool Drink
+71a3ed44-1d2d-409d-a61d-d996272f9e7d,"Harper, Ortega and Castaneda",Coffee,213.37,Hot Drink
+a251af6a-9337-4f92-bcb9-5409e5d87b1f,Ward-Johnson,Red Label Tea,306.38,Hot Drink
+d40b0bdd-00d0-4ac7-b262-e542ea7b8e25,West-Craig,Green Tea,198.93,Hot Drink
+a41b4813-bdcc-4434-8bcb-c6f37bb1ad29,"Campos, Bass and Silva",Coffee,124.08,Hot Drink
+c174ffae-229e-4f21-9894-f584af5e99c9,"Jones, Lee and Wilson",Blueberry Soda,492.0,Cool Drink
+d9957e9a-0195-4291-b794-c565c41e5f39,Jackson Inc,Green Tea,430.52,Hot Drink
+5c103e9f-01a8-42ac-996b-ec3474376274,"Clark, Jackson and Beltran",Blueberry Soda,194.09,Cool Drink
+7617ebc2-4dba-44b5-8caa-221cecad8410,Newman-Hanson,Mehandi,90.36,Powder
+0811f6fc-fb1f-48c6-87db-8decf7441740,Schneider LLC,Blueberry Soda,466.87,Cool Drink
+97f62c1e-32da-4c93-8a19-6971f7791fa0,Schneider-Peterson,Green Tea,182.97,Hot Drink
+b0925803-94fd-4e03-b0ef-186e6f2cb863,Conway-Paul,Blueberry Soda,269.08,Cool Drink
+0e0c59d8-baf4-4036-8e87-4be1117c2731,Lewis-Baker,Lemon Soda,205.46,Cool Drink
+0814df96-e547-4e0d-99ee-dfec30cb7f7d,Jones-Morrison,Red Label Tea,407.11,Hot Drink
+b005d349-5ffd-4182-b2ca-b7b8ef1eb19c,"Stephens, Gomez and Keith",Coffee,345.89,Hot Drink
+d8806588-6de6-450b-aedf-5cd709cf8373,Carson-Harris,Lemon Soda,310.16,Cool Drink
+d0548f6b-01c0-480d-ade7-6a5103b8d8dc,"Davis, Byrd and Brown",Coffee,475.19,Hot Drink
+d5d8d3d4-c192-4ae1-802a-38fa652c666d,"Sparks, Young and Garcia",Blueberry Soda,140.65,Cool Drink
+0e952918-5043-4ff2-95e5-cc695941e685,Patterson-Snyder,Lemon Soda,471.31,Cool Drink
+0cc70125-3f8e-4f3b-a3f4-d361e202b1b6,"White, Edwards and Smith",Mehandi,403.14,Powder
+b7f286d0-0297-4ebd-931d-b5e0cfd67952,Valdez Group,Red Label Tea,97.02,Hot Drink
+48b5a123-8126-4eeb-ad83-263e4551c0a4,Mccoy and Sons,Red Label Tea,188.85,Hot Drink
+736b50f1-933f-4ac2-b16a-c9964ad0ec1b,"Valdez, Joyce and Nguyen",Green Tea,89.6,Hot Drink
+23b7974e-372a-4d61-b6a5-d198f5c913e6,"Marquez, Reed and Jones",Lemon Soda,423.06,Cool Drink
+5bbfd20d-627c-4257-b8d8-ee826581faed,Chase-Weaver,Blueberry Soda,193.76,Cool Drink
+fd49ffa6-ce14-4001-ba1a-bc4da6a410ab,"Lewis, Myers and Klein",Coffee,444.11,Hot Drink
+371b854d-6b1e-450e-a67a-20787254e7d3,Jenkins Group,Green Tea,491.26,Hot Drink
+17130476-ae29-481c-bab1-463ca4128ac7,Adkins and Sons,Red Label Tea,246.81,Hot Drink
+ddb8876b-8f5a-43aa-848f-861a5d8c9ccf,Lewis-Garcia,Green Tea,454.82,Hot Drink
+eb8b97e0-608e-4566-8bf7-caab0b24c1d1,"Adams, Rose and Cook",Blueberry Soda,382.89,Cool Drink
+0e276bed-3470-4759-8808-9b053da80a2b,Fuller LLC,Lemon Soda,273.47,Cool Drink
+3719d3c0-318f-4b8e-bbe0-553e2419a72f,"Good, Clay and Garcia",Red Label Tea,273.46,Hot Drink
+2ea81ddd-b13f-4b91-ae1d-5889b7e1c86c,Reynolds-Moore,Lemon Soda,63.62,Cool Drink
+d6d11dff-7ec4-448f-8484-5d06b45f197a,"Harris, Stone and Thompson",Red Label Tea,245.05,Hot Drink
+5ccd95c7-dde7-4ca2-b254-193fe5348d63,"Webster, Clark and Dorsey",Blueberry Soda,339.27,Cool Drink
+9d9e3098-6f6f-4c2f-b667-3ad0ae60c03b,Peck-Riley,Blueberry Soda,176.16,Cool Drink
+76a08b02-3515-4e85-abb1-892851f23088,Rogers-Jimenez,Lemon Soda,308.22,Cool Drink
+742d1fcd-cf0f-4f2e-9667-c263c3750f8d,"Davenport, Kerr and Cowan",Green Tea,444.48,Hot Drink
+3b266886-72fb-4d37-8390-0ce25adbdf2f,Contreras and Sons,Lemon Soda,124.45,Cool Drink
+7af03f44-bb6b-494f-9e73-83bf7a1d1ca0,"Parker, Thomas and Gonzalez",Mehandi,231.25,Powder
+275cf999-ef65-46bb-a6c3-2878fe9aa7c4,"Rocha, Quinn and Harvey",Mehandi,156.22,Powder
+939d4beb-0811-4fc9-b391-804d162dec27,"Bowman, Sharp and Schmidt",Coffee,270.31,Hot Drink
+e8d7a8c1-c377-4a17-9db9-b866f5fbada7,Fitzgerald LLC,Blueberry Soda,175.8,Cool Drink
+e59fd129-3a3e-4dfb-971b-bec57130c136,Perry-Cunningham,Green Tea,228.68,Hot Drink
+79fe57c7-2bff-488c-b6f2-257da7273e49,Nichols and Sons,Blueberry Soda,335.85,Cool Drink
+78ed667c-d765-4c2a-aee4-8a698cb72efd,Osborne Inc,Red Label Tea,443.48,Hot Drink
+29a5b76c-06dc-4fbc-952c-b064f4112ac3,Larson LLC,Blueberry Soda,148.93,Cool Drink
+4ac3aa9c-ef04-4708-956e-87b0791554bc,Shepherd-King,Green Tea,406.65,Hot Drink
+c3ca3173-72ff-4162-9fb2-60543d59bb69,"Smith, Dominguez and York",Red Label Tea,234.36,Hot Drink
+f920cb9f-9b18-43d4-ac00-6d9f11e5a06c,Knight-Sandoval,Blueberry Soda,235.74,Cool Drink
+e63336ce-b20f-4d81-b6ec-479e90745e59,Long-Young,Green Tea,181.06,Hot Drink
+39e83783-2ced-4b9d-85a0-f108086e3821,"Jacobs, Hicks and Ramirez",Lemon Soda,183.31,Cool Drink
+7d8c8b88-4864-4dac-9dae-35cd90e01297,White Ltd,Mehandi,340.32,Powder
+00f7ccac-6f87-4f11-a89f-2893a57645c4,Miller and Sons,Red Label Tea,225.03,Hot Drink
+a6c3b2d7-6368-4bb5-acba-82fa2a6bbe62,Hooper Ltd,Lemon Soda,415.71,Cool Drink
+e0819ede-50a3-411a-8981-29bc453d1898,Adams and Sons,Mehandi,325.59,Powder
+c9efdd39-3848-4644-b611-2fc0fa9587b6,"Garcia, Lee and Michael",Lemon Soda,392.83,Cool Drink
+3cc0d0df-eaf8-4a06-9ccf-c35f27cd319a,"Ryan, Moore and Pierce",Blueberry Soda,127.35,Cool Drink
+d5465a2c-dd7f-49ea-a4b5-c2def5d3908f,Welch-Hamilton,Green Tea,242.86,Hot Drink
+02795348-e36e-4e88-86f0-59fd9a9743b1,Morales and Sons,Mehandi,240.24,Powder
+02b29cc6-1cb2-4ad8-9c3e-cd0d7989db85,"Richards, Castro and Schwartz",Lemon Soda,435.68,Cool Drink
+e3c85bf1-3497-4568-8df8-22c0bf6b64e6,Pena Ltd,Red Label Tea,241.25,Hot Drink
+44b71bbd-768d-4448-9561-65295fe4cfa9,Johnston PLC,Red Label Tea,369.28,Hot Drink
+a1c517ff-b0e9-4930-b6ed-6af747737f4e,"Johnson, Mcclain and Macias",Green Tea,398.85,Hot Drink
+37575695-6c84-4748-b7d9-136fa14402fa,"Carr, Riley and Parks",Coffee,190.45,Hot Drink
+0adb2298-f3cb-46f2-8850-9571d72fb477,White-Griffith,Red Label Tea,247.9,Hot Drink
+09f18db7-f1a4-494f-8d8f-005c2a419a76,Jones-Price,Lemon Soda,131.6,Cool Drink
+81606fcb-f3b3-4fff-865e-cf74a96722b3,Palmer PLC,Red Label Tea,496.9,Hot Drink
+2f5ca666-c6bd-4a1d-83a2-118f30c6dc7a,Moore Ltd,Coffee,161.77,Hot Drink
+091e0507-744c-46b3-800b-2dceb8b03bdc,Simmons-Brennan,Mehandi,284.71,Powder
+7f6e89cc-d071-4011-9ad4-eb7216f5b496,Perez and Sons,Mehandi,390.96,Powder
+85e0465f-1a98-46c7-8b40-5e49518870bd,Johnston Group,Coffee,397.56,Hot Drink
+7908a7a0-dc31-424a-b7cb-714444a259bd,Sanchez-Williams,Mehandi,365.11,Powder
+58e1c0b0-06ce-4bc0-9880-586e2369d4ba,"Myers, Cortez and White",Coffee,469.59,Hot Drink
+226d1f99-7bf6-456b-824a-b288eb7917a9,Sanchez Inc,Lemon Soda,211.24,Cool Drink
+532a4b72-2352-4927-9741-28758d8b4756,Villanueva LLC,Blueberry Soda,327.51,Cool Drink
+aa8a594a-4c75-4b62-a762-d0e647064cd6,"Willis, Hudson and Carroll",Blueberry Soda,390.77,Cool Drink
+2be794e6-5737-4cc1-9e26-1c6dcfbb448c,Foley LLC,Blueberry Soda,222.51,Cool Drink
+e8b251e3-2588-40e7-bf1e-3b8123c7a4a7,"Hamilton, Cardenas and Rodriguez",Green Tea,236.38,Hot Drink
+dbb6cb8b-9e51-4e5d-a85e-f2faa812287c,Conner and Sons,Lemon Soda,202.54,Cool Drink
+7ca2ec55-c921-4e67-9c73-7e7f8a88a26e,Brennan and Sons,Green Tea,387.51,Hot Drink
+1d31d872-3475-44fc-8c5b-6bab28f88592,Smith Inc,Lemon Soda,160.01,Cool Drink
+07393a8d-ea5a-4ca6-91d2-924e62811686,"Jones, Travis and Cameron",Red Label Tea,82.91,Hot Drink
+b621b912-230b-4970-93fc-c1c470e915b8,Gonzales Inc,Coffee,346.54,Hot Drink
+2f7d816a-f9c2-4388-8a05-f27fd648ecb7,Herrera Ltd,Blueberry Soda,266.48,Cool Drink
+286d6365-668a-4f03-9c62-c31c99ec4132,Baker and Sons,Red Label Tea,88.63,Hot Drink
+e134ea8d-3fb5-436d-b160-8ada886694fb,Bennett Inc,Red Label Tea,208.97,Hot Drink
+1d3993cb-c405-4993-bef3-4be51a26e545,Walter and Sons,Mehandi,444.86,Powder
+5c43b713-a6c0-4f57-92fd-efb69c9ff101,Fowler-Webb,Red Label Tea,109.29,Hot Drink
+877976e1-e2be-4365-aede-cb214971526f,Williamson-Cabrera,Blueberry Soda,282.34,Cool Drink
+c76f433d-6cc0-49e2-9897-9cd7be908f72,Le and Sons,Lemon Soda,213.05,Cool Drink
+4bc344c0-fab8-483b-833a-e18104a50268,Tucker LLC,Mehandi,349.04,Powder
+a7a00a5c-a454-40c6-9d4d-b1bdfa58c983,"Hancock, Anderson and Weiss",Coffee,104.26,Hot Drink
+45097fa4-d9d8-41da-8559-41e0c1da11c5,"Holder, Osborn and Ward",Blueberry Soda,389.2,Cool Drink
+a502b729-b4ae-4cde-a350-87189d3238d5,Lee-Higgins,Blueberry Soda,412.19,Cool Drink
+498a09f6-2d0b-43e0-994a-984b018fd341,Herman Ltd,Lemon Soda,369.28,Cool Drink
+62480699-8add-49f0-b7c5-deec83e1412a,Owens LLC,Coffee,494.15,Hot Drink
+45df9b57-57e1-4344-83b7-01b87343d826,"Johnson, Jackson and Barnett",Lemon Soda,314.89,Cool Drink
+446b05c1-1e45-468a-ad6a-b4cb8029ed13,Hammond Group,Red Label Tea,387.11,Hot Drink
+b5099593-9548-432e-b3fc-834401cac71f,"Walsh, Briggs and Wilkinson",Red Label Tea,284.38,Hot Drink
+7be6acd2-4f8f-48f5-8262-23caa459a6ce,"Collins, Cortez and Torres",Blueberry Soda,76.83,Cool Drink
+35cdf88a-dd62-4ce0-9d8d-988b044c4ea9,Wolfe-Liu,Blueberry Soda,179.17,Cool Drink
+77768d31-369d-46b3-bb57-c95884fc3839,Cochran PLC,Mehandi,195.34,Powder
+9ff5d82a-ac87-4add-aec1-e23b8376dda3,"Poole, Shaw and Gallagher",Mehandi,68.28,Powder
+b163eee3-f2ab-4eca-9d46-bad620d9f517,Goodman-Obrien,Red Label Tea,205.28,Hot Drink
+4b10155c-e277-415b-8f99-1b91d8be33d3,Sanchez-Black,Blueberry Soda,392.59,Cool Drink
+1eef3c95-c0fc-4b6c-bb33-57397a12a435,Carpenter-Rice,Green Tea,498.5,Hot Drink
+a0645af6-335f-49b8-9320-ab671fcc8928,"Miller, Cruz and Lane",Green Tea,230.67,Hot Drink
+a926f972-4080-4ca1-9ac3-3cc0501fb9fb,Bautista Ltd,Green Tea,145.15,Hot Drink
+fb120dce-54eb-4285-8aa4-798b3dce2d0a,Lewis and Sons,Blueberry Soda,256.31,Cool Drink
+d9ed4890-b091-40fb-a62f-3fb28cf0585a,"Frazier, Contreras and Jenkins",Green Tea,176.47,Hot Drink
+0211add6-aad1-40b9-9f22-9246e75242ef,"Byrd, Snyder and Brooks",Green Tea,103.39,Hot Drink
+297fc6d4-718c-478c-9494-a8b080622fcb,Olson-Espinoza,Red Label Tea,407.61,Hot Drink
+037dd2ca-8bf8-4f2e-b684-64a0c9bf1ad0,Meadows PLC,Lemon Soda,333.27,Cool Drink
+3ff6e0ad-8966-46a0-ac7d-537dd5750ddc,Carroll-Stevens,Mehandi,245.62,Powder
+7fc9f164-fcca-404c-beec-66bd1f21dd72,Wiley-Curry,Lemon Soda,288.29,Cool Drink
+35e70806-5233-4df3-9044-9550f0bb68bb,Garcia-Anderson,Blueberry Soda,321.21,Cool Drink
+006277e7-2422-466f-870d-95628d09513a,Keith LLC,Lemon Soda,58.91,Cool Drink
+385fa0be-c9e6-4de7-9e1a-9f4cf90b3212,"Bailey, Reyes and Smith",Blueberry Soda,448.97,Cool Drink
+e76c2e0b-68bf-41c0-a7b5-fff8d2248133,Brooks Inc,Lemon Soda,384.5,Cool Drink
+f1ea203b-946b-4eba-9859-7d707562766a,Francis-Williams,Lemon Soda,241.84,Cool Drink
+7d530b0e-f3a0-4237-b39c-5e59a0787ace,"Hensley, Graves and Hunt",Red Label Tea,376.34,Hot Drink
+ea7ca104-062a-43f3-ad8a-6649eaafdfb2,Smith LLC,Mehandi,157.16,Powder
+5356e800-d899-4f28-84c2-2dbed1bd6f54,Dickerson-Sampson,Green Tea,198.63,Hot Drink
+fe18dc20-d36f-41ff-a131-5715944402c5,"Landry, Ayala and Greene",Mehandi,135.93,Powder
+da2002b7-698c-4184-92c2-0b796d92fb33,"Kirk, Garcia and Williams",Coffee,102.62,Hot Drink
+13ac8be1-99b0-4679-a3ae-42abe7185d1a,Garcia Group,Blueberry Soda,184.75,Cool Drink
+ad4cf078-e1da-4dbb-bb18-0e84cb475712,Moreno PLC,Red Label Tea,229.66,Hot Drink
+65d84a5a-c580-43ee-8c8b-c9c7a654eb0e,"Willis, Jackson and Burke",Red Label Tea,454.21,Hot Drink
+dbe22663-9c71-4334-a766-4bb275771978,Ortiz PLC,Coffee,478.62,Hot Drink
+5d1ac08a-7008-4105-aa55-b7967d6b3d2d,"Arellano, Reid and Marks",Green Tea,456.19,Hot Drink
+a3b11c92-e95e-4d89-b37e-741fffa248f0,"Jones, Lopez and Turner",Lemon Soda,137.17,Cool Drink
+cd6b363c-0401-4b3e-a0e9-b084e529eb01,Allen-Cross,Lemon Soda,373.93,Cool Drink
+02d8a37d-f8d9-4ef7-b33f-16d8a348ee03,"Jones, Wilkins and Cooper",Mehandi,313.2,Powder
+85a303b5-b0b7-43d8-be7f-1e35d5dcf195,"Martinez, Jones and Woods",Mehandi,331.94,Powder
+ae96d434-a238-4b9a-99e8-c08cb072b12e,"Collins, Tanner and Tate",Mehandi,208.03,Powder
+0d15431f-09b2-48c5-8c38-3f808474c53d,Vargas-Gilbert,Coffee,130.09,Hot Drink
+8b5a36f4-f4a0-498d-8a36-34430cf3231b,"Bradley, Robinson and Hinton",Blueberry Soda,360.78,Cool Drink
+d7cf5753-af4b-4ae5-8ec4-4d63738747b0,Johnson-Higgins,Blueberry Soda,328.64,Cool Drink
+c2066fb6-e14a-4f5d-b541-1b446b491657,Carr-Bradley,Red Label Tea,492.19,Hot Drink
+2b4edb52-7ca1-4eb7-a170-a83d0cb9fcc7,"Johnston, Davis and Cook",Coffee,175.52,Hot Drink
+b91072ee-49e8-4387-b6ed-096f15d8372c,Moore Inc,Lemon Soda,376.02,Cool Drink
+f50ceef3-d2d6-4e00-b349-7778b07bcd64,Weaver-Mcdonald,Mehandi,180.8,Powder
+4036eaf1-073b-4f90-aed8-614ee63bc678,Richardson Ltd,Red Label Tea,433.55,Hot Drink
+8e6fc429-e705-47a8-9551-fb5604baffc4,Morrison Inc,Coffee,375.78,Hot Drink
+54b9f744-fc72-4ce4-972f-cc2ea2dcb50d,"Adams, Terry and Solomon",Blueberry Soda,233.51,Cool Drink
+48aa2620-df77-4277-b0dd-73a4c61d356a,Woodard-Delacruz,Green Tea,316.9,Hot Drink
+b5a62db4-eed8-412a-8bd4-0a1a04545afd,Johnson-Lawson,Coffee,240.89,Hot Drink
+168c1450-14f4-4177-aa70-484fec3c552d,"Brooks, Diaz and Delacruz",Mehandi,209.54,Powder
+4e4f7832-a848-4ccd-8c2a-ef2a9ff29e34,Hughes-Sanchez,Mehandi,64.61,Powder
+44c8b7eb-3334-4a81-97fe-b1791ab62933,Rios LLC,Mehandi,284.64,Powder
+16d86c08-f7af-409c-9e7f-cac2f9561025,Wilson-Taylor,Green Tea,347.93,Hot Drink
+eccc58c6-6ff1-4fcb-a5b1-b8b0e9fe255f,"Hodges, Davis and Franklin",Blueberry Soda,445.53,Cool Drink
+31a067f5-05c9-431f-8700-fc934eca2196,Miller LLC,Lemon Soda,78.3,Cool Drink
+8c6bc2be-df5f-49c0-8d91-a73767388911,Moore-Alexander,Green Tea,224.08,Hot Drink
+71133e38-b96c-4aaf-a126-110bd8e035a9,Lee Group,Red Label Tea,174.12,Hot Drink
+cacea86c-3067-49b3-9121-31a78e7a6a7c,Conner Group,Coffee,132.49,Hot Drink
+12bfdbd9-80b8-4055-8db8-bbf4777e25d3,Todd-Grimes,Lemon Soda,134.13,Cool Drink
+7a7f2731-a2a3-4e8a-8aaa-2f60605294e6,Coleman PLC,Blueberry Soda,51.48,Cool Drink
+12772f19-d8b7-4423-9469-669a6e3f88ab,Webb LLC,Lemon Soda,309.95,Cool Drink
+dfa986d2-622d-4f39-8a10-3297f060ceaf,"Manning, Taylor and Alexander",Green Tea,300.5,Hot Drink
+6aea9f0c-25cf-43da-ac2c-07ba72e00ea9,Tapia-Phillips,Mehandi,222.6,Powder
+adcad533-8cd0-4f7a-9079-66d9ae3cfaf2,"Lee, Williams and Michael",Mehandi,391.82,Powder
+e92a9137-e7b5-41ab-b7d2-7740bec7a5a8,Mitchell LLC,Red Label Tea,486.26,Hot Drink
+ceb0f6d4-9fff-4ad8-a550-3926991fc666,Tran-Miller,Lemon Soda,389.3,Cool Drink
+8e15a006-3102-4750-8bd1-4b5a9b70f464,Berry Group,Red Label Tea,364.11,Hot Drink
+f57ee0a7-5170-4230-87aa-984407e142e9,Brown and Sons,Lemon Soda,229.68,Cool Drink
+159cf56b-a2da-45cd-8bae-21dfb3bc40f3,Clements-Porter,Green Tea,197.63,Hot Drink
+d58d1143-13c0-4688-924d-6a3eb6288847,Jones-Lopez,Blueberry Soda,200.67,Cool Drink
+7fb52ea1-8635-4f7d-9007-087d2b2dba9c,Barron Inc,Green Tea,300.76,Hot Drink
+ede5a588-b9e6-4485-adf5-8fbb470bc5ae,"Perez, Ramirez and Spencer",Coffee,283.68,Hot Drink
+5b525152-ea40-414b-9301-e96fb815ebeb,Rodriguez Inc,Green Tea,164.76,Hot Drink
+67c1e48a-4567-4f04-8e6d-e5c1bd6eb774,Moreno-Lawrence,Red Label Tea,143.31,Hot Drink
+c04c255d-b24c-42e9-ac9b-d1e01c51c730,Leach-Pollard,Green Tea,385.24,Hot Drink
+264eea13-024e-4083-a338-4dad61f2edb9,"English, Jordan and Medina",Blueberry Soda,173.11,Cool Drink
+60d3459b-b749-4bb9-b7ce-8077e2265c04,Johnson-Jackson,Mehandi,459.34,Powder
+5d004798-c42b-427c-9065-c29a323c3cb1,Webster-Clark,Mehandi,61.33,Powder
+d971d2eb-63a1-4675-87bf-ddd73465d299,Walker-Johnson,Blueberry Soda,487.19,Cool Drink
+53d0d313-6f0a-4545-80b2-2d17e6a8d443,"Nguyen, Gordon and Colon",Lemon Soda,212.54,Cool Drink
+8aa4f117-6e48-4b99-b79a-fc0e6356c42b,"Lawson, Morris and Miller",Mehandi,442.44,Powder
+9d051ffb-1b6b-4688-91c2-9eb244ee7685,"Baker, Reeves and Pham",Green Tea,179.58,Hot Drink
+9a23c1ee-e330-4891-813b-1aeb5a148197,Moreno-Gibbs,Green Tea,418.86,Hot Drink
+9663f5b9-91db-4ac2-a94a-d1f3c006ff54,Vaughn Inc,Lemon Soda,357.76,Cool Drink
+890d2dc3-eb46-412b-938f-13483c5aabe0,Johnson and Sons,Blueberry Soda,385.47,Cool Drink
+87351b4e-9e67-4e4d-9872-2f4abb718e20,Hardin LLC,Coffee,52.1,Hot Drink
+942066ff-a2bc-40f0-8449-995a69fe9b20,Perkins-Roberts,Green Tea,413.11,Hot Drink
+f404f884-08f8-430b-851d-f265bb3d7998,Weiss-Beard,Red Label Tea,62.89,Hot Drink
+ac28afbd-dc3e-4bfa-bdba-d96f993c9622,Mendez Group,Lemon Soda,414.02,Cool Drink
+f2aec79c-59d2-47b4-8f4c-aba0ca333889,Duncan-Stone,Blueberry Soda,259.2,Cool Drink
+6112fb51-827b-4c4f-9726-2e11e5b47547,Strickland Group,Green Tea,359.44,Hot Drink
+ab26ded9-9e8b-415b-bc35-0b63e63273c9,Chen LLC,Green Tea,130.92,Hot Drink
+7fa5b45b-5e0c-4005-ae62-db4c7b7fcabd,Salas PLC,Blueberry Soda,163.65,Cool Drink
+9cd35a58-fcf7-4336-90e0-1e73ce780f1f,"Padilla, Kelly and Torres",Coffee,312.18,Hot Drink
+8583425f-759e-42eb-a195-561217dce23c,"Robinson, Cain and Rose",Red Label Tea,348.29,Hot Drink
+93255ae5-22f3-4784-a6ae-82b868a30b58,Collins LLC,Blueberry Soda,334.92,Cool Drink
+d0bc4ff7-f81e-45f2-8001-f175167c23d0,Clark Group,Coffee,401.81,Hot Drink
+21b56964-3708-4fc9-9b80-480547953153,"Byrd, Horton and Gonzalez",Mehandi,276.19,Powder
+f5229dcb-6f8a-4da8-8966-b6261305799e,Phillips Group,Coffee,462.64,Hot Drink
+f865e4e1-5fe1-4180-85ec-58cc5102792c,"Rogers, Arellano and Tucker",Lemon Soda,151.4,Cool Drink
+dc697e55-a299-40e9-92c9-e0bb51371b0c,"Diaz, Tran and Payne",Mehandi,438.79,Powder
+7245e005-e871-438f-ab3c-581b0da10d7d,Jacobs-Adkins,Blueberry Soda,252.08,Cool Drink
+968a86a3-0fcb-40f2-9e90-d3de3a8feef5,"Smith, Gonzalez and Murray",Blueberry Soda,252.57,Cool Drink
+8d649ab3-9851-4450-b4b3-9bd028684a78,Farmer-Flores,Blueberry Soda,449.55,Cool Drink
+5e0c770a-6b40-42c5-836a-aed7b1f43562,Singleton Inc,Red Label Tea,186.68,Hot Drink
+93a87f3f-131f-4ca7-8789-4799c24809e3,"Jones, Martinez and Sharp",Blueberry Soda,460.39,Cool Drink
+a053afe4-e419-4789-a6e2-496b877c393a,Brown-Lloyd,Lemon Soda,419.61,Cool Drink
+97dc4947-22e1-4fd8-a7d5-5b1dde4a6a38,Patton Group,Coffee,359.18,Hot Drink
+09d77dd1-8b89-4ec7-bbc4-00e686df1398,"Anderson, Shea and Koch",Coffee,467.69,Hot Drink
+76c99fb3-57fa-40d3-9700-d27884db9d7f,Williams-Ware,Blueberry Soda,203.22,Cool Drink
+aebcd6e5-206c-43c5-9d36-dfa5b3be1e72,Anderson Inc,Mehandi,474.32,Powder
+9d83a1f5-3070-46a9-bf8c-b5db31fdc61e,Rodriguez-Owens,Lemon Soda,231.77,Cool Drink
+733af38b-a516-4ff2-856c-093017e53076,Moreno Ltd,Green Tea,193.01,Hot Drink
+8fb8cbe7-1bbf-4c30-a2b9-d6bf7723ff20,White-Rodriguez,Green Tea,448.37,Hot Drink
+5ff3630c-1cd2-4fed-90ba-25dc2efe48e9,"Johnson, House and Lopez",Blueberry Soda,434.4,Cool Drink
+90dc28c9-0fb0-42e3-bcf2-7333270f3e71,Dennis Group,Blueberry Soda,190.57,Cool Drink
+4df38830-0674-42fd-997c-4266c09a658d,"Ward, Moore and Robinson",Green Tea,258.46,Hot Drink
+759a8336-3c95-4fbe-90cd-2203c12568ae,Williams Group,Green Tea,398.24,Hot Drink
+e5852aeb-6cce-4ef2-b11b-240b5dac772a,Price-Cruz,Mehandi,141.5,Powder
+7b0e7bad-99a4-4fe4-8ace-c93ec8eea5fd,Lutz-Washington,Red Label Tea,51.82,Hot Drink
+141a25ad-c8bd-4e62-9b1e-c30dc271db8e,Mitchell Ltd,Blueberry Soda,192.01,Cool Drink
+38d6455a-3a4f-45fc-b96f-6398b9a79aec,Moore-Farmer,Lemon Soda,324.42,Cool Drink
+d192b5ad-2403-4ae6-a68c-5bfa010f7296,"Lynch, Brooks and Campbell",Red Label Tea,216.14,Hot Drink
+95d19549-28cd-4dfe-9842-9a5682908878,Weeks and Sons,Coffee,369.19,Hot Drink
+5f001ef1-2afd-4058-b734-1703e9d9d729,Kane Ltd,Mehandi,373.83,Powder
+5595f869-64ae-4ed7-be96-3d263239f967,Bradley-Bowman,Green Tea,253.05,Hot Drink
+5558f01e-c328-4ccf-b513-218cd2f74caa,"Rocha, Tucker and Perez",Lemon Soda,404.28,Cool Drink
+28e90945-7213-42d4-9684-3de0caa7516c,"Smith, Gonzalez and Rios",Blueberry Soda,376.17,Cool Drink
+f156f253-583f-4b5b-aa76-51b7a6ba2bcf,Bond Ltd,Coffee,379.12,Hot Drink
+98cd994d-86b5-430d-a7cd-9ccdfbfcdb55,Rogers-Brown,Mehandi,283.73,Powder
+783901d9-e7c8-42e5-a27f-83e875473678,Ortiz-Jensen,Blueberry Soda,411.94,Cool Drink
+e25c9f26-bcbc-483d-a175-74b116f3ea09,"Logan, Martin and Burton",Mehandi,494.99,Powder
+c4d41397-1a64-42d3-be2a-c9458f58e58c,"Jordan, Lutz and King",Red Label Tea,487.08,Hot Drink
+1a0b88ab-c390-4366-a4a2-dac70a44739d,Yoder-Garcia,Lemon Soda,357.95,Cool Drink
+3ebd59fa-07b7-4996-9f2f-3802f3bc03a5,Mueller and Sons,Red Label Tea,309.99,Hot Drink
+b00fdade-807a-407e-9fe4-dff6f6f31a9e,"Barnes, Cole and Daniels",Mehandi,348.9,Powder
+4c9ac647-2cd0-45e6-bcf3-1b67e166f4e0,"Fisher, Roberts and Anderson",Coffee,322.57,Hot Drink
+9fd2c31f-30c0-4118-ad0a-6d5ed6a5f997,Collier and Sons,Blueberry Soda,433.33,Cool Drink
+911539f9-7e14-40d0-9a75-33a083c2c003,Murphy-Walker,Coffee,325.02,Hot Drink
+841d4edf-ee15-4ebb-8b82-99cac1007886,Powell Ltd,Red Label Tea,79.24,Hot Drink
+2c2b4946-8dcc-4cc4-9932-315f8f6e79d0,Lawrence and Sons,Blueberry Soda,61.64,Cool Drink
+c130b9cb-5998-4bb1-a319-6a31b8d197ca,Oneill Group,Coffee,203.26,Hot Drink
+65784901-f4a5-45ea-8f58-e905ec9cec58,"Chandler, Ramirez and Jenkins",Coffee,229.2,Hot Drink
+08977193-7b2d-43cc-8f04-a3208cc913e7,"Schroeder, Carpenter and Sullivan",Lemon Soda,341.88,Cool Drink
+a3ad06d8-adb0-4af1-bc3d-e856b00cdc01,"Weaver, Carter and Barrera",Lemon Soda,237.27,Cool Drink
+bfa94132-1361-4c5b-bffb-bbd1af58d519,Davis-Martinez,Green Tea,296.03,Hot Drink
+6a4c533e-b5ad-4dfa-b297-668a5b473bd1,Browning-Barajas,Coffee,228.27,Hot Drink
+c230fe95-8e19-465b-af08-78de21875de9,Perry Group,Coffee,340.8,Hot Drink
+b4a579b0-7e15-4e06-a289-6da1e0c35266,"Taylor, Foley and Brown",Mehandi,203.81,Powder
+a9b0855c-0481-43ed-8a0d-0b4c7d81d00b,Jones-Lewis,Green Tea,123.95,Hot Drink
+62c5f615-a708-4053-9580-571717337b1b,"West, Garcia and Coffey",Blueberry Soda,491.31,Cool Drink
+dd0f933e-1e22-4a5c-ac1e-07a971f89cb4,Chandler and Sons,Red Label Tea,216.38,Hot Drink
+b5afdb8e-ce3a-41e3-bb9d-9025adccd153,"Valenzuela, Moore and Shepherd",Coffee,143.07,Hot Drink
+a3969db4-cb70-424b-a6e6-4f75b3087067,Morales-Hudson,Coffee,195.32,Hot Drink
+1bcff575-e9a2-41ef-b23e-4d87664ab1f7,"Aguirre, Torres and Fleming",Lemon Soda,133.13,Cool Drink
+c736a748-e455-4e5d-b89f-5e89931ec7e6,Barnett LLC,Green Tea,65.38,Hot Drink
+ce33c1db-527a-47c0-91a1-ccfb3b86367a,Ho-Roberts,Red Label Tea,314.27,Hot Drink
+9da8e1a9-4d6a-4de4-8751-8bd49fa3b963,"Villarreal, Stone and Lozano",Red Label Tea,196.78,Hot Drink
+a2a7ce62-93cb-4f6d-a669-37108634d6af,Foster LLC,Coffee,163.78,Hot Drink
+dade7a85-672d-48fc-9ac7-18699890532b,Stone and Sons,Lemon Soda,158.02,Cool Drink
+830b7007-e5a1-44b6-87be-4a69e36270f8,Bowman PLC,Green Tea,97.23,Hot Drink
+e0663879-e7fa-4a02-96be-d392c79966e5,"Blackburn, Thomas and Fischer",Red Label Tea,273.42,Hot Drink
+c7a22e65-cc70-45c6-94ce-2a712bb96d55,Gonzalez Group,Green Tea,434.77,Hot Drink
+5a893dc5-ecc1-441a-849c-8ed8bc40e3e1,Morales-Suarez,Green Tea,274.5,Hot Drink
+9bca83dd-b31d-4f75-8cd4-81b3f9514880,"White, Guerra and Gomez",Green Tea,139.59,Hot Drink
+7d573726-0736-45c1-8526-9b1c7514f586,Smith and Sons,Coffee,488.54,Hot Drink
+b76145bf-21e6-4f58-864b-a5ca78a9820c,Clark-Alvarez,Blueberry Soda,186.86,Cool Drink
+0a62a455-5960-422f-8eef-19dc78d8c509,Sheppard LLC,Coffee,310.22,Hot Drink
+8e6316d1-6e10-49df-9326-9044a00866fc,Torres-Nelson,Red Label Tea,246.13,Hot Drink
+5ae2202d-e702-4e11-9c26-e579e746ef44,Robinson LLC,Green Tea,146.27,Hot Drink
+b7bb60cf-5a9a-483a-b832-023399de324e,Baker Ltd,Lemon Soda,209.72,Cool Drink
+3c066927-b9bc-4573-91fb-19eebf706f1a,Hogan-Curtis,Green Tea,125.8,Hot Drink
+cba23f84-a088-4a01-b15d-a5fa51a4d83b,"Evans, Trujillo and Campbell",Blueberry Soda,133.04,Cool Drink
+b3c64d59-cfef-4185-813b-7b5754f326f7,Powell-Figueroa,Mehandi,427.66,Powder
+2d65106d-6fe7-481e-a132-74d57e13bc1b,"Lewis, Rubio and Robbins",Lemon Soda,460.63,Cool Drink
+146fcf33-c4d5-403a-a933-1006a5f92734,"Rollins, Bailey and Sexton",Coffee,157.98,Hot Drink
+48a29ffe-68e6-436e-a019-3eca32f51404,Pratt-King,Green Tea,384.32,Hot Drink
+b02ab016-028d-4922-b408-b2680426296c,Sampson LLC,Green Tea,247.11,Hot Drink
+a1f7bb55-b06d-4c74-ac0c-97e5048530cf,White-Garcia,Lemon Soda,418.99,Cool Drink
+8747120d-afc9-436d-be17-5155efc147da,"Zimmerman, Holmes and Rich",Blueberry Soda,210.51,Cool Drink
+e11c6b68-97a3-4513-9e29-6fce9b55b056,Fitzgerald and Sons,Mehandi,239.61,Powder
+2931c455-e4a9-413a-9736-960686729ce7,"Edwards, Holder and Gray",Green Tea,286.65,Hot Drink
+1a4e879b-f682-4539-b781-18c2e88e68bc,Graves PLC,Blueberry Soda,342.86,Cool Drink
+ec74c7d5-d7e7-42ff-bc45-abffa9ed3748,Ramirez-Mitchell,Green Tea,479.68,Hot Drink
+503c95fc-be40-4174-b9dc-c3c85344e792,Page-Sheppard,Blueberry Soda,380.67,Cool Drink
+bba51ee7-eea8-40bb-9cfe-a259f7a457f8,Rodriguez-Greene,Lemon Soda,304.87,Cool Drink
+f51a8c67-5f0b-4b12-a578-51e488b9acae,Jones and Sons,Blueberry Soda,434.16,Cool Drink
+8eec0076-b68d-49f2-9715-9e572086a77f,Newton-White,Red Label Tea,454.09,Hot Drink
+03ad49f2-b66c-4ac5-a401-01d3fbdf1496,"Bennett, Bass and Robbins",Mehandi,359.84,Powder
+0add0c95-9ad7-4223-9585-9bc2cd50e9df,Ryan LLC,Blueberry Soda,261.63,Cool Drink
+fb507343-19f3-4bfe-86a3-7d77d3562090,"Combs, Willis and Jenkins",Lemon Soda,233.94,Cool Drink
+346cd560-309a-445e-9a30-e01f126e20b8,Jones-Jensen,Green Tea,137.88,Hot Drink
+e09cac6c-e614-4786-a838-c92ada022f30,"Cannon, Chavez and Ochoa",Red Label Tea,68.11,Hot Drink
+efcb39f8-fda3-4ea2-ae42-328b169e17e2,Velazquez-Bell,Coffee,124.76,Hot Drink
+0bd05e76-a133-413a-bf64-4e8cf843e66f,Cameron Ltd,Mehandi,147.91,Powder
+ddaae802-152b-4a77-84cc-8abaa6840503,Simmons LLC,Blueberry Soda,313.66,Cool Drink
+426c4114-6a9f-4997-9297-37d02423d3f0,Cameron-Taylor,Blueberry Soda,408.56,Cool Drink
+d4558157-4d8a-443b-9852-39c280a26a5e,"Hall, Hale and Grant",Mehandi,66.73,Powder
+11dcbfe5-02a0-4519-b569-6277dcc625a8,"Obrien, Garner and Norris",Lemon Soda,245.45,Cool Drink
+704a9c10-bca2-43d8-867d-831361e9033f,Gardner and Sons,Red Label Tea,428.82,Hot Drink
+10790fbd-2de4-499f-a15f-962d095d562b,Miller-Wells,Green Tea,329.83,Hot Drink
+158f0edd-4656-44bc-86a5-7c46a2252739,Reed-Rodriguez,Red Label Tea,188.25,Hot Drink
+7276b82c-c429-4dae-9385-1066817c541a,Jennings and Sons,Mehandi,204.97,Powder
+1f7f1a6a-a8a2-483b-9680-c0c7cbbbb679,"Harrison, Massey and Ward",Coffee,425.84,Hot Drink
+f10c9f58-2d8f-49f1-98b8-f9e4f9a45fd8,Gonzalez-Phillips,Mehandi,485.56,Powder
+2aa8983b-3f14-4030-8547-9cfc27e9cebc,Hernandez-Simmons,Lemon Soda,67.22,Cool Drink
+a5d61570-d0ac-4cf1-baa1-0b166d6d471f,Mercer Group,Mehandi,404.22,Powder
+ab302a9f-eb92-45b9-b46a-bbd048223bb4,"Harrell, Garcia and Sullivan",Green Tea,216.48,Hot Drink
+bc13861d-6918-4008-9b35-ec54df183ce3,"Sutton, Miller and Harris",Green Tea,187.29,Hot Drink
+cbfff417-d35c-4542-a004-9cad08e49dbb,Black and Sons,Coffee,427.98,Hot Drink
+db739183-e7be-41d0-aaf3-f426ec689bc4,Salazar-Fuller,Lemon Soda,121.51,Cool Drink
+b14e7a60-2661-44bf-b126-803a6a6f71d3,Powell and Sons,Coffee,196.25,Hot Drink
+e414b73e-7e3b-47d1-af7e-3787b120fa19,"Walker, House and Nguyen",Coffee,227.6,Hot Drink
+d78bb010-44f0-44a8-b530-34483c1ca6b6,Burgess-Thomas,Lemon Soda,97.56,Cool Drink
+700034f4-5373-4f82-a39d-6d0edb008848,Lloyd LLC,Mehandi,156.77,Powder
+79765495-30fa-400d-bb2d-df120c123666,Rogers-Fields,Red Label Tea,396.98,Hot Drink
+f1316dd2-7caf-4fd0-9401-0ceabf203fa2,Collins PLC,Green Tea,349.73,Hot Drink
+38b1310f-2e59-4f85-9da1-cd41e7eff72a,Hunt-Ross,Red Label Tea,311.84,Hot Drink
+6f18df7a-8b51-42af-86b0-a7eb2f13e4d4,"Davis, Townsend and Pennington",Blueberry Soda,405.42,Cool Drink
+0abf92de-69b0-4afe-b637-b4508dc23f73,"Foster, Austin and Solomon",Red Label Tea,106.83,Hot Drink
+4261655b-cd3a-40ed-b43f-70b8a04d04ae,James-Tran,Red Label Tea,153.14,Hot Drink
+4afd2031-47d3-4154-9e46-8c20135bfac1,"Mills, Garrett and Woods",Green Tea,414.11,Hot Drink
+8676da0f-e33a-4fa2-b24d-be3ca0fc61cf,Hunt Group,Red Label Tea,122.93,Hot Drink
+8c4de31f-88ac-478b-a394-c53b55068e6e,"Larson, Johnson and Sosa",Red Label Tea,450.42,Hot Drink
+1bd92a70-27a2-46ef-a586-2f467326d557,"Ross, Price and Thomas",Blueberry Soda,487.62,Cool Drink
+1d5c14a6-a78a-40b5-ae12-26ebf3322fae,Rodriguez-Dillon,Green Tea,190.0,Hot Drink
+8b6dd5e6-eac7-4879-95e9-b2424e195366,Hill-Proctor,Lemon Soda,389.86,Cool Drink
+8a657642-3719-4e7e-9c34-034705d65c23,Wilson-Park,Coffee,442.17,Hot Drink
+18f60008-eddc-4b90-971c-d8f63619cde1,Sullivan LLC,Mehandi,268.33,Powder
+9d06a296-cd66-492d-9b2a-b7fa6db9fdb6,"Hale, Olson and Harris",Mehandi,251.88,Powder
+8fd1fbd5-739b-4a7e-918c-a5001dd86efb,Mitchell Inc,Coffee,297.7,Hot Drink
+0dcd5ed6-d155-453e-a9c7-e208ae5e35ec,Gay and Sons,Red Label Tea,265.07,Hot Drink
+c84ee246-0564-4d0b-a7e0-df8cbff67bc0,Jennings-Lozano,Lemon Soda,241.33,Cool Drink
+610375c4-f000-4e9d-8556-b6707812f202,Brown PLC,Mehandi,192.63,Powder
+9b6c2b46-129a-4d4d-a692-a7dd6c5759ae,Salas Group,Green Tea,326.83,Hot Drink
+e19aa6f5-cef4-4979-88b7-ab8a996f3288,Schultz and Sons,Blueberry Soda,117.06,Cool Drink
+ebc5b43f-7b67-473b-a920-14e7e871b5e1,Cox-Wright,Mehandi,285.33,Powder
+8f257af4-f35d-466c-b7ac-b3bd8bf16cb0,Williams Ltd,Green Tea,363.83,Hot Drink
+7af222e7-e540-492d-9106-7e51edb14058,"Schneider, Chang and Koch",Lemon Soda,95.1,Cool Drink
+d885d0bd-3e2a-4f71-9ac2-acd718431e77,Blackwell-Salazar,Red Label Tea,180.68,Hot Drink
+cfe4b97b-5196-4fe2-9e29-cf06a711fa21,Singh and Sons,Green Tea,204.34,Hot Drink
+32167b52-eee2-4b6d-8910-01a5dcf6a755,Miller-Nelson,Red Label Tea,137.29,Hot Drink
+35e32a43-1687-4f6b-b2e8-6531a7060b30,Cox-Parks,Blueberry Soda,481.05,Cool Drink
+21a90260-92aa-4bd6-8a40-27926338045b,"Mcintosh, Washington and Turner",Green Tea,336.02,Hot Drink
+96e318bc-14c2-4bb0-996a-58f0ce43e402,"Brown, Parker and Lucas",Lemon Soda,192.79,Cool Drink
+2d2aad6e-acaf-46a9-8e27-68283664d5c6,Price Inc,Coffee,147.46,Hot Drink
+e307e1b8-f874-476e-823e-846c299698fb,Sharp LLC,Mehandi,124.84,Powder
+8ec58865-7b03-40d3-a5a3-9841c2bddbef,Roberts Group,Red Label Tea,335.05,Hot Drink
+a934cf67-e3e4-4731-a7d5-993a78b88c18,Johnson Ltd,Green Tea,166.66,Hot Drink
+47e16815-e950-48f7-94b9-55e4dd63a038,Sims and Sons,Red Label Tea,494.22,Hot Drink
+6f2a528b-460f-47d3-9132-22331dab3f0a,Bowman Inc,Blueberry Soda,405.25,Cool Drink
+dee49820-438a-4b84-9b9a-9c669e9f3386,Perez-Skinner,Lemon Soda,382.82,Cool Drink
+74c176bd-b44d-44f3-9d69-75f41b320d2d,Gibson-Peterson,Green Tea,483.49,Hot Drink
+54a1a7dd-eac3-4367-8ea5-99c2a9efe762,"Beck, Castro and White",Lemon Soda,270.19,Cool Drink
+e40b3594-42ae-43b1-a6cb-d6640c01bdb5,Fields and Sons,Green Tea,212.26,Hot Drink
+fb725721-4a44-4634-86f7-e2c12a457273,Trevino-Sanders,Lemon Soda,463.74,Cool Drink
+b143ff0c-f2bd-453a-a259-48422876af68,"Lara, Webb and Morgan",Blueberry Soda,119.92,Cool Drink
+447820fa-6a82-45b2-9f6f-dfac7c0859b4,Graham PLC,Coffee,462.95,Hot Drink
+2b565f9c-669a-43fc-a7ab-688d0305ec8c,Yang Group,Lemon Soda,153.68,Cool Drink
+7d6dae2c-c193-45a7-9aab-e5da954e74a1,"Johnson, Gallegos and Ray",Red Label Tea,479.96,Hot Drink
+1d59c8be-0f37-49f8-805a-db56634171b3,Henry-Thomas,Blueberry Soda,380.71,Cool Drink
+8542618d-4cc6-4143-9401-48433c994481,Garner-Trevino,Lemon Soda,222.42,Cool Drink
+30b1b7f6-3c55-41a9-bc06-8e297fc47e91,Lewis-Thomas,Red Label Tea,337.27,Hot Drink
+5a6dda10-642e-41bc-ae55-8b94bbeebad1,"Lester, Farmer and Johnson",Blueberry Soda,477.63,Cool Drink
+4583766c-1879-4b25-8407-dfa00a77e440,Brady PLC,Mehandi,341.69,Powder
+860728fe-32cf-44c7-b43c-3298bdd073f4,Snyder-Roman,Green Tea,348.67,Hot Drink
+d77c755a-a9fc-4714-8f2f-d45c57629bfc,Perry-Roberson,Blueberry Soda,73.72,Cool Drink
+cb5a0ee1-3a48-44b7-bc50-62c321c37e67,"Smith, Stewart and Arnold",Green Tea,187.77,Hot Drink
+9caf4b50-58a0-4d9a-8bc9-de65c8a11f62,Foster LLC,Blueberry Soda,63.4,Cool Drink
+3e3785fc-c2d1-4a8e-ae92-944931e9d6af,"Bell, Smith and Kim",Coffee,241.22,Hot Drink
+103c8c06-8d46-421c-89cd-5e055af162e6,"Schultz, Marshall and Pacheco",Blueberry Soda,497.53,Cool Drink
+36abb3d2-420a-4bc4-836a-efc36218d2f7,"Martin, Rios and Smith",Green Tea,115.21,Hot Drink
+b44b624b-62d1-4053-8a60-1311fdc08f30,Wise LLC,Mehandi,67.13,Powder
+d89a160d-9207-4a26-8f6f-06b3791de97f,Johnson-Owens,Green Tea,297.46,Hot Drink
+6d58e4c5-0917-442b-9f04-b054bea2d838,Conner PLC,Blueberry Soda,371.34,Cool Drink
+a0bca4eb-414b-4a91-860d-ff2ec8179365,"Green, Wright and Mccann",Red Label Tea,410.24,Hot Drink
+4df162f5-9bea-482a-9e08-50670b8772e6,Anderson and Sons,Coffee,122.94,Hot Drink
+b66ddccd-9f94-4524-a152-e524e05f6f16,"Wright, White and Roberts",Coffee,301.37,Hot Drink
+88ade453-3595-4008-adab-b8ac720c424e,Palmer PLC,Mehandi,69.02,Powder
+2a3d112f-8fb2-4001-bfbf-456b9cd49469,Orr-Howell,Green Tea,375.3,Hot Drink
+59c0edb7-3459-4fb7-be3b-1ce115f878e7,Rose PLC,Mehandi,318.91,Powder
+61c85df0-6b62-4939-9460-d438c332713e,"Chase, Ross and Owens",Lemon Soda,205.06,Cool Drink
+ca0997de-824c-4ac1-90a2-8bee06e779d0,Singleton and Sons,Green Tea,432.58,Hot Drink
+578443e3-e01a-4a42-af50-d89aae7cbf1a,"Landry, Bishop and Taylor",Coffee,72.87,Hot Drink
+fcfb963d-8abb-404d-9d73-44d1d9a08adc,Clay-Matthews,Coffee,464.07,Hot Drink
+16feeb0c-931d-423b-90be-224281f92113,Ferguson Inc,Green Tea,309.8,Hot Drink
+baf926ae-960b-4291-9aa2-5a2dfe7f4fc3,"Rosales, Miller and Moody",Mehandi,57.08,Powder
+4c32c383-46ac-4554-8df5-1683fc3012de,Kennedy-Ware,Red Label Tea,210.59,Hot Drink
+5337b458-ad03-450e-854c-ee74bd454180,"Clay, Johnson and Dougherty",Red Label Tea,265.92,Hot Drink
+9ef1dd32-c88c-4443-a9eb-daa1e9f11bd8,Delgado Group,Red Label Tea,250.94,Hot Drink
+8114fe45-deac-4323-915c-4f62d1fbd34c,Rivera and Sons,Coffee,256.62,Hot Drink
+69c9c9a4-19f0-4092-9dab-cdeeea12ca06,Taylor-Lee,Coffee,405.3,Hot Drink
+102b46c3-a9fb-44ee-b833-ae8460a0a074,Brown-Thomas,Coffee,488.38,Hot Drink
+e45492d6-0ee5-4d77-8849-783d2a6ae3d4,Maldonado Inc,Mehandi,233.76,Powder
+49918768-dc5c-4d47-ae63-ec54e3db76b3,"Morales, Wilkinson and Myers",Mehandi,50.28,Powder
+1195020b-3e3b-4d66-bb66-329c8d27753a,Sloan LLC,Coffee,174.7,Hot Drink
+482919d4-f49f-4ff1-bab9-5eb0af5e4f14,Jackson and Sons,Mehandi,227.52,Powder
+81b146ca-0095-4a86-b1c9-df5001edfd10,"Smith, Stevens and Anderson",Lemon Soda,323.85,Cool Drink
+8bdc5b50-e123-4ce0-8b9f-2ccaa17a8171,"Williams, Holmes and Long",Mehandi,315.8,Powder
+64759837-3a68-47aa-be59-beb81c998a68,"Mcclure, Buckley and Blake",Red Label Tea,323.61,Hot Drink
+ed5ca52f-ee15-4b8d-8dc2-6f43eed8d46d,Villanueva-Nash,Blueberry Soda,350.77,Cool Drink
+199b84e4-7630-47dc-bb71-b3eeb0aad473,"Mathews, Larsen and Ho",Coffee,274.24,Hot Drink
+ec951bad-d7b6-4a27-9a8c-173c33fb6419,Reed Group,Lemon Soda,138.76,Cool Drink
+c5a14c45-4eb9-44e4-bf62-26c0eb532397,"Davis, Clark and Hernandez",Coffee,335.01,Hot Drink
+96bbdbae-b356-4eb8-a5fc-68c0ead15ebe,"Jones, Price and Myers",Green Tea,432.18,Hot Drink
+69e3cd19-1267-4efd-8d92-558a4f068fb8,"Bird, Robinson and Fletcher",Lemon Soda,210.38,Cool Drink
+ff95e042-481e-45ba-9245-2d9470abd449,"Mckee, Lloyd and Carter",Red Label Tea,145.92,Hot Drink
+3a426f53-8f99-4437-8af9-8472efc0688d,Wright-Crosby,Coffee,135.79,Hot Drink
+90ff0b15-e5f1-46ee-b7a3-c5c677f78b13,Shelton and Sons,Coffee,61.21,Hot Drink
+853f0f44-5190-450f-92a1-38a10b42102d,"Mullen, Cummings and Armstrong",Mehandi,424.64,Powder
+163a044e-c239-43f3-b522-9b36306c5702,Terrell Ltd,Mehandi,215.18,Powder
+2a91e10c-1a82-420f-b714-c7f6d40c8dd9,Woodard-Burton,Coffee,368.05,Hot Drink
+c3efc864-c5ee-4582-ba2a-5b0275ee36f3,"Hill, Whitney and Haynes",Lemon Soda,225.09,Cool Drink
+74a05b2c-e26f-4a55-a966-5e31de9028c2,Sanford-Welch,Mehandi,162.74,Powder
+f643a3a4-80f2-44c6-882a-e70a4f735cce,Gilbert-Edwards,Coffee,57.32,Hot Drink
+81a9db5a-4af0-4fcd-a0a6-4a5904643afd,Fisher PLC,Lemon Soda,54.51,Cool Drink
+5fe85ee5-dadb-4ef3-ab8f-a3abda1c5e5d,"Hughes, Roberson and Davidson",Coffee,174.88,Hot Drink
+7337e330-9064-4d1b-8ff3-378becf1f125,Weber Ltd,Mehandi,339.82,Powder
+90be7675-7f05-4309-9b2d-5660779473f9,"Martinez, Green and Jackson",Red Label Tea,414.62,Hot Drink
+95f0aa2d-4d0c-404a-9add-1809de6b106a,Taylor-Glenn,Blueberry Soda,128.12,Cool Drink
+fac1bd29-8ad1-4c85-9ed4-658a9c894ca1,Decker-Perkins,Blueberry Soda,339.14,Cool Drink
+c5a70569-4365-47ed-b518-b02906cd0eec,Todd-Clarke,Green Tea,206.18,Hot Drink
+c5d2bc38-7470-43f4-9ffb-8eeb54ca0035,Smith Group,Green Tea,128.34,Hot Drink
+5f9d2e02-dddc-4850-a2e2-0fcc294d75f7,Haynes-Burton,Lemon Soda,93.55,Cool Drink
+fdda6409-de18-47f5-a49e-b99992f72ae0,Romero and Sons,Mehandi,405.09,Powder
+3b3a31bb-9862-4958-ac4c-2c423369b1f5,Harris Group,Lemon Soda,191.87,Cool Drink
+7d40b173-03e9-4ab1-b23c-486e5ea1d735,"Odom, Shaw and Wilson",Blueberry Soda,373.37,Cool Drink
+367e0f64-e512-4857-8ff7-139be0ad24bc,Wilson-Conner,Red Label Tea,413.15,Hot Drink
+fa31ad7b-8609-4ee2-a56f-d482639a39cc,"Lawson, Davis and Martinez",Red Label Tea,101.04,Hot Drink
+ca5b6d3c-320b-4f83-9f12-7257f0ef4e5c,Castillo-Valentine,Mehandi,59.71,Powder
+844913db-4c37-4141-9f96-4be74592a568,Ortiz Ltd,Green Tea,158.19,Hot Drink
+e64e9e35-d4ed-43fd-adeb-2c62a6347b3d,Morgan-Miller,Lemon Soda,478.79,Cool Drink
+05a202c5-696c-40b7-9537-4b6d6e8dce5c,"Martinez, Parker and Woodward",Blueberry Soda,96.68,Cool Drink
+04a9f77c-ada6-4c2d-b78b-0b4d17738f3b,Gonzalez-Kirby,Blueberry Soda,298.79,Cool Drink
+9e4ba303-6f17-4f2e-a827-832da103f200,Blankenship Group,Mehandi,294.77,Powder
+5319011a-3289-40e4-b4fa-b1f028eeb17e,"Hess, Thompson and Thompson",Mehandi,448.18,Powder
+0a124360-d323-4d7f-a3f5-dd18f36975ec,"Lowe, Baird and Lopez",Green Tea,462.51,Hot Drink
+3f6fa212-660f-47e6-b65d-3dfa845f4c88,Lopez Ltd,Coffee,162.5,Hot Drink
+11c485a6-7cbf-4a0d-8e1f-ec7aabc26fc5,Hayes and Sons,Coffee,452.01,Hot Drink
+05db0dd0-856b-47c8-9743-a23efda3885c,"Fleming, Moore and Patel",Green Tea,440.32,Hot Drink
+dbbb78e9-7b05-4c66-92f8-a5f5dbc0d455,Contreras-Wolf,Lemon Soda,474.27,Cool Drink
+787b09d4-082b-41d2-879c-69a15e2f7009,Love-Larsen,Blueberry Soda,344.53,Cool Drink
+99ae1742-8918-48c7-9d81-4114c2a0f425,Gray-Leonard,Red Label Tea,330.33,Hot Drink
+47d73071-b603-4d99-9d6f-536370becf0b,Porter Ltd,Blueberry Soda,335.14,Cool Drink
+034628f9-025e-4ee3-a9c6-98d972975be7,"Livingston, Nguyen and Lewis",Blueberry Soda,414.15,Cool Drink
+d855875a-bb9c-4e4b-9c04-23b1d732060d,Williams-Eaton,Green Tea,407.83,Hot Drink
+7fe4246a-3a33-4ff9-9062-5cbd5344946d,Riley-Donaldson,Mehandi,466.71,Powder
+0db7f2c4-a109-4a7b-abcf-5dbeab1a5c8b,Ellis Inc,Red Label Tea,441.03,Hot Drink
+f6fde28c-ca8f-4216-9add-2bd5c57e9229,Hill and Sons,Red Label Tea,230.23,Hot Drink
+c3b9c09f-41c6-4c38-aa52-26d2d7e31296,Black-Daniels,Coffee,405.55,Hot Drink
+be600426-d4a6-434c-a373-d1969727784e,"Mann, Gregory and Flores",Lemon Soda,456.84,Cool Drink
+25b91366-b89a-45aa-81e7-bb6cc6728c31,Buckley-Saunders,Mehandi,71.32,Powder
+13d05d90-e0ce-4a20-806f-be966ad084c1,Brown-Wright,Lemon Soda,157.66,Cool Drink
+24ea4a46-3b39-4f65-bf2f-18d9ff48f98c,Hardin Ltd,Mehandi,492.53,Powder
+1c621863-6a78-4dd7-a463-0006fe26f1d5,Sims and Sons,Blueberry Soda,393.33,Cool Drink
+bb78b6b7-2ef2-4c39-841e-bbcb4e583a20,"Lane, Weber and Williams",Blueberry Soda,492.79,Cool Drink
+067b83e1-12f3-4b08-a2f5-822af469e717,"Hill, Snyder and Bridges",Red Label Tea,264.38,Hot Drink
+67a8d70f-072f-41fd-aa7d-d01c1c72e6c0,"Herrera, Villa and Maxwell",Mehandi,61.06,Powder
+b001dd74-c8fb-4ff3-9c55-46a17e88d474,Melendez-Davenport,Red Label Tea,271.53,Hot Drink
+0a387d6a-1b04-42d7-b7b5-50ad8ae77278,Reed Group,Green Tea,154.87,Hot Drink
+a6d6cb15-639f-462f-86b1-4ebb3895eb2a,"Mercado, Frazier and Gonzalez",Lemon Soda,349.65,Cool Drink
+0f41b817-45be-4686-8c63-bcb626cc1a37,Phelps-Norman,Mehandi,134.12,Powder
+6db165ad-7c64-48a9-8f8b-ba595f28ecd8,"Villegas, Richard and King",Red Label Tea,450.51,Hot Drink
+52800661-889c-44d2-9d31-29d865fc5e41,"Johnson, Goodwin and Thomas",Lemon Soda,74.7,Cool Drink
+96e1ee33-4f79-4864-947e-04ef4a615ba0,Lopez-Miller,Red Label Tea,461.28,Hot Drink
+f511e57d-70fb-4236-a1ff-27d49b18b6c4,Medina-Turner,Green Tea,347.25,Hot Drink
+48707a29-1d8d-4450-979c-3bb266a34275,Aguilar LLC,Blueberry Soda,328.46,Cool Drink
+7f4e1ee3-1ca6-4666-b2f1-78302b4bc015,Walters-Taylor,Mehandi,260.15,Powder
+24e7e1cf-ef2c-43eb-b632-07cb6161a36d,Houston-Bradford,Red Label Tea,112.77,Hot Drink
+5bfce892-8125-4ab3-9302-25e444840ba2,"Hardy, Torres and Olson",Blueberry Soda,71.45,Cool Drink
+7e08dcfd-39ef-4360-ae1f-895422d5bb4b,Jackson Ltd,Red Label Tea,265.92,Hot Drink
+8ebe0438-5d94-40f7-a6eb-46d3e1c49d19,Reid-Ellis,Red Label Tea,424.97,Hot Drink
+9fdacd58-b362-4178-abfb-a1539c1d9827,Bender-Lewis,Green Tea,75.5,Hot Drink
+d0f49947-2c77-436a-a928-2fb9f298e928,"Chavez, Chase and Gill",Mehandi,110.93,Powder
+04522c97-5767-4f59-b5dd-c5b3dec97cc7,Stark-Davis,Green Tea,52.72,Hot Drink
+6cd0e0c1-d82b-476b-877f-bcf7388a694c,Chapman Inc,Red Label Tea,227.64,Hot Drink
+6f50813f-22f8-4fd2-a6ae-93f6634c8864,"Hernandez, Holland and Barnes",Blueberry Soda,469.83,Cool Drink
+36944d9e-a631-41ab-a09a-32295900e90e,Fields-Fitzgerald,Coffee,310.48,Hot Drink
+8aafc4fb-a795-434c-a9e3-a5062dc142bb,Garrison Ltd,Lemon Soda,146.63,Cool Drink
+1f291fda-cb3f-42c6-86dd-590d0d0fce5d,Fox-Wang,Blueberry Soda,343.48,Cool Drink
+9e49a8aa-0cd0-4d1e-a578-a800a12e96f9,"Brandt, Jones and Day",Mehandi,224.97,Powder
+e5a320d1-fd5b-4993-9e73-b411186f5765,Singleton Inc,Lemon Soda,365.17,Cool Drink
+6cb831ca-c12e-4ec6-8b06-f0120e93b98e,"Roberts, Castillo and Garcia",Mehandi,247.9,Powder
+1d312c50-2496-43e7-9f86-81ba6401987d,Banks Ltd,Mehandi,135.9,Powder
+d5f381fc-9740-4da7-ad17-2e75fcc49439,"Brewer, Glass and Franco",Green Tea,199.3,Hot Drink
+2d0c97f3-badc-4eb8-b0d8-44f70e298f92,Black-Evans,Green Tea,454.89,Hot Drink
+e841994e-b98a-4698-8448-9289de73b5a5,Flynn-Bright,Red Label Tea,479.77,Hot Drink
+ae339fcd-3d85-4863-a466-2eb31346d5d2,Stout-Eaton,Coffee,399.5,Hot Drink
+9c821494-a283-416e-9118-968d4fc1ea67,Castillo-House,Lemon Soda,491.83,Cool Drink
+8151a8a0-71dc-4879-8ee8-ff5a53ef96a7,Salazar-Blevins,Coffee,263.32,Hot Drink
+a9015b0e-c976-44bc-b635-b97173065fe4,"Hamilton, Mitchell and Walker",Lemon Soda,411.75,Cool Drink
+07adfaf4-b452-4bb3-b34d-89c7da874055,Livingston-Clark,Red Label Tea,181.87,Hot Drink
+eed2506d-1800-4fa9-aa95-a374dec2c00c,Williams-Chavez,Red Label Tea,268.41,Hot Drink
+ba1fdd41-5485-4bd9-bef1-e4a3f4ce1fc7,"Moore, Hernandez and Taylor",Mehandi,494.59,Powder
+96c18a40-1606-4cb1-b7a1-1b9c78c925a9,Knight-Johnson,Red Label Tea,251.34,Hot Drink
+3f67e693-2a85-4bd2-b719-115d06296885,Stewart-Allen,Green Tea,269.63,Hot Drink
+b344c321-a894-4fe0-b9de-f9806d466bf0,"Kelly, Alvarado and Cummings",Lemon Soda,346.26,Cool Drink
+84264556-5066-4b13-b788-cfc594978217,Jacobs Ltd,Coffee,61.66,Hot Drink
+993ae06d-5637-4ad1-9824-32911b2c24b5,Bishop Group,Mehandi,186.37,Powder
+65559ade-6f8f-45f7-84d9-3ada1ce70e32,"Wood, Malone and Gonzales",Coffee,52.66,Hot Drink
+c9d10e94-bfc2-4720-b394-29b233305ed9,"Anderson, Gonzales and Rangel",Mehandi,117.73,Powder
+c4fa0559-8478-4ddd-a1e8-bcb8526e0a22,"Novak, Sweeney and Fischer",Green Tea,482.04,Hot Drink
+27d3998c-3007-4b2f-9490-961778e10a03,"Petersen, Torres and Brown",Green Tea,453.01,Hot Drink
+dac193fd-73ec-4647-956a-68e596850969,Richardson Group,Blueberry Soda,54.37,Cool Drink
+e0ef0986-a584-416e-94e7-9c04930d21c7,Wood Inc,Red Label Tea,111.07,Hot Drink
+9382ccc4-cff7-4346-9abc-eec044499b17,Stewart Inc,Lemon Soda,424.23,Cool Drink
+a90c69ff-594a-487c-961d-cbb7f83f724e,Miller Ltd,Lemon Soda,356.15,Cool Drink
+8f728c2c-ee7d-4285-8da3-9b5b725f3d52,Graham Ltd,Lemon Soda,344.72,Cool Drink
+3e7320c7-c024-4b69-9e4f-76ff86dfd4fe,Berry Ltd,Coffee,350.35,Hot Drink
+52ba46de-ac8f-489e-8d8c-8bc379f0830d,Snyder PLC,Coffee,417.04,Hot Drink
+6c7600d5-67c2-43a1-bb70-de5c0f72e52d,Quinn-Wood,Blueberry Soda,153.72,Cool Drink
+acd478d3-cb93-454f-9c94-3626f1683d29,Kirk-Hughes,Mehandi,100.34,Powder
+f87e22a4-e1ce-4d12-9f03-db603db67620,Johnson-Duffy,Green Tea,385.12,Hot Drink
+676c3b3a-54bc-4c0b-bed8-8d0a3e1e861e,"Schmidt, Harrison and Reyes",Mehandi,159.65,Powder
+c78fe6df-50e8-4c72-9653-47162d6774d6,Hill-Stevens,Coffee,425.41,Hot Drink
+6ca62d15-8cae-4cfe-9783-dabed2de4e73,Bartlett-Friedman,Green Tea,289.56,Hot Drink
+7d6249f8-6b2f-48c1-87dd-d407906d8532,Lopez PLC,Green Tea,397.57,Hot Drink
+4601c4e5-acee-434d-9ffb-11b845cf853b,Johnson-Campbell,Lemon Soda,154.27,Cool Drink
+acef3b93-72d1-4f4c-b4d7-d36031d42722,Huffman Group,Green Tea,264.16,Hot Drink
+6bc9320c-5564-4845-aa66-98b693dd07a0,Harrison-Aguilar,Red Label Tea,404.49,Hot Drink
+4f4f3f9b-7dcf-4ddd-b77d-65eb00ae4842,"Sanchez, Gardner and Wagner",Lemon Soda,402.1,Cool Drink
+98379b8b-e86d-4004-9f8b-c670d3c3ecdf,"Davis, Johnson and Moore",Green Tea,393.89,Hot Drink
+13c60f29-31a7-4788-9f9f-dac39f0e6d1b,"Gonzalez, Jackson and Clark",Lemon Soda,394.25,Cool Drink
+8af65279-575a-4f9f-8e57-6ccdde791eb4,Holder LLC,Green Tea,465.02,Hot Drink
+baf99fca-5a04-438b-904c-d0e1d6d78b39,"Cook, Hubbard and Johnson",Lemon Soda,332.74,Cool Drink
+2604648b-f061-4baa-8706-de476f6217cb,Hernandez PLC,Lemon Soda,293.97,Cool Drink
+9a5b1ac8-16bc-4ce2-8ba3-1654a9f494d5,"Adams, Andrade and Burgess",Green Tea,419.28,Hot Drink
+7692cd16-3113-45d2-89e2-e81a5ea765e2,Roberts Group,Coffee,318.72,Hot Drink
+3eec356a-761c-43d1-94e2-30decec99b73,Rodriguez PLC,Mehandi,118.11,Powder
+4d69ad14-8cf4-418c-8ce8-74731180239a,Owens and Sons,Coffee,195.33,Hot Drink
+8a05dfa3-61ac-41d5-af0a-f875e3815b5b,"Lucas, Jordan and Smith",Red Label Tea,382.49,Hot Drink
+29dc1d37-13b0-49c9-8543-d9c63f1cda3c,Perry-Snyder,Green Tea,79.32,Hot Drink
+92cf926f-94d6-431f-87b4-329e47f035bf,Miller PLC,Green Tea,302.89,Hot Drink
+b9690468-1947-4e07-a39a-ae2aa9e6f308,"Woods, Cochran and Golden",Blueberry Soda,448.28,Cool Drink
+2caf4048-8e6f-49c1-bb7a-8242a26ee26c,Pratt PLC,Mehandi,126.38,Powder
+ddea7a4b-8df4-4606-9fc0-9fd8d8ae3062,Thomas-Johnson,Mehandi,229.95,Powder
+c27e63eb-1889-4a45-9829-f1bafcaa2222,Williams LLC,Lemon Soda,333.44,Cool Drink
+98319f29-c808-43d0-a62f-b5221974cd76,"Olsen, Mcdonald and Thompson",Lemon Soda,412.77,Cool Drink
+e1f9b93f-f174-4284-8e34-24b768cca799,"Zhang, Blackwell and Hopkins",Coffee,142.77,Hot Drink
+bb1d1090-8845-40ca-86ea-1d867b4269c0,Kim-Rogers,Blueberry Soda,159.32,Cool Drink
+cf4c3751-283d-4ed1-96e4-7fe854165ea0,Lewis-Blevins,Coffee,465.46,Hot Drink
+6217f434-0d93-4f53-a41b-d681fd96e710,Ayers-Scott,Blueberry Soda,56.43,Cool Drink
+046bff0e-266a-4805-992d-a7585dc87804,Mcgee-Sanchez,Lemon Soda,230.94,Cool Drink
+98e8ba8f-2ccd-404a-a248-e15f396af9b9,Bauer-Miller,Green Tea,292.72,Hot Drink
+f364bba3-9f4f-4b47-86c0-e9cb45df4489,Archer and Sons,Red Label Tea,376.34,Hot Drink
+1210873a-c143-481e-b1d3-3ce4c8792333,"Bryant, Beasley and Gonzalez",Red Label Tea,468.25,Hot Drink
+4304bfdd-c9d1-408d-b3bf-e3c9f6e02134,"Wilcox, Wells and Williamson",Mehandi,186.72,Powder
+33d6287b-6d13-4de3-b04b-b1a5842d2e62,Williams-Decker,Red Label Tea,112.96,Hot Drink
+5153e288-d562-4350-a585-fb33b6f01e31,"Beck, Carroll and Flowers",Lemon Soda,294.18,Cool Drink
+e3bbbe4f-abba-4638-b0c9-56ca2b55d01a,"Ross, Garcia and Beard",Lemon Soda,223.95,Cool Drink
+b11e8244-1963-4f64-8fdd-cb4d85e18d3d,Mason Inc,Red Label Tea,129.19,Hot Drink
+ce6f18f4-db0d-430c-adcb-41053645e783,"Campbell, Yates and Watson",Blueberry Soda,308.27,Cool Drink
+5c2eeaa7-d589-4efd-9adc-0a102e12a841,"Collins, Garcia and Thomas",Red Label Tea,331.57,Hot Drink
+4a61de98-7206-47eb-a7ae-8a5548d8383e,"Thompson, Morales and Wilson",Lemon Soda,254.79,Cool Drink
+2a590926-9b78-4c30-8b43-625fe45ea466,Jenkins Ltd,Red Label Tea,250.81,Hot Drink
+1d15658a-8961-40c7-9b29-e8e6303b4257,Morales LLC,Mehandi,182.09,Powder
+6e36ed94-9c4a-4515-bf63-fc246647a87d,Miller Ltd,Mehandi,189.35,Powder
+8f737032-eb52-4d07-9698-a983e9ed615a,Lucero-Donaldson,Mehandi,334.18,Powder
+d46e58dd-d105-4932-ae0f-192859b58809,Atkins-Brock,Blueberry Soda,81.37,Cool Drink
+190faaca-5792-4658-80d7-eab1d0c16fdc,"Heath, Price and Rodriguez",Red Label Tea,404.64,Hot Drink
+f07db2c5-3aec-4af2-9b40-1475f76b7d06,"Hall, Jones and Baker",Blueberry Soda,66.99,Cool Drink
+70381bb8-6cf0-4492-97f8-c07e50fe7f9a,Moore-Garrison,Green Tea,402.96,Hot Drink
+248be9e6-d17d-4efa-9447-cbc27cbe0d7d,Gonzalez-Wise,Red Label Tea,313.47,Hot Drink
+cd0d75a5-0e4e-4766-92d0-2ca1e6701e13,"Anderson, Torres and Martinez",Red Label Tea,189.4,Hot Drink
+2cd8b581-34ba-45cf-a43a-a5ba5034cea6,"Cabrera, Schneider and Jackson",Red Label Tea,441.91,Hot Drink
+4389daf0-57f4-4487-bce8-1e153d88abc2,Smith-Owens,Lemon Soda,289.6,Cool Drink
+d8dd9230-3e5c-4bc7-8e0a-6431b4d0e458,"Gentry, Wells and Patterson",Coffee,76.37,Hot Drink
+bb216fed-e004-457c-8802-26835a6ccb4a,Lane and Sons,Lemon Soda,114.9,Cool Drink
+224fc74c-46de-408c-b250-5d291adac3d0,"Thomas, Moss and Williams",Lemon Soda,280.05,Cool Drink
+4cbfb6cf-dc20-4072-bc9d-f44baea8a5c8,Garza LLC,Mehandi,267.85,Powder
+81962641-772b-4ca4-9bb5-1914d93e0705,Cobb LLC,Coffee,364.18,Hot Drink
+d3d82918-9230-4fd0-b91c-87db4fd2cf7c,Rodriguez-Schwartz,Red Label Tea,320.9,Hot Drink
+407009be-e3fb-4438-9077-db2a714923f2,"Mora, Walsh and Nash",Red Label Tea,323.18,Hot Drink
+70366ead-e982-4abd-9444-3ea29577ea08,Simon Group,Green Tea,378.67,Hot Drink
+e87918fb-3f26-481c-83af-b77ad2422c0a,"Valdez, Morales and Jarvis",Green Tea,391.25,Hot Drink
+af9a5e68-c157-4e8a-9263-1cb36551761f,Moore LLC,Red Label Tea,491.05,Hot Drink
+0c4a6dc6-ba97-40c0-8846-74a4d481dd86,Davis-Davenport,Lemon Soda,122.09,Cool Drink
+a5852feb-cef6-49d8-ab1f-c9e90e6569cf,Mayer-Martinez,Mehandi,149.89,Powder
+c7537d07-809b-4dd5-85c5-6bd50c025621,Smith PLC,Red Label Tea,286.47,Hot Drink
+3f3d52ae-d741-4dc2-bb50-da053d7536fb,"Adams, Macdonald and Leonard",Coffee,106.98,Hot Drink
+807254d7-b3d6-4119-86ee-ceb2b2c1e86c,Carroll PLC,Lemon Soda,194.09,Cool Drink
+ef274eb4-b278-4de1-83ea-d6c2b50912ae,Scott-Andrade,Coffee,123.7,Hot Drink
+b62b1a01-a287-4f2a-8ab2-81554a22cafc,Parker LLC,Lemon Soda,296.43,Cool Drink
+027afe82-d610-44eb-963c-7623b734f72e,"Campbell, Jackson and Murphy",Red Label Tea,134.19,Hot Drink
+d6103027-ee22-4d78-a7de-7463bead5383,Leonard-Davis,Lemon Soda,62.73,Cool Drink
+e0b455df-7813-4e60-8484-2e58cdde4e00,Johnson-Howard,Coffee,279.41,Hot Drink
+fa913f16-dd50-4f64-be6a-fc9dd30e7e4d,Mann and Sons,Coffee,256.84,Hot Drink
+d138c954-3618-4135-ac4c-86118053e653,Garcia Inc,Red Label Tea,176.73,Hot Drink
+3585cd6d-bc20-497f-9c89-b5b80bcf194c,Smith-Sparks,Red Label Tea,360.94,Hot Drink
+95e486cd-d955-4a9b-9d6a-aabed6d2b8a5,Sandoval Ltd,Coffee,125.86,Hot Drink
+db5e0301-4b4f-4b29-95fa-3562f1222869,Phillips Inc,Lemon Soda,74.68,Cool Drink
+e391366b-a17e-42f0-8faf-a33cbb82957e,Gutierrez-Fry,Green Tea,204.66,Hot Drink
+95e529ec-fa5f-4254-9f84-d89dd5c42803,"Davis, Ellis and Green",Green Tea,168.68,Hot Drink
+fa8b5c67-d52b-4c12-90e1-5598e46dd1f6,"Hall, Mitchell and Welch",Red Label Tea,455.67,Hot Drink
+136ad110-91cb-4bc0-98c4-d0bcb8e81245,"King, Gross and West",Green Tea,303.98,Hot Drink
+0b77526a-f5a9-4b3a-94a2-639ccbcb1953,Mendoza and Sons,Mehandi,165.79,Powder
+f8439c3d-2899-4a0c-a598-d89579d1fe75,Smith-Castillo,Blueberry Soda,195.23,Cool Drink
+d7252f6b-9a4a-4537-bcfa-90ca66233ef3,"Little, Castillo and Fitzpatrick",Blueberry Soda,378.1,Cool Drink
+edd16088-98f3-441e-8cd8-3e786bc71aa1,Howard-Bradley,Red Label Tea,150.19,Hot Drink
+9bfc9516-f110-4c5b-807f-aa8cd10a7f88,Ryan-Hayes,Green Tea,264.5,Hot Drink
+8172e0a8-d23e-480a-b89f-48ac8aec1a8c,"Moon, Brown and Thompson",Red Label Tea,236.02,Hot Drink
+47e5ae19-ab33-4800-81f4-6bd6bd2c0a25,Wall Ltd,Lemon Soda,450.73,Cool Drink
+87a6958e-77de-435b-8b92-0e49adff8eaf,"Clark, Silva and Craig",Green Tea,108.06,Hot Drink
+0b8a32c9-a572-4cae-a6ed-7053b9ac575b,Smith Inc,Lemon Soda,270.33,Cool Drink
+1bec123b-cfab-484a-83fb-543f235da856,"Jones, Estrada and Taylor",Coffee,354.46,Hot Drink
+d37bb12d-a676-44c3-b774-d5c791ea1aa7,Martinez-Ford,Mehandi,421.74,Powder
+caa1fce6-c7d8-4f7a-a599-e7470ea3c4f8,Bradley Group,Lemon Soda,302.09,Cool Drink
+a8122d72-5945-4896-b1d5-82692991a228,Walker PLC,Mehandi,115.63,Powder
+470816fe-fcc2-4c1a-af66-a6d89661ec73,"Hensley, Vaughn and Hanna",Blueberry Soda,141.17,Cool Drink
+bc3b6541-7c7d-4403-8d46-84d6afffcba1,"Thomas, Orr and Ritter",Blueberry Soda,145.72,Cool Drink
+ce135b71-5160-480d-9f7a-e3b8ee494ba0,"Freeman, Fletcher and French",Coffee,441.87,Hot Drink
+cd7ec838-2fa5-4660-96db-1aff79a6e088,"Thomas, Hamilton and Robinson",Mehandi,455.99,Powder
+6c8de56d-203a-44ce-8e97-c1234e88f319,Nunez Inc,Red Label Tea,281.83,Hot Drink
+0bea281d-3626-439c-ad44-26111746f824,Keller-Sullivan,Blueberry Soda,358.6,Cool Drink
+f1a4c7ad-2b10-43aa-99f6-76d5b1a2d8f4,"Juarez, Noble and Stephens",Coffee,449.63,Hot Drink
+0754a1c8-9c3c-4072-8d8f-f175007dccb5,Johnson-Brown,Blueberry Soda,365.68,Cool Drink
+4829f3b0-feb8-4c31-9db2-88358b123409,Gay-Ford,Blueberry Soda,53.73,Cool Drink
+94788f44-3c62-48d8-b7e3-6177fcb60a71,"Mitchell, Roberson and Gutierrez",Lemon Soda,267.03,Cool Drink
+97a36bde-8f50-481e-a2c3-6a5f62177149,"Shelton, Daniels and Erickson",Blueberry Soda,442.83,Cool Drink
+53676a11-74c1-41aa-9cd7-5ca9668e80c1,Sanders-Mccarthy,Green Tea,199.36,Hot Drink
+1615fe44-bbbf-444a-8f26-6143894e96dc,Thomas Ltd,Blueberry Soda,351.76,Cool Drink
+9a87785d-65df-4213-b855-05c8c8435cec,Mitchell-Rodriguez,Mehandi,183.84,Powder
+79c6bf77-3200-4445-b07e-4b23ba32fd4c,"Floyd, Steele and Flores",Lemon Soda,219.86,Cool Drink
+f9ae47f2-986f-476f-befe-7733e41bf599,Smith Inc,Lemon Soda,382.94,Cool Drink
+8239bed2-8c1e-42a9-9ac1-ca8568eb53da,"Beasley, Carlson and Brown",Mehandi,483.35,Powder
+11dec276-f57a-4994-9d12-834e014f6b67,Sandoval-Garrison,Mehandi,368.65,Powder
+82cf9ced-1797-45a0-ac06-03b4a84d932b,"Fernandez, Bowers and Snyder",Green Tea,436.75,Hot Drink
+04d56aed-ff6a-46d7-b835-fd496167b4bd,Davis Inc,Blueberry Soda,264.9,Cool Drink
+83f47063-16ed-44b1-baeb-8cac232a4614,Foster LLC,Red Label Tea,237.08,Hot Drink
+a62ba8c0-f344-4b79-8c1b-698690d3877d,Smith Ltd,Blueberry Soda,177.56,Cool Drink
+d2a184e3-8f22-4902-b621-cedab3c22c54,"Price, Andrews and Gallegos",Coffee,449.5,Hot Drink
+287a93ba-1b96-42d8-bd7a-614ed0f52004,Coleman Group,Coffee,260.1,Hot Drink
+2599b297-8b68-4480-83ec-dea27265f16a,Crosby Ltd,Blueberry Soda,467.44,Cool Drink
+63eae727-4908-47de-bcfd-89324fe2acd1,Gonzalez Inc,Blueberry Soda,118.64,Cool Drink
+9d9d1aa5-e12a-4b6f-a4c4-9802417c9f33,Hughes-Maldonado,Red Label Tea,248.47,Hot Drink
+e66d4502-e5de-4da3-970d-4a5f3f8e5daa,"Guerrero, Rodriguez and Thompson",Green Tea,406.52,Hot Drink
+d6a01895-7ffe-4f7f-97c3-619a94288186,"Joseph, Flores and Webb",Red Label Tea,400.51,Hot Drink
+8b39bead-500f-42ad-a3c1-655196dbd088,Owens-Sanchez,Blueberry Soda,187.94,Cool Drink
+714b2a86-843b-4231-bc85-e1375c59e5e0,Bishop and Sons,Coffee,311.94,Hot Drink
+193abf82-4fd3-4acf-95c0-1bc808936372,"Stone, Baker and Phillips",Green Tea,426.51,Hot Drink
+ad07c599-61cc-4623-b849-86fae9ccbb3c,"Hamilton, Kennedy and Acevedo",Blueberry Soda,361.83,Cool Drink
+d1aba9fc-66da-4bef-b5c4-698c2e2c5cc9,Turner PLC,Blueberry Soda,463.42,Cool Drink
+bf314929-b075-4ba2-b5a7-4d1f40b57f79,"Olson, Clark and Hernandez",Blueberry Soda,485.21,Cool Drink
+ad890571-0db7-401a-a7c0-b56816d09d09,Ruiz Inc,Lemon Soda,345.92,Cool Drink
+94e03e4e-d975-4914-b8a3-c57db019ebdb,Ortiz-Kelley,Red Label Tea,135.55,Hot Drink
+f6e49b41-0f07-4aa9-a78c-9548e61b3fe0,Phillips LLC,Lemon Soda,129.54,Cool Drink
+229b4a93-1641-4885-aee8-bbdc9c3798a7,Monroe and Sons,Green Tea,181.54,Hot Drink
+adaf6802-bb9d-41df-a473-1fb77ad83210,Young and Sons,Lemon Soda,295.85,Cool Drink
+ef0f131a-835c-455d-b537-16cf5c50378d,"Maldonado, Colon and Scott",Blueberry Soda,255.53,Cool Drink
+ad951f5e-dd95-495d-a5a6-192120613ea3,Simpson-Armstrong,Lemon Soda,403.29,Cool Drink
+2d9cb461-94de-4e1f-bce8-a9ab90e2b199,Mathis-Taylor,Mehandi,145.91,Powder
+bbc622ec-f367-4d9d-91c6-3d2f14f2d98e,"Stein, Grimes and Reeves",Green Tea,197.27,Hot Drink
+bbdca142-0baf-4a3d-8b1d-3661cb52eaf1,Martin Ltd,Coffee,253.36,Hot Drink
+f9888974-e3ea-400b-9374-d5a0e5554df1,"Weeks, Lam and Palmer",Red Label Tea,445.9,Hot Drink
+ab34a683-43d9-4120-a75a-0f81ad1b1773,"Haas, Wilkinson and Howe",Green Tea,218.46,Hot Drink
+4c1d2c56-b47c-4208-b972-7094e29f72d2,Moore-Parsons,Coffee,396.01,Hot Drink
+92978285-0f84-402d-904a-cdb39236dd0e,"Harrington, Jones and Jones",Coffee,181.05,Hot Drink
+e559840d-28ae-4e1a-b241-54ff88bd54be,Johnson Ltd,Red Label Tea,455.75,Hot Drink
+edea1ee0-d511-4dec-91f2-2ed9f27c2f2d,Clarke Ltd,Mehandi,470.36,Powder
+3b14e0e3-fc40-47e5-b174-4a25ed3239ee,Spence Inc,Lemon Soda,173.68,Cool Drink
+88630164-cf67-4204-8248-cd689020d915,Smith-Miller,Blueberry Soda,388.63,Cool Drink
+4d786c83-6e59-4610-a580-20d1e871557e,Green Group,Lemon Soda,339.41,Cool Drink
+f3515399-a5ab-4604-aaff-6dc63b000771,"Harris, Eaton and Orr",Mehandi,381.68,Powder
+b066365a-65f6-4fab-b7ee-3c596ff8f102,Gonzalez Group,Red Label Tea,470.32,Hot Drink
+b972700c-986d-4e12-a989-aa7446b267a5,Frazier-Saunders,Blueberry Soda,356.33,Cool Drink
+18a2b957-c652-475f-9cb1-05ade6414701,Rodgers Group,Red Label Tea,386.63,Hot Drink
+f884a987-49fa-487f-84ca-37d0d69c4770,Benjamin-Harrell,Coffee,291.91,Hot Drink
+f374b2dc-248a-4b91-9698-14f1307a230b,"Miller, Ortiz and Allen",Lemon Soda,159.45,Cool Drink
+3c3d2a1c-352f-449d-b33c-4b42c20c0ded,Reid Group,Coffee,253.36,Hot Drink
+ff00df1d-433b-4cd1-bccd-1887a6ea6a8f,"Beck, Castillo and Rodriguez",Red Label Tea,91.81,Hot Drink
+2a0516ab-e357-4949-9e7e-979412006066,"Rush, Oconnor and Warner",Red Label Tea,76.63,Hot Drink
+55b5c454-25a5-4704-a06f-aa97f775337e,Lyons PLC,Blueberry Soda,277.96,Cool Drink
+30d5c796-6c23-4b85-8585-58d714aafe80,"Neal, Gomez and Green",Red Label Tea,407.45,Hot Drink
+05059c0a-a8ed-4323-8f5c-fa5f421a7f81,Hodges-Cummings,Red Label Tea,408.59,Hot Drink
+ce643206-968e-46ac-8d17-36a4fc1d265a,Wall-White,Red Label Tea,68.43,Hot Drink
+4562ad11-b3ff-4b53-8b32-dc0b1ac7be23,Morton-Vazquez,Blueberry Soda,255.12,Cool Drink
+6bc60e46-01ff-4d01-a51c-a6d0d1e88b7e,Thompson-Wilson,Lemon Soda,206.88,Cool Drink
+c16b7aed-5363-4933-a054-151c186522fb,"Patel, Nichols and Hodges",Coffee,416.37,Hot Drink
+54e3d8f9-3fbb-4a6b-b31b-75b427ea4922,Stanley-Mcconnell,Green Tea,274.57,Hot Drink
