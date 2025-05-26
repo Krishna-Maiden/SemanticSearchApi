@@ -1,18 +1,18 @@
-﻿using LangChain.Abstractions.Schema;
-using LangChain.Tools;
-
-namespace SemanticSearchApi.Tools.Base
+﻿namespace SemanticSearchApi.Tools.Base
 {
-    public abstract class SemanticSearchTool : Tool
+    public abstract class SemanticSearchTool : ITool
     {
+        public string Name { get; }
+        public string Description { get; }
         public abstract string ToolType { get; }
-        
-        protected SemanticSearchTool(string name, string description) 
-            : base(name, description)
+
+        protected SemanticSearchTool(string name, string description)
         {
+            Name = name;
+            Description = description;
         }
 
-        public override async Task<string> InvokeAsync(string input)
+        public async Task<string> InvokeAsync(string input)
         {
             try
             {
@@ -21,7 +21,7 @@ namespace SemanticSearchApi.Tools.Base
             }
             catch (Exception ex)
             {
-                return $"Error: {ex.Message}";
+                return System.Text.Json.JsonSerializer.Serialize(new { error = ex.Message });
             }
         }
 

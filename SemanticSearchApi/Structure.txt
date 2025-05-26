@@ -49,3 +49,29 @@ https://localhost:7213/api/search/init
 {
   "query": "Display line chart with product name on x axis and transaction count on y axis"
 }
+
+SemanticSearchApi/
+├── Tools/
+│   ├── Base/
+│   │   └── SemanticSearchTool.cs
+│   ├── CompanyResolverTool.cs
+│   ├── ElasticsearchTool.cs
+│   ├── VectorSearchTool.cs
+│   ├── QueryPlannerTool.cs
+│   └── ToolRegistry.cs
+├── LangChain/
+│   ├── IAgenticOrchestrator.cs
+│   ├── LangChainOrchestrator.cs
+│   ├── ReActAgent.cs
+│   └── LangChainIntentAgent.cs
+├── MCP/
+│   ├── MCPServer.cs
+│   ├── MCPToolRegistry.cs
+│   └── MCPSchemaProvider.cs
+├── Api/
+│   └── AgenticController.cs (update existing)
+├── Program.cs (update existing)
+├── appsettings.json (update existing)
+├── SemanticSearchApi.csproj (update existing)
+├── Process.md (update existing)
+└── MIGRATION_GUIDE.md (new)

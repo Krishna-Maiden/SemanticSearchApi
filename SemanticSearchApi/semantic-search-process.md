@@ -1,8 +1,14 @@
-# Semantic Search API - Process Documentation
+# Semantic Search API - Process Documentation (v2.0 with LangChain & MCP)
 
 ## System Overview
 
 The Semantic Search API is a hybrid intelligent search system that implements an **agentic architecture** for processing natural language queries across multiple data sources (PostgreSQL with vector embeddings and Elasticsearch). It leverages AI to understand user intent and provide contextual, conversational search capabilities.
+
+**Version 2.0 Updates:**
+- Integrated LangChain.NET for standardized agent orchestration
+- Added Model Context Protocol (MCP) for tool discovery
+- Implemented Tools pattern for modular functionality
+- Dual-mode operation (Original vs LangChain)
 
 ## Architecture Overview
 
@@ -16,7 +22,88 @@ The Semantic Search API is a hybrid intelligent search system that implements an
 - **Backend**: ASP.NET Core 7.0
 - **Databases**: PostgreSQL (with pgvector extension), Elasticsearch
 - **AI/ML**: OpenAI API (embeddings, GPT-4)
-- **Libraries**: NEST (Elasticsearch), Npgsql (PostgreSQL), Dapper, CsvHelper
+- **Libraries**: 
+  - NEST (Elasticsearch)
+  - Npgsql (PostgreSQL)
+  - Dapper
+  - CsvHelper
+  - **LangChain.NET** (v0.12.3) - Agent orchestration
+  - **Microsoft.SemanticKernel** - AI orchestration support
+
+## New Architecture Components (v2.0)
+
+### 1. LangChain Integration
+
+#### LangChainOrchestrator
+- **Location**: `LangChain/LangChainOrchestrator.cs`
+- **Purpose**: Replaces original orchestrator with LangChain's agent system
+- **Features**:
+  - ReAct agent pattern for reasoning
+  - Automatic tool selection
+  - Built-in conversation memory
+  - Verbose logging for debugging
+
+#### LangChainIntentAgent
+- **Location**: `LangChain/LangChainIntentAgent.cs`
+- **Purpose**: Intent extraction using LangChain's LLMChain
+- **Advantages**: 
+  - Structured prompt templates
+  - Automatic retry logic
+  - Better error handling
+
+### 2. Tools Framework
+
+#### Tool Implementations
+All tools inherit from `SemanticSearchTool` base class:
+
+1. **CompanyResolverTool** (`Tools/CompanyResolverTool.cs`)
+   - Resolves company names to database IDs
+   - Returns mapping with counts
+
+2. **ElasticsearchTool** (`Tools/ElasticsearchTool.cs`)
+   - Executes Elasticsearch DSL queries
+   - Returns hit count and results
+
+3. **VectorSearchTool** (`Tools/VectorSearchTool.cs`)
+   - Semantic similarity search
+   - Configurable top-N and threshold
+
+4. **QueryPlannerTool** (`Tools/QueryPlannerTool.cs`)
+   - Generates Elasticsearch DSL from intent
+   - Handles complex query construction
+
+#### ToolRegistry
+- **Location**: `Tools/ToolRegistry.cs`
+- **Purpose**: Service locator for tools
+- **Methods**:
+  - `GetTool(name)`: Retrieve specific tool
+  - `GetAllTools()`: Get all registered tools
+  - `GetToolNames()`: List available tools
+
+### 3. Model Context Protocol (MCP)
+
+#### MCPServer
+- **Location**: `MCP/MCPServer.cs`
+- **Endpoints**:
+  - `GET /.well-known/mcp/manifest` - Tool and resource discovery
+  - `POST /.well-known/mcp/invoke/{toolName}` - Tool invocation
+  - `GET /.well-known/mcp/resources/{resourceName}` - Schema/data access
+
+#### MCPToolRegistry
+- **Location**: `MCP/MCPToolRegistry.cs`
+- **Purpose**: MCP-compliant tool descriptions
+- **Features**:
+  - JSON Schema parameter definitions
+  - Tool manifest generation
+  - Input transformation for tools
+
+#### MCPSchemaProvider
+- **Location**: `MCP/MCPSchemaProvider.cs`
+- **Resources Exposed**:
+  - `elasticsearch_indices`: Index mappings
+  - `postgresql_tables`: Table schemas
+  - `company_mappings`: Name to ID mappings
+  - `product_catalog`: Product variations
 
 ## Core Components
 
@@ -190,7 +277,7 @@ The Semantic Search API is a hybrid intelligent search system that implements an
 - **Response**: Results from SQL, Elasticsearch, or vector search
 
 #### POST /api/agentic/query
-- **Purpose**: Conversational agentic search
+- **Purpose**: Conversational agentic search (supports both modes)
 - **Request Body**:
   ```json
   {
@@ -198,7 +285,58 @@ The Semantic Search API is a hybrid intelligent search system that implements an
     "sessionId": "string"
   }
   ```
-- **Response**: Natural language answer with context
+- **Response**: 
+  ```json
+  {
+    "response": "Natural language answer",
+    "mode": "LangChain" | "Original"
+  }
+  ```
+
+#### POST /api/agentic/query/langchain
+- **Purpose**: Force LangChain mode
+- **Same request/response as above**
+
+#### POST /api/agentic/query/original
+- **Purpose**: Force original orchestrator mode
+- **Same request/response as above**
+
+#### GET /api/agentic/tools
+- **Purpose**: List available tools
+- **Response**: 
+  ```json
+  {
+    "tools": ["company_resolver", "elasticsearch_search", "vector_search", "query_planner"]
+  }
+  ```
+
+### 2. MCP Endpoints
+
+#### GET /.well-known/mcp/manifest
+- **Purpose**: MCP discovery endpoint
+- **Response**:
+  ```json
+  {
+    "name": "SemanticSearchAPI",
+    "version": "1.0.0",
+    "description": "...",
+    "tools": [...],
+    "resources": [...]
+  }
+  ```
+
+#### POST /.well-known/mcp/invoke/{toolName}
+- **Purpose**: Invoke tool via MCP
+- **Request**: Tool-specific parameters
+- **Response**: Tool execution result
+
+#### GET /.well-known/mcp/resources/{resourceName}
+- **Purpose**: Get schema or data resources
+- **Resources**: 
+  - `elasticsearch_indices`
+  - `postgresql_tables`
+  - `company_mappings`
+  - `product_catalog`
 
 ### 2. Data Management
 
@@ -268,9 +406,61 @@ The Semantic Search API is a hybrid intelligent search system that implements an
   },
   "Database": {
     "Type": "elasticsearch" // or "postgresql"
+  },
+  "Features": {
+    "UseLangChain": true,      // Enable LangChain mode
+    "EnableMCP": true,         // Enable MCP endpoints
+    "EnableTools": true        // Enable tools framework
+  },
+  "LangChain": {
+    "DefaultModel": "gpt-4",
+    "Temperature": 0.7,
+    "MaxTokens": 2000,
+    "VerboseLogging": true
+  },
+  "MCP": {
+    "Enabled": true,
+    "ExposeAtWellKnown": true,
+    "AllowExternalAccess": false
+  },
+  "Tools": {
+    "CompanyResolver": {
+      "MaxResults": 100,
+      "FuzzyMatchThreshold": 0.7
+    },
+    "VectorSearch": {
+      "DefaultTopN": 10,
+      "DefaultThreshold": 0.25
+    },
+    "Elasticsearch": {
+      "DefaultSize": 10,
+      "Timeout": "30s"
+    }
   }
 }
 ```
+
+## Migration Guide
+
+### Phase 1: Parallel Operation (Weeks 1-2)
+1. Deploy with both orchestrators active
+2. Use feature flag to switch between modes
+3. Compare results and performance
+
+### Phase 2: Tool Migration (Weeks 3-4)
+1. Migrate agents to tool pattern
+2. Test individual tools via MCP
+3. Update client code to use tools
+
+### Phase 3: Full LangChain Adoption (Weeks 5-6)
+1. Default to LangChain mode
+2. Deprecate original orchestrator
+3. Remove legacy code paths
+
+### Phase 4: Advanced Features (Weeks 7-8)
+1. Add more sophisticated agents
+2. Implement tool chaining
+3. Add external tool support
 
 ## Security Considerations
 
@@ -311,13 +501,108 @@ The Semantic Search API is a hybrid intelligent search system that implements an
 4. **Database Migrations**: Version control schema changes
 5. **API Versioning**: Plan for backward compatibility
 
-## Future Enhancements
+## Testing the New Features
 
-1. **Multi-language Support**: Extend beyond English queries
-2. **Visual Analytics**: Generate charts from query results
-3. **Export Capabilities**: Allow data export in various formats
-4. **Advanced NLP**: Use more sophisticated intent recognition
-5. **Federated Search**: Query multiple data sources simultaneously
-6. **Real-time Updates**: Support streaming data ingestion
-7. **User Feedback Loop**: Learn from user interactions
-8. **Query Suggestions**: Provide autocomplete and suggestions
+### 1. Test LangChain Mode
+```bash
+curl -X POST https://localhost:7213/api/agentic/query/langchain \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Show unit price for Global Spices selling Henna",
+    "sessionId": "test-123"
+  }'
+```
+
+### 2. Test MCP Discovery
+```bash
+curl https://localhost:7213/.well-known/mcp/manifest
+```
+
+### 3. Test Tool Invocation via MCP
+```bash
+curl -X POST https://localhost:7213/.well-known/mcp/invoke/company_resolver \
+  -H "Content-Type: application/json" \
+  -d '{
+    "companyName": "Global Spices"
+  }'
+```
+
+### 4. Test Resource Access
+```bash
+curl https://localhost:7213/.well-known/mcp/resources/company_mappings
+```
+
+## Benefits of the New Architecture
+
+### 1. **Standardization**
+- Common patterns across all agents via Tools
+- LangChain provides industry-standard agent patterns
+- MCP enables cross-system interoperability
+
+### 2. **Flexibility**
+- Easy to add new tools without changing core logic
+- Switch between orchestrators with feature flags
+- External systems can discover and use your tools
+
+### 3. **Observability**
+- LangChain's built-in logging and tracing
+- Tool execution metrics
+- Session-based conversation tracking
+
+### 4. **Composability**
+- Chain multiple tools together
+- Create complex workflows
+- Reuse tools in different contexts
+
+### 5. **Future-Proofing**
+- Ready for LangChain ecosystem growth
+- MCP adoption by major AI providers
+- Easy integration with other AI systems
+
+## Troubleshooting
+
+### Common Issues
+
+1. **"Tool not found" errors**
+   - Ensure tool is registered in `Program.cs`
+   - Check tool name matches exactly
+   - Verify DI container registration
+
+2. **LangChain mode not working**
+   - Check `Features:UseLangChain` is `true`
+   - Verify OpenAI API key is valid
+   - Check logs for detailed errors
+
+3. **MCP endpoints returning 404**
+   - Ensure MCP routing is configured
+   - Check `MCP:Enabled` is `true`
+   - Verify URL format: `/.well-known/mcp/...`
+
+4. **Memory not persisting**
+   - Current implementation is in-memory
+   - Implement Redis backend for persistence
+   - Check session ID consistency
+
+## Next Steps
+
+1. **Production Readiness**
+   - Add Redis for distributed memory
+   - Implement rate limiting
+   - Add comprehensive error handling
+
+2. **Enhanced Tools**
+   - SQL generation tool
+   - Data visualization tool
+   - Export/report generation tool
+
+3. **Advanced LangChain Features**
+   - Custom agent types
+   - Tool validation
+   - Fallback strategies
+
+4. **MCP Extensions**
+   - Authentication for external access
+   - Tool versioning
+   - Resource caching
+
+This updated architecture provides a modern, extensible foundation for semantic search that can grow with your needs and integrate with the broader AI ecosystem.
