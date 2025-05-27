@@ -1,74 +1,188 @@
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
-public class SimpleQueryPlanner : IQueryPlanner
+namespace SemanticSearchApi.Agents
 {
-    public Task<string> PlanAsync(UserIntent intent, Dictionary<string, List<int>> companyMap)
+    public class SimpleQueryPlanner : IQueryPlanner
     {
-        var must = new List<object>();
-
-        if (intent.CompanyMentions?.Exporter != null)
+        public async Task<string> PlanAsync(UserIntent intent, Dictionary<string, List<int>> companyMap)
         {
-            if (companyMap.TryGetValue("Exporter", out var exporters) && exporters.Count > 0)
+            var query = new
             {
-                must.Add(new Dictionary<string, object>
-                {
-                    ["terms"] = new Dictionary<string, object> { ["parentGlobalExporterId"] = exporters }
-                });
-            }
-            else
-            {
-                must.Add(new Dictionary<string, object>
-                {
-                    ["match"] = new Dictionary<string, object> { ["parentGlobalExporterId"] = intent.CompanyMentions.Exporter }
-                });
-            }
+                query = BuildQuery(intent, companyMap),
+                size = intent.Limit ?? 100,
+                _source = DetermineSourceFields(intent),
+                sort = DetermineSortOrder(intent),
+                aggs = BuildAggregations(intent)
+            };
+
+            return JsonSerializer.Serialize(query, new JsonSerializerOptions { WriteIndented = true });
         }
 
-        if (intent.CompanyMentions?.Importer != null)
+        private object BuildQuery(UserIntent intent, Dictionary<string, List<int>> companyMap)
         {
-            if (companyMap.TryGetValue("Importer", out var importers) && importers.Count > 0)
+            var mustClauses = new List<object>();
+
+            // Add company filters
+            if (companyMap.ContainsKey("Exporter") && companyMap["Exporter"].Any())
             {
-                must.Add(new Dictionary<string, object>
+                mustClauses.Add(new
                 {
-                    ["terms"] = new Dictionary<string, object> { ["parentGlobalImporterId"] = importers }
+                    terms = new { parentGlobalExporterId = companyMap["Exporter"] }
                 });
             }
-            else
+
+            if (companyMap.ContainsKey("Importer") && companyMap["Importer"].Any())
             {
-                must.Add(new Dictionary<string, object>
+                mustClauses.Add(new
                 {
-                    ["match"] = new Dictionary<string, object> { ["parentGlobalImporterId"] = intent.CompanyMentions.Importer }
+                    terms = new { parentGlobalImporterId = companyMap["Importer"] }
                 });
             }
-        }
 
-        if (!string.IsNullOrEmpty(intent.Product))
-        {
-            must.Add(new Dictionary<string, object>
+            // Add product filter
+            if (!string.IsNullOrEmpty(intent.Product))
             {
-                ["match_phrase"] = new Dictionary<string, object>
+                mustClauses.Add(new
                 {
-                    ["productDesc"] = $"*{intent.Product}*"
-                }
-            });
-        }
-
-        var dsl = new Dictionary<string, object>
-        {
-            ["_source"] = new[] { intent.FocusField },
-            ["query"] = new Dictionary<string, object>
-            {
-                ["bool"] = new Dictionary<string, object>
-                {
-                    ["must"] = must
-                }
+                    multi_match = new
+                    {
+                        query = intent.Product,
+                        fields = new[] { "productDesc", "productDescription", "productDescEnglish" },
+                        type = "phrase_prefix"
+                    }
+                });
             }
-        };
 
-        var json = JsonSerializer.Serialize(dsl);
-        return Task.FromResult(json);
+            // Add date range filter if specified
+            if (!string.IsNullOrEmpty(intent.TimeFilter))
+            {
+                mustClauses.Add(new
+                {
+                    range = new
+                    {
+                        date = new
+                        {
+                            gte = "now-1y", // Adjust based on TimeFilter
+                            lte = "now"
+                        }
+                    }
+                });
+            }
+
+            if (mustClauses.Any())
+            {
+                return new
+                {
+                    @bool = new
+                    {
+                        must = mustClauses
+                    }
+                };
+            }
+
+            return new { match_all = new { } };
+        }
+
+        private string[] DetermineSourceFields(UserIntent intent)
+        {
+            var fields = new List<string>();
+
+            // Always include date fields
+            fields.Add("date");
+            fields.Add("transactionDate");
+            fields.Add("shipmentDate");
+            
+            // Include fields based on focus
+            if (intent.FocusField?.ToLower() == "unitprice" || 
+                intent.FocusField?.ToLower().Contains("price") ||
+                intent.RawQuery.ToLower().Contains("price"))
+            {
+                fields.Add("unitPrice");
+                fields.Add("unitRateUsd");
+                fields.Add("unitRateInr");
+            }
+
+            // Include company info if needed
+            if (intent.RawQuery.ToLower().Contains("supplier") || 
+                intent.RawQuery.ToLower().Contains("buyer") ||
+                intent.CompanyMentions != null)
+            {
+                fields.Add("parentGlobalExporterId");
+                fields.Add("parentGlobalImporterId");
+                fields.Add("exporterName");
+                fields.Add("importerName");
+            }
+
+            // Include product info
+            if (!string.IsNullOrEmpty(intent.Product))
+            {
+                fields.Add("productDesc");
+                fields.Add("productDescription");
+                fields.Add("quantity");
+                fields.Add("quantityUnit");
+            }
+
+            // If no specific fields, include common ones
+            if (!fields.Any())
+            {
+                fields.AddRange(new[] { 
+                    "date", "unitRateUsd", "productDesc", 
+                    "exporterName", "importerName", "quantity" 
+                });
+            }
+
+            return fields.Distinct().ToArray();
+        }
+
+        private object[] DetermineSortOrder(UserIntent intent)
+        {
+            // Sort by date descending by default when price is requested
+            if (intent.FocusField?.ToLower().Contains("price") == true ||
+                intent.RawQuery.ToLower().Contains("price"))
+            {
+                return new object[]
+                {
+                    new { date = new { order = "desc" } },
+                    new { unitRateUsd = new { order = "desc" } }
+                };
+            }
+
+            return new object[] { new { _score = new { order = "desc" } } };
+        }
+
+        private object BuildAggregations(UserIntent intent)
+        {
+            // Add aggregations for price summary over time
+            if (intent.FocusField?.ToLower().Contains("price") == true ||
+                intent.RawQuery.ToLower().Contains("price"))
+            {
+                return new
+                {
+                    price_over_time = new
+                    {
+                        date_histogram = new
+                        {
+                            field = "date",
+                            calendar_interval = "month",
+                            format = "yyyy-MM-dd"
+                        },
+                        aggs = new
+                        {
+                            avg_price = new { avg = new { field = "unitRateUsd" } },
+                            min_price = new { min = new { field = "unitRateUsd" } },
+                            max_price = new { max = new { field = "unitRateUsd" } }
+                        }
+                    },
+                    price_stats = new
+                    {
+                        stats = new { field = "unitRateUsd" }
+                    }
+                };
+            }
+
+            return null;
+        }
     }
 }

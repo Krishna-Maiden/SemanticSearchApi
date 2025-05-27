@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 public class OpenAISummarizer : IAnswerSynthesizer
 {
     private readonly HttpClient _httpClient;
+    private readonly string _apiKey;
 
-    public OpenAISummarizer()
+    public OpenAISummarizer(IConfiguration config)
     {
         _httpClient = new HttpClient();
-        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "sk-xxx");
+        _apiKey = config["OpenAI:ApiKey"];
+        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
     }
 
     public string Summarize(JsonElement results, UserIntent intent)

@@ -20,12 +20,13 @@ namespace SemanticSearchApi.Tools
             try
             {
                 var result = await _executor.ExecuteAsync(input);
-                return new
+                return result;
+                /*return new
                 {
                     success = true,
                     hits = result.GetProperty("hits").GetProperty("total").GetProperty("value").GetInt32(),
                     results = result
-                };
+                };*/
             }
             catch (Exception ex)
             {
