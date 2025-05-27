@@ -9,6 +9,7 @@ using SemanticSearchApi.Tools;
 using SemanticSearchApi.Tools.Base;
 using SemanticSearchApi.MCP;
 using SemanticSearchApi.LangChain;
+using SemanticSearchApi.Agents;
 
 var builder = WebApplication.CreateBuilder(args);
 

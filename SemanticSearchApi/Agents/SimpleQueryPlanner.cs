@@ -11,7 +11,7 @@ namespace SemanticSearchApi.Agents
             var query = new
             {
                 query = BuildQuery(intent, companyMap),
-                size = intent.Limit ?? 100,
+                size = ExtractLimit(intent.RawQuery) ?? 100,
                 _source = DetermineSourceFields(intent),
                 sort = DetermineSortOrder(intent),
                 aggs = BuildAggregations(intent)
@@ -93,10 +93,9 @@ namespace SemanticSearchApi.Agents
             fields.Add("date");
             fields.Add("transactionDate");
             fields.Add("shipmentDate");
-            
+
             // Include fields based on focus
-            if (intent.FocusField?.ToLower() == "unitprice" || 
-                intent.FocusField?.ToLower().Contains("price") ||
+            if (intent.FocusField != null && (intent.FocusField.ToLower() == "unitprice" ||intent.FocusField.ToLower().Contains("price")) ||
                 intent.RawQuery.ToLower().Contains("price"))
             {
                 fields.Add("unitPrice");
@@ -105,7 +104,7 @@ namespace SemanticSearchApi.Agents
             }
 
             // Include company info if needed
-            if (intent.RawQuery.ToLower().Contains("supplier") || 
+            if (intent.RawQuery.ToLower().Contains("supplier") ||
                 intent.RawQuery.ToLower().Contains("buyer") ||
                 intent.CompanyMentions != null)
             {
@@ -127,9 +126,9 @@ namespace SemanticSearchApi.Agents
             // If no specific fields, include common ones
             if (!fields.Any())
             {
-                fields.AddRange(new[] { 
-                    "date", "unitRateUsd", "productDesc", 
-                    "exporterName", "importerName", "quantity" 
+                fields.AddRange(new[] {
+                    "date", "unitRateUsd", "productDesc",
+                    "exporterName", "importerName", "quantity"
                 });
             }
 
@@ -139,7 +138,7 @@ namespace SemanticSearchApi.Agents
         private object[] DetermineSortOrder(UserIntent intent)
         {
             // Sort by date descending by default when price is requested
-            if (intent.FocusField?.ToLower().Contains("price") == true ||
+            if ((intent.FocusField?.ToLower().Contains("price") ?? false) ||
                 intent.RawQuery.ToLower().Contains("price"))
             {
                 return new object[]
@@ -155,7 +154,7 @@ namespace SemanticSearchApi.Agents
         private object BuildAggregations(UserIntent intent)
         {
             // Add aggregations for price summary over time
-            if (intent.FocusField?.ToLower().Contains("price") == true ||
+            if ((intent.FocusField?.ToLower().Contains("price") ?? false) ||
                 intent.RawQuery.ToLower().Contains("price"))
             {
                 return new
@@ -180,6 +179,22 @@ namespace SemanticSearchApi.Agents
                         stats = new { field = "unitRateUsd" }
                     }
                 };
+            }
+
+            return null;
+        }
+
+        private int? ExtractLimit(string query)
+        {
+            // Extract limit from query like "top 5", "first 10", etc.
+            var match = System.Text.RegularExpressions.Regex.Match(
+                query.ToLower(),
+                @"(?:top|first|limit)\s+(\d+)"
+            );
+
+            if (match.Success && int.TryParse(match.Groups[1].Value, out var limit))
+            {
+                return limit;
             }
 
             return null;
