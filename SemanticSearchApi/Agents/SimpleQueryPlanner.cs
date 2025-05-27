@@ -1,188 +1,74 @@
-using System.Text.Json;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace SemanticSearchApi.Agents
+public class SimpleQueryPlanner : IQueryPlanner
 {
-    public class SimpleQueryPlanner : IQueryPlanner
+    public Task<string> PlanAsync(UserIntent intent, Dictionary<string, List<int>> companyMap)
     {
-        public async Task<string> PlanAsync(UserIntent intent, Dictionary<string, List<int>> companyMap)
+        var must = new List<object>();
+
+        if (intent.CompanyMentions?.Exporter != null)
         {
-            var query = new
+            if (companyMap.TryGetValue("Exporter", out var exporters) && exporters.Count > 0)
             {
-                query = BuildQuery(intent, companyMap),
-                size = intent.Limit ?? 100,
-                _source = DetermineSourceFields(intent),
-                sort = DetermineSortOrder(intent),
-                aggs = BuildAggregations(intent)
-            };
-
-            return JsonSerializer.Serialize(query, new JsonSerializerOptions { WriteIndented = true });
-        }
-
-        private object BuildQuery(UserIntent intent, Dictionary<string, List<int>> companyMap)
-        {
-            var mustClauses = new List<object>();
-
-            // Add company filters
-            if (companyMap.ContainsKey("Exporter") && companyMap["Exporter"].Any())
-            {
-                mustClauses.Add(new
+                must.Add(new Dictionary<string, object>
                 {
-                    terms = new { parentGlobalExporterId = companyMap["Exporter"] }
+                    ["terms"] = new Dictionary<string, object> { ["parentGlobalExporterId"] = exporters }
                 });
             }
-
-            if (companyMap.ContainsKey("Importer") && companyMap["Importer"].Any())
+            else
             {
-                mustClauses.Add(new
+                must.Add(new Dictionary<string, object>
                 {
-                    terms = new { parentGlobalImporterId = companyMap["Importer"] }
+                    ["match"] = new Dictionary<string, object> { ["parentGlobalExporterId"] = intent.CompanyMentions.Exporter }
                 });
             }
-
-            // Add product filter
-            if (!string.IsNullOrEmpty(intent.Product))
-            {
-                mustClauses.Add(new
-                {
-                    multi_match = new
-                    {
-                        query = intent.Product,
-                        fields = new[] { "productDesc", "productDescription", "productDescEnglish" },
-                        type = "phrase_prefix"
-                    }
-                });
-            }
-
-            // Add date range filter if specified
-            if (!string.IsNullOrEmpty(intent.TimeFilter))
-            {
-                mustClauses.Add(new
-                {
-                    range = new
-                    {
-                        date = new
-                        {
-                            gte = "now-1y", // Adjust based on TimeFilter
-                            lte = "now"
-                        }
-                    }
-                });
-            }
-
-            if (mustClauses.Any())
-            {
-                return new
-                {
-                    @bool = new
-                    {
-                        must = mustClauses
-                    }
-                };
-            }
-
-            return new { match_all = new { } };
         }
 
-        private string[] DetermineSourceFields(UserIntent intent)
+        if (intent.CompanyMentions?.Importer != null)
         {
-            var fields = new List<string>();
-
-            // Always include date fields
-            fields.Add("date");
-            fields.Add("transactionDate");
-            fields.Add("shipmentDate");
-            
-            // Include fields based on focus
-            if (intent.FocusField?.ToLower() == "unitprice" || 
-                intent.FocusField?.ToLower().Contains("price") ||
-                intent.RawQuery.ToLower().Contains("price"))
+            if (companyMap.TryGetValue("Importer", out var importers) && importers.Count > 0)
             {
-                fields.Add("unitPrice");
-                fields.Add("unitRateUsd");
-                fields.Add("unitRateInr");
-            }
-
-            // Include company info if needed
-            if (intent.RawQuery.ToLower().Contains("supplier") || 
-                intent.RawQuery.ToLower().Contains("buyer") ||
-                intent.CompanyMentions != null)
-            {
-                fields.Add("parentGlobalExporterId");
-                fields.Add("parentGlobalImporterId");
-                fields.Add("exporterName");
-                fields.Add("importerName");
-            }
-
-            // Include product info
-            if (!string.IsNullOrEmpty(intent.Product))
-            {
-                fields.Add("productDesc");
-                fields.Add("productDescription");
-                fields.Add("quantity");
-                fields.Add("quantityUnit");
-            }
-
-            // If no specific fields, include common ones
-            if (!fields.Any())
-            {
-                fields.AddRange(new[] { 
-                    "date", "unitRateUsd", "productDesc", 
-                    "exporterName", "importerName", "quantity" 
+                must.Add(new Dictionary<string, object>
+                {
+                    ["terms"] = new Dictionary<string, object> { ["parentGlobalImporterId"] = importers }
                 });
             }
-
-            return fields.Distinct().ToArray();
-        }
-
-        private object[] DetermineSortOrder(UserIntent intent)
-        {
-            // Sort by date descending by default when price is requested
-            if (intent.FocusField?.ToLower().Contains("price") == true ||
-                intent.RawQuery.ToLower().Contains("price"))
+            else
             {
-                return new object[]
+                must.Add(new Dictionary<string, object>
                 {
-                    new { date = new { order = "desc" } },
-                    new { unitRateUsd = new { order = "desc" } }
-                };
+                    ["match"] = new Dictionary<string, object> { ["parentGlobalImporterId"] = intent.CompanyMentions.Importer }
+                });
             }
-
-            return new object[] { new { _score = new { order = "desc" } } };
         }
 
-        private object BuildAggregations(UserIntent intent)
+        if (!string.IsNullOrEmpty(intent.Product))
         {
-            // Add aggregations for price summary over time
-            if (intent.FocusField?.ToLower().Contains("price") == true ||
-                intent.RawQuery.ToLower().Contains("price"))
+            must.Add(new Dictionary<string, object>
             {
-                return new
+                ["match_phrase"] = new Dictionary<string, object>
                 {
-                    price_over_time = new
-                    {
-                        date_histogram = new
-                        {
-                            field = "date",
-                            calendar_interval = "month",
-                            format = "yyyy-MM-dd"
-                        },
-                        aggs = new
-                        {
-                            avg_price = new { avg = new { field = "unitRateUsd" } },
-                            min_price = new { min = new { field = "unitRateUsd" } },
-                            max_price = new { max = new { field = "unitRateUsd" } }
-                        }
-                    },
-                    price_stats = new
-                    {
-                        stats = new { field = "unitRateUsd" }
-                    }
-                };
-            }
-
-            return null;
+                    ["productDescription"] = $"*{intent.Product}*"
+                }
+            });
         }
+
+        var dsl = new Dictionary<string, object>
+        {
+            ["_source"] = new[] { intent.FocusField },
+            ["query"] = new Dictionary<string, object>
+            {
+                ["bool"] = new Dictionary<string, object>
+                {
+                    ["must"] = must
+                }
+            }
+        };
+
+        var json = JsonSerializer.Serialize(dsl);
+        return Task.FromResult(json);
     }
 }
