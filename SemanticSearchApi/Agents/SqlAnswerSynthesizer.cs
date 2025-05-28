@@ -5,7 +5,7 @@ using SemanticSearchApi.Models;
 
 namespace SemanticSearchApi.Agents
 {
-    public class SqlAnswerSynthesizer : IAnswerSynthesizer
+    public class SqlAnswerSynthesizer
     {
         private readonly ILogger<SqlAnswerSynthesizer> _logger;
 
@@ -14,22 +14,7 @@ namespace SemanticSearchApi.Agents
             _logger = logger;
         }
 
-        public string Summarize(System.Text.Json.JsonElement results, UserIntent intent)
-        {
-            try
-            {
-                // Parse SQL results
-                var sqlResult = System.Text.Json.JsonSerializer.Deserialize<SqlQueryResult>(results.GetRawText());
-                return SummarizeSqlResults(sqlResult, intent);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error summarizing SQL results");
-                return "Unable to summarize the results.";
-            }
-        }
-
-        private string SummarizeSqlResults(SqlQueryResult result, UserIntent intent)
+        public string SummarizeSqlResults(SqlQueryResult result, UserIntent intent)
         {
             if (!result.Success)
             {
@@ -76,7 +61,8 @@ namespace SemanticSearchApi.Agents
                 summary.AppendLine("Grade Distribution:");
                 foreach (var row in result.Rows)
                 {
-                    summary.AppendLine($"- Grade {row["Grade"]}: {row["Count"]} enrollments ({row["StudentCount"]} students)");
+                    var studentCount = row.ContainsKey("StudentCount") ? $" ({row["StudentCount"]} students)" : "";
+                    summary.AppendLine($"- Grade {row["Grade"]}: {row["Count"]} enrollments{studentCount}");
                 }
                 return summary.ToString();
             }

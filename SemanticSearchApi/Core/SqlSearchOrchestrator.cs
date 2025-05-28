@@ -1,5 +1,6 @@
 // Core/SqlSearchOrchestrator.cs
 using System.Text.Json;
+using SemanticSearchApi.Agents;
 using SemanticSearchApi.Interfaces;
 using SemanticSearchApi.Models;
 
@@ -10,7 +11,7 @@ namespace SemanticSearchApi.Core
         private readonly IIntentAgent _intentAgent;
         private readonly ISqlQueryPlanner _queryPlanner;
         private readonly ISqlQueryExecutor _executor;
-        private readonly IAnswerSynthesizer _synthesizer;
+        private readonly SqlAnswerSynthesizer _synthesizer; // Changed from IAnswerSynthesizer
         private readonly IChatMemory _memory;
         private readonly ILogger<SqlSearchOrchestrator> _logger;
 
@@ -18,7 +19,7 @@ namespace SemanticSearchApi.Core
             IIntentAgent intentAgent,
             ISqlQueryPlanner queryPlanner,
             ISqlQueryExecutor executor,
-            IAnswerSynthesizer synthesizer,
+            SqlAnswerSynthesizer synthesizer, // Changed from IAnswerSynthesizer
             IChatMemory memory,
             ILogger<SqlSearchOrchestrator> logger)
         {
@@ -63,9 +64,7 @@ namespace SemanticSearchApi.Core
                 else
                 {
                     // Step 4: Generate human-readable response
-                    var resultsJson = JsonSerializer.Serialize(result);
-                    var jsonElement = JsonDocument.Parse(resultsJson).RootElement;
-                    response.Summary = _synthesizer.Summarize(jsonElement, intent);
+                    response.Summary = _synthesizer.SummarizeSqlResults(result, intent);
 
                     // Step 5: Save interaction to memory
                     _memory.UpdateContext(userInput, response.Summary);
