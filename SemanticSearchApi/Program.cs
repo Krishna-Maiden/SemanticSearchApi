@@ -9,6 +9,9 @@ using SemanticSearchApi.Tools;
 using SemanticSearchApi.Tools.Base;
 using SemanticSearchApi.MCP;
 using SemanticSearchApi.LangChain;
+using SemanticSearchApi.Core;
+using SemanticSearchApi.Agents;
+using SemanticSearchApi.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,13 +23,17 @@ builder.Services.AddSingleton<QueryInterpretationService>();
 // Add logging
 builder.Services.AddLogging();
 
-// Database Services
+// Database Services - PostgreSQL for Vector Search
 builder.Services.AddSingleton(provider =>
 {
     var connectionString = builder.Configuration.GetConnectionString("PostgresConnection");
-    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
-    dataSourceBuilder.UseVector();
-    return dataSourceBuilder.Build();
+    if (!string.IsNullOrEmpty(connectionString))
+    {
+        var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
+        dataSourceBuilder.UseVector();
+        return dataSourceBuilder.Build();
+    }
+    return null;
 });
 
 // Core Services
@@ -43,7 +50,17 @@ builder.Services.AddSingleton<IAnswerSynthesizer, OpenAISummarizer>();
 builder.Services.AddSingleton<IChatMemory, InMemoryChatMemory>();
 builder.Services.AddSingleton<AgenticSearchOrchestrator>();
 
-// LangChain Services - Manual configuration instead of AddLangChain
+// SQL Server Services (NEW)
+builder.Services.AddSingleton<ISqlQueryPlanner, SqlQueryPlanner>();
+builder.Services.AddSingleton<ISqlQueryExecutor, SqlQueryExecutor>();
+builder.Services.AddSingleton<SqlAnswerSynthesizer>();
+builder.Services.AddSingleton<SqlSearchOrchestrator>();
+
+// SQL Tools (NEW)
+builder.Services.AddSingleton<SqlQueryTool>();
+builder.Services.AddSingleton<SqlPlannerTool>();
+
+// LangChain Services - Manual configuration
 //builder.Services.AddSingleton<LangChainIntentAgent>();
 builder.Services.AddSingleton<IAgenticOrchestrator, LangChainOrchestrator>();
 
@@ -63,15 +80,19 @@ builder.Services.AddSingleton<Nest.IElasticClient>(provider =>
 {
     var config = provider.GetRequiredService<IConfiguration>();
     var elasticUri = config["Elastic:Uri"];
-    var username = config["Elastic:username"];
-    var password = config["Elastic:password"];
-
-    var settings = new Nest.ConnectionSettings(new Uri(elasticUri))
-        .DefaultIndex("documents")
-        .BasicAuthentication(username, password)
-        .ServerCertificateValidationCallback((o, cert, chain, errors) => true);
-
-    return new Nest.ElasticClient(settings);
+    if (!string.IsNullOrEmpty(elasticUri))
+    {
+        var username = config["Elastic:username"];
+        var password = config["Elastic:password"];
+        
+        var settings = new Nest.ConnectionSettings(new Uri(elasticUri))
+            .DefaultIndex("documents")
+            .BasicAuthentication(username, password)
+            .ServerCertificateValidationCallback((o, cert, chain, errors) => true);
+        
+        return new Nest.ElasticClient(settings);
+    }
+    return null;
 });
 
 var app = builder.Build();

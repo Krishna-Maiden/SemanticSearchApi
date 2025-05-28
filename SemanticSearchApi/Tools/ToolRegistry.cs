@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿// Tools/ToolRegistry.cs
+using Microsoft.Extensions.DependencyInjection;
 using SemanticSearchApi.Tools.Base;
 
 namespace SemanticSearchApi.Tools
@@ -13,10 +14,15 @@ namespace SemanticSearchApi.Tools
             _serviceProvider = serviceProvider;
             _toolTypes = new Dictionary<string, Type>
             {
+                // Elasticsearch tools
                 ["company_resolver"] = typeof(CompanyResolverTool),
                 ["elasticsearch_search"] = typeof(ElasticsearchTool),
                 ["vector_search"] = typeof(VectorSearchTool),
-                ["query_planner"] = typeof(QueryPlannerTool)
+                ["query_planner"] = typeof(QueryPlannerTool),
+                
+                // SQL Server tools (NEW)
+                ["sql_query"] = typeof(SqlQueryTool),
+                ["sql_planner"] = typeof(SqlPlannerTool)
             };
         }
 
@@ -37,6 +43,18 @@ namespace SemanticSearchApi.Tools
         public IEnumerable<string> GetToolNames()
         {
             return _toolTypes.Keys;
+        }
+        
+        public IEnumerable<ITool> GetToolsByType(string toolType)
+        {
+            return GetAllTools().Where(tool => 
+            {
+                if (tool is SemanticSearchTool sst)
+                {
+                    return sst.ToolType == toolType;
+                }
+                return false;
+            });
         }
     }
 }
