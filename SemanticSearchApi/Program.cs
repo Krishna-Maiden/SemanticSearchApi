@@ -12,6 +12,7 @@ using SemanticSearchApi.LangChain;
 using SemanticSearchApi.Core;
 using SemanticSearchApi.Agents;
 using SemanticSearchApi.Interfaces;
+using SemanticSearchApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,6 +50,10 @@ builder.Services.AddSingleton<IElasticQueryExecutor, ElasticQueryExecutor>();
 builder.Services.AddSingleton<IAnswerSynthesizer, OpenAISummarizer>();
 builder.Services.AddSingleton<IChatMemory, InMemoryChatMemory>();
 builder.Services.AddSingleton<AgenticSearchOrchestrator>();
+builder.Services.AddHttpClient<IOpenAiSqlGenerator, OpenAiSqlGenerator>();
+builder.Services.AddScoped<ISqlQueryPlanner, SqlQueryPlanner>();
+
+builder.Services.AddSingleton<SqlSearchOrchestrator>();
 
 // SQL Server Services (NEW)
 builder.Services.AddSingleton<ISqlQueryPlanner, SqlQueryPlanner>();

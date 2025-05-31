@@ -63,8 +63,8 @@ namespace SemanticSearchApi.Core
                 }
                 else
                 {
-                    // Step 4: Generate human-readable response
-                    response.Summary = _synthesizer.SummarizeSqlResults(result, intent);
+                    // Step 4: Generate human-readable response using OpenAI
+                    response.Summary = await _synthesizer.SummarizeSqlResultsAsync(result, intent);
 
                     // Step 5: Save interaction to memory
                     _memory.UpdateContext(userInput, response.Summary);
