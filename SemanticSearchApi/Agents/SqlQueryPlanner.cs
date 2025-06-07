@@ -19,7 +19,7 @@ namespace SemanticSearchApi.Agents
 
         public async Task<string> PlanSqlAsync(UserIntent intent)
         {
-            // Use OpenAI to generate SQL from the raw query
+            // Always use OpenAI with the enhanced context
             var sql = await _sqlGenerator.GenerateSqlAsync(intent.RawQuery);
 
             _logger.LogInformation($"Generated SQL from OpenAI: {sql}");
