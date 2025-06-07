@@ -18,17 +18,6 @@ CREATE TABLE Subject (
     Title NVARCHAR(50) NOT NULL
 );
 
--- StudentGradeSubject junction table
-CREATE TABLE StudentGradeSubject (
-    Id INT PRIMARY KEY IDENTITY(1,1),
-    StudentId INT NOT NULL,
-    SubjectId INT NOT NULL,
-    GradeId INT NOT NULL,
-    FOREIGN KEY (StudentId) REFERENCES Student(StudentId),
-    FOREIGN KEY (SubjectId) REFERENCES Subject(SubjectId),
-    CHECK (GradeId BETWEEN 1 AND 5)
-);
-
 -- Insert test data - Students
 INSERT INTO Student (Name) VALUES 
 ('Anjali'),
@@ -44,61 +33,76 @@ INSERT INTO Subject (Title) VALUES
 ('Geography'),
 ('English');
 
--- Insert 500 rows of test data
--- Batch 1: 100 records
-INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
-(1, 1, 4), (1, 2, 5), (1, 3, 3), (1, 4, 4), (1, 1, 5), (1, 2, 4), (1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4),
-(1, 3, 5), (1, 4, 4), (1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4), (1, 3, 3), (1, 4, 4),
-(2, 1, 5), (2, 2, 4), (2, 3, 5), (2, 4, 4), (2, 1, 3), (2, 2, 5), (2, 3, 4), (2, 4, 5), (2, 1, 4), (2, 2, 3),
-(2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 5), (2, 2, 5), (2, 3, 4), (2, 4, 3),
-(3, 1, 2), (3, 2, 3), (3, 3, 2), (3, 4, 3), (3, 1, 4), (3, 2, 2), (3, 3, 3), (3, 4, 2), (3, 1, 3), (3, 2, 4),
-(3, 3, 2), (3, 4, 3), (3, 1, 2), (3, 2, 3), (3, 3, 4), (3, 4, 2), (3, 1, 3), (3, 2, 2), (3, 3, 3), (3, 4, 4),
-(4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3), (4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5),
-(4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3), (4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5),
-(5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1), (5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3),
-(5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1), (5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3);
+-- Alternative Schema: Add AssessmentDate to allow multiple records
+-- This allows the same student to get the same grade in the same subject multiple times
 
--- Continue with more batches to reach 500 records total
--- Batch 2: Another 100 records
-INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
-(1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 3), (1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4),
-(1, 3, 3), (1, 4, 4), (1, 1, 4), (1, 2, 5), (1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 4),
-(2, 1, 4), (2, 2, 3), (2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 4), (2, 2, 5),
-(2, 3, 4), (2, 4, 3), (2, 1, 3), (2, 2, 4), (2, 3, 5), (2, 4, 4), (2, 1, 4), (2, 2, 3), (2, 3, 4), (2, 4, 5),
-(3, 1, 1), (3, 2, 2), (3, 3, 1), (3, 4, 2), (3, 1, 3), (3, 2, 1), (3, 3, 2), (3, 4, 1), (3, 1, 2), (3, 2, 3),
-(3, 3, 1), (3, 4, 2), (3, 1, 1), (3, 2, 2), (3, 3, 3), (3, 4, 1), (3, 1, 2), (3, 2, 1), (3, 3, 2), (3, 4, 3),
-(4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5), (4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3),
-(4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5), (4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3),
-(5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3), (5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1),
-(5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3), (5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1);
+-- Drop and recreate with assessment date
+DROP TABLE IF EXISTS StudentGradeSubject;
 
--- Continue inserting more batches... (I'll generate a script that creates all 500 records)
--- For brevity, I'm showing the pattern. The actual script would continue with similar patterns
--- to reach exactly 500 records with varied grade distributions.
+-- StudentGradeSubject with assessment tracking
+CREATE TABLE StudentGradeSubject (
+    StudentId INT NOT NULL,
+    SubjectId INT NOT NULL,
+    GradeId INT NOT NULL,
+    AssessmentDate DATE NOT NULL DEFAULT GETDATE(),
+    PRIMARY KEY (StudentId, SubjectId, GradeId, AssessmentDate),
+    FOREIGN KEY (StudentId) REFERENCES Student(StudentId),
+    FOREIGN KEY (SubjectId) REFERENCES Subject(SubjectId),
+    CHECK (GradeId BETWEEN 1 AND 5)
+);
 
--- Add more records to reach 500 total (300 more needed)
--- Batch 3-5: 300 more records with random but realistic distributions
-DECLARE @Counter INT = 201;
+-- Insert 500 records with different assessment dates
+DECLARE @Counter INT = 0;
 DECLARE @StudentId INT;
-DECLARE @SubjectId INT;
+DECLARE @SubjectId INT; 
 DECLARE @GradeId INT;
+DECLARE @AssessmentDate DATE;
 
-WHILE @Counter <= 500
+-- Start from January 1, 2024
+SET @AssessmentDate = '2024-01-01';
+
+WHILE @Counter < 500
 BEGIN
-    SET @StudentId = ((@Counter - 1) % 5) + 1;  -- Cycles through students 1-5
-    SET @SubjectId = ((@Counter - 1) % 4) + 1;  -- Cycles through subjects 1-4
+    -- Cycle through students (1-5)
+    SET @StudentId = (@Counter % 5) + 1;
     
-    -- Generate varied grades based on student pattern
-    IF @StudentId = 1 SET @GradeId = CASE WHEN @Counter % 3 = 0 THEN 5 ELSE 4 END;  -- Anjali: mostly 4-5
-    IF @StudentId = 2 SET @GradeId = CASE WHEN @Counter % 4 = 0 THEN 3 ELSE 5 END;  -- Kavya: mostly 5, some 3
-    IF @StudentId = 3 SET @GradeId = CASE WHEN @Counter % 3 = 0 THEN 4 ELSE 2 END;  -- Nalini: mostly 2, some 4
-    IF @StudentId = 4 SET @GradeId = CASE WHEN @Counter % 2 = 0 THEN 4 ELSE 3 END;  -- Madhu: mix of 3-4
-    IF @StudentId = 5 SET @GradeId = CASE WHEN @Counter % 5 = 0 THEN 3 ELSE 1 END;  -- Prasad: mostly 1, some 3
+    -- Cycle through subjects (1-4)  
+    SET @SubjectId = ((@Counter / 5) % 4) + 1;
     
-    INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES (@StudentId, @SubjectId, @GradeId);
+    -- Generate grade based on student performance pattern
+    IF @StudentId = 1 -- Anjali: mostly 4-5
+        SET @GradeId = CASE WHEN @Counter % 3 = 0 THEN 3 WHEN @Counter % 2 = 0 THEN 5 ELSE 4 END;
+    ELSE IF @StudentId = 2 -- Kavya: mostly 5
+        SET @GradeId = CASE WHEN @Counter % 4 = 0 THEN 4 WHEN @Counter % 7 = 0 THEN 3 ELSE 5 END;
+    ELSE IF @StudentId = 3 -- Nalini: mostly 2-3
+        SET @GradeId = CASE WHEN @Counter % 5 = 0 THEN 4 WHEN @Counter % 6 = 0 THEN 1 WHEN @Counter % 2 = 0 THEN 3 ELSE 2 END;
+    ELSE IF @StudentId = 4 -- Madhu: mostly 3-4
+        SET @GradeId = CASE WHEN @Counter % 4 = 0 THEN 5 WHEN @Counter % 5 = 0 THEN 2 WHEN @Counter % 2 = 0 THEN 4 ELSE 3 END;
+    ELSE -- Prasad: mostly 1-2
+        SET @GradeId = CASE WHEN @Counter % 6 = 0 THEN 3 WHEN @Counter % 8 = 0 THEN 4 WHEN @Counter % 2 = 0 THEN 2 ELSE 1 END;
     
+    -- Insert the record
+    INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId, AssessmentDate) 
+    VALUES (@StudentId, @SubjectId, @GradeId, @AssessmentDate);
+    
+    -- Increment counter and date
     SET @Counter = @Counter + 1;
+    SET @AssessmentDate = DATEADD(day, 1, @AssessmentDate);
 END;
 
--- Verify the final count
-SELECT 'Total Records' as Description, COUNT(*) as Count FROM StudentGradeSubject;
+-- Verify the data
+SELECT 'Total Records' as Description, COUNT(*) as Count FROM StudentGradeSubject
+UNION ALL
+SELECT 'Unique Student-Subject-Grade Combinations', COUNT(DISTINCT CONCAT(StudentId, '-', SubjectId, '-', GradeId)) FROM StudentGradeSubject;
+
+-- Show distribution by student
+SELECT 
+    s.Name,
+    COUNT(*) as TotalAssessments,
+    AVG(CAST(sgs.GradeId as FLOAT)) as AverageGrade,
+    MIN(sgs.GradeId) as LowestGrade,
+    MAX(sgs.GradeId) as HighestGrade
+FROM Student s
+JOIN StudentGradeSubject sgs ON s.StudentId = sgs.StudentId
+GROUP BY s.StudentId, s.Name
+ORDER BY AverageGrade DESC;

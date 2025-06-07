@@ -1,4 +1,4 @@
-// Services/OpenAiSqlGenerator.cs (Completely generic version)
+﻿// Services/OpenAiSqlGenerator.cs (Completely generic version)
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using SemanticSearchApi.Interfaces;
@@ -39,17 +39,22 @@ namespace SemanticSearchApi.Services
 
 {schemaContext}
 
-IMPORTANT RULES:
+CRITICAL UNDERSTANDING RULES:
 1. Use ONLY the tables and columns shown in the schema above
-2. Use proper JOINs when connecting related tables (look for foreign key relationships)
-3. Use appropriate SQL Server syntax (TOP instead of LIMIT, etc.)
-4. Handle aggregations intelligently (COUNT, AVG, SUM, etc.)
-5. When counting distinct entities, use COUNT(DISTINCT column)
-6. Include appropriate GROUP BY clauses for aggregations
-7. Add ORDER BY for better result organization when appropriate
-8. Return ONLY the SQL query, no explanations or comments
-9. Use proper data type casting when needed (e.g., CAST(column as FLOAT) for averages)
-10. Always use square brackets around table and column names: [TableName].[ColumnName]
+2. Pay close attention to the 'Distinct values' shown for each column - these are the ACTUAL data values in the database
+3. Use the exact values shown in the distinct values lists when filtering data
+4. When users mention specific values, match them exactly to what exists in the distinct values
+
+QUERY CONSTRUCTION RULES:
+1. Use proper JOINs when connecting related tables (look for foreign key relationships)
+2. Use appropriate SQL Server syntax (TOP instead of LIMIT, etc.)
+3. Handle aggregations intelligently (COUNT, AVG, SUM, etc.)
+4. When counting distinct entities, use COUNT(DISTINCT column)
+5. Include appropriate GROUP BY clauses for aggregations
+6. Add ORDER BY for better result organization when appropriate
+7. Return ONLY the SQL query, no explanations or comments
+8. Use proper data type casting when needed (e.g., CAST(column as FLOAT) for averages)
+9. Always use square brackets around table and column names: [TableName].[ColumnName]
 
 QUERY OPTIMIZATION:
 - Use EXISTS over IN for better performance when appropriate
@@ -57,9 +62,11 @@ QUERY OPTIMIZATION:
 - Consider using table aliases for readability
 - Leverage primary key and foreign key relationships shown in the schema
 
-Remember: Work ONLY with the actual schema provided. Do not assume any table or column names that aren't explicitly shown.";
+Remember: Work ONLY with the actual schema and data values provided. The distinct values show exactly what data exists in each column.";
 
-            var userPrompt = $@"Generate SQL for: {naturalLanguageQuery}";
+            var userPrompt = $@"Generate SQL for: {naturalLanguageQuery}
+
+Look at the distinct values in the schema to understand what data exists in the database.";
 
             var requestBody = new
             {
@@ -255,8 +262,8 @@ Remember: Work ONLY with the actual schema provided. Do not assume any table or 
                 }
             }
 
-            schemaBuilder.AppendLine("\nSAMPLE DATA (for AI context):");
-            schemaBuilder.AppendLine("==============================");
+            schemaBuilder.AppendLine("\nDATA PATTERNS AND VALUES (Critical for AI Understanding):");
+            schemaBuilder.AppendLine("=========================================================");
 
             foreach (var table in tables)
             {
@@ -275,8 +282,8 @@ Remember: Work ONLY with the actual schema provided. Do not assume any table or 
 
                     if (recordCount > 0)
                     {
-                        // Get a few sample records
-                        var sampleQuery = $"SELECT TOP 3 * FROM [{table}]";
+                        // Get sample records
+                        var sampleQuery = $"SELECT TOP 5 * FROM [{table}]";
                         using var cmd = new SqlCommand(sampleQuery, connection);
                         using var reader = await cmd.ExecuteReaderAsync();
 
@@ -287,7 +294,7 @@ Remember: Work ONLY with the actual schema provided. Do not assume any table or 
                         }
 
                         var sampleCount = 0;
-                        while (await reader.ReadAsync() && sampleCount < 3)
+                        while (await reader.ReadAsync() && sampleCount < 5)
                         {
                             var values = new List<string>();
                             for (int i = 0; i < reader.FieldCount; i++)
@@ -298,6 +305,9 @@ Remember: Work ONLY with the actual schema provided. Do not assume any table or 
                             schemaBuilder.AppendLine($"  Sample {sampleCount + 1}: {string.Join(", ", values)}");
                             sampleCount++;
                         }
+
+                        // Get distinct values for key columns to help AI understand data patterns
+                        await AddDistinctValuesForTableAsync(connection, table, schemaBuilder);
                     }
                 }
                 catch (Exception ex)
@@ -305,6 +315,64 @@ Remember: Work ONLY with the actual schema provided. Do not assume any table or 
                     _logger.LogDebug($"Error getting sample data for table {table}: {ex.Message}");
                     schemaBuilder.AppendLine($"Table [{table}]: Unable to read sample data");
                 }
+            }
+        }
+
+        private async Task AddDistinctValuesForTableAsync(SqlConnection connection, string tableName, StringBuilder schemaBuilder)
+        {
+            try
+            {
+                // Get columns for this table
+                var columnsQuery = $@"
+                    SELECT COLUMN_NAME, DATA_TYPE 
+                    FROM INFORMATION_SCHEMA.COLUMNS 
+                    WHERE TABLE_NAME = '{tableName}'
+                    ORDER BY ORDINAL_POSITION";
+
+                var columns = new List<(string name, string type)>();
+                using (var cmd = new SqlCommand(columnsQuery, connection))
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        columns.Add((reader.GetString(0), reader.GetString(1)));
+                    }
+                }
+
+                // Show distinct values for each column (especially important for lookup/reference data)
+                foreach (var (columnName, dataType) in columns)
+                {
+                    try
+                    {
+                        var distinctQuery = $@"
+                            SELECT DISTINCT TOP 10 [{columnName}] 
+                            FROM [{tableName}] 
+                            WHERE [{columnName}] IS NOT NULL 
+                            ORDER BY [{columnName}]";
+
+                        using var distinctCmd = new SqlCommand(distinctQuery, connection);
+                        using var distinctReader = await distinctCmd.ExecuteReaderAsync();
+
+                        var values = new List<string>();
+                        while (await distinctReader.ReadAsync())
+                        {
+                            values.Add(distinctReader.GetValue(0).ToString());
+                        }
+
+                        if (values.Any())
+                        {
+                            schemaBuilder.AppendLine($"  Distinct values in [{columnName}]: {string.Join(", ", values)}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogDebug($"Error getting distinct values for {tableName}.{columnName}: {ex.Message}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogDebug($"Error analyzing distinct values for table {tableName}: {ex.Message}");
             }
         }
     }
