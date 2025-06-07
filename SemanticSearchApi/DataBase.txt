@@ -1,21 +1,24 @@
+-- Database Schema - Student Domain (for testing the dynamic system)
+-- The code will discover this schema dynamically without any hardcoded assumptions
+
 -- Drop existing tables if they exist
 DROP TABLE IF EXISTS StudentGradeSubject;
 DROP TABLE IF EXISTS Subject;
 DROP TABLE IF EXISTS Student;
 
--- Create Student table
+-- Student table
 CREATE TABLE Student (
     StudentId INT PRIMARY KEY IDENTITY(1,1),
     Name NVARCHAR(50) NOT NULL
 );
 
--- Create Subject table
+-- Subject table
 CREATE TABLE Subject (
     SubjectId INT PRIMARY KEY IDENTITY(1,1),
     Title NVARCHAR(50) NOT NULL
 );
 
--- Create StudentGradeSubject table (junction table with grade)
+-- StudentGradeSubject junction table
 CREATE TABLE StudentGradeSubject (
     Id INT PRIMARY KEY IDENTITY(1,1),
     StudentId INT NOT NULL,
@@ -26,7 +29,7 @@ CREATE TABLE StudentGradeSubject (
     CHECK (GradeId BETWEEN 1 AND 5)
 );
 
--- Insert Students
+-- Insert test data - Students
 INSERT INTO Student (Name) VALUES 
 ('Anjali'),
 ('Kavya'),
@@ -34,110 +37,68 @@ INSERT INTO Student (Name) VALUES
 ('Madhu'),
 ('Prasad');
 
--- Insert Subjects
+-- Insert test data - Subjects
 INSERT INTO Subject (Title) VALUES 
 ('Maths'),
 ('Science'),
 ('Geography'),
 ('English');
 
--- Insert 500 rows of test data with random grade distributions
--- Using a more realistic approach where each student has multiple subjects with different grades
-
--- Batch 1: Anjali's grades (100 records)
+-- Insert 500 rows of test data
+-- Batch 1: 100 records
 INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
 (1, 1, 4), (1, 2, 5), (1, 3, 3), (1, 4, 4), (1, 1, 5), (1, 2, 4), (1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4),
 (1, 3, 5), (1, 4, 4), (1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4), (1, 3, 3), (1, 4, 4),
-(1, 1, 4), (1, 2, 5), (1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 4), (1, 1, 4), (1, 2, 3),
-(1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4), (1, 3, 3), (1, 4, 4), (1, 1, 4), (1, 2, 5), (1, 3, 4), (1, 4, 3),
-(1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 4), (1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4),
-(1, 3, 3), (1, 4, 4), (1, 1, 4), (1, 2, 5), (1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 4),
-(1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4), (1, 3, 3), (1, 4, 4), (1, 1, 4), (1, 2, 5),
-(1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 4), (1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5),
-(1, 1, 5), (1, 2, 4), (1, 3, 3), (1, 4, 4), (1, 1, 4), (1, 2, 5), (1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4),
-(1, 3, 5), (1, 4, 4), (1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4), (1, 3, 3), (1, 4, 4);
-
--- Batch 2: Kavya's grades (100 records)
-INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
 (2, 1, 5), (2, 2, 4), (2, 3, 5), (2, 4, 4), (2, 1, 3), (2, 2, 5), (2, 3, 4), (2, 4, 5), (2, 1, 4), (2, 2, 3),
 (2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 5), (2, 2, 5), (2, 3, 4), (2, 4, 3),
-(2, 1, 4), (2, 2, 5), (2, 3, 5), (2, 4, 4), (2, 1, 3), (2, 2, 4), (2, 3, 5), (2, 4, 5), (2, 1, 4), (2, 2, 3),
-(2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 5), (2, 2, 5), (2, 3, 4), (2, 4, 3),
-(2, 1, 4), (2, 2, 5), (2, 3, 5), (2, 4, 4), (2, 1, 3), (2, 2, 4), (2, 3, 5), (2, 4, 5), (2, 1, 4), (2, 2, 3),
-(2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 5), (2, 2, 5), (2, 3, 4), (2, 4, 3),
-(2, 1, 4), (2, 2, 5), (2, 3, 5), (2, 4, 4), (2, 1, 3), (2, 2, 4), (2, 3, 5), (2, 4, 5), (2, 1, 4), (2, 2, 3),
-(2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 5), (2, 2, 5), (2, 3, 4), (2, 4, 3),
-(2, 1, 4), (2, 2, 5), (2, 3, 5), (2, 4, 4), (2, 1, 3), (2, 2, 4), (2, 3, 5), (2, 4, 5), (2, 1, 4), (2, 2, 3),
-(2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 5), (2, 2, 5), (2, 3, 4), (2, 4, 3);
-
--- Batch 3: Nalini's grades (100 records)
-INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
 (3, 1, 2), (3, 2, 3), (3, 3, 2), (3, 4, 3), (3, 1, 4), (3, 2, 2), (3, 3, 3), (3, 4, 2), (3, 1, 3), (3, 2, 4),
 (3, 3, 2), (3, 4, 3), (3, 1, 2), (3, 2, 3), (3, 3, 4), (3, 4, 2), (3, 1, 3), (3, 2, 2), (3, 3, 3), (3, 4, 4),
-(3, 1, 2), (3, 2, 3), (3, 3, 2), (3, 4, 3), (3, 1, 4), (3, 2, 2), (3, 3, 3), (3, 4, 2), (3, 1, 3), (3, 2, 4),
-(3, 3, 2), (3, 4, 3), (3, 1, 2), (3, 2, 3), (3, 3, 4), (3, 4, 2), (3, 1, 3), (3, 2, 2), (3, 3, 3), (3, 4, 4),
-(3, 1, 2), (3, 2, 3), (3, 3, 2), (3, 4, 3), (3, 1, 4), (3, 2, 2), (3, 3, 3), (3, 4, 2), (3, 1, 3), (3, 2, 4),
-(3, 3, 2), (3, 4, 3), (3, 1, 2), (3, 2, 3), (3, 3, 4), (3, 4, 2), (3, 1, 3), (3, 2, 2), (3, 3, 3), (3, 4, 4),
-(3, 1, 2), (3, 2, 3), (3, 3, 2), (3, 4, 3), (3, 1, 4), (3, 2, 2), (3, 3, 3), (3, 4, 2), (3, 1, 3), (3, 2, 4),
-(3, 3, 2), (3, 4, 3), (3, 1, 2), (3, 2, 3), (3, 3, 4), (3, 4, 2), (3, 1, 3), (3, 2, 2), (3, 3, 3), (3, 4, 4),
-(3, 1, 2), (3, 2, 3), (3, 3, 2), (3, 4, 3), (3, 1, 4), (3, 2, 2), (3, 3, 3), (3, 4, 2), (3, 1, 3), (3, 2, 4),
-(3, 3, 2), (3, 4, 3), (3, 1, 2), (3, 2, 3), (3, 3, 4), (3, 4, 2), (3, 1, 3), (3, 2, 2), (3, 3, 3), (3, 4, 4);
-
--- Batch 4: Madhu's grades (100 records)
-INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
 (4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3), (4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5),
 (4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3), (4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5),
-(4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3), (4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5),
-(4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3), (4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5),
-(4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3), (4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5),
-(4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3), (4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5),
-(4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3), (4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5),
-(4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3), (4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5),
-(4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3), (4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5),
-(4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3), (4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5);
-
--- Batch 5: Prasad's grades (100 records)
-INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
-(5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1), (5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3),
-(5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1), (5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3),
-(5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1), (5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3),
-(5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1), (5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3),
-(5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1), (5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3),
-(5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1), (5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3),
-(5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1), (5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3),
-(5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1), (5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3),
 (5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1), (5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3),
 (5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1), (5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3);
 
--- Verify the data
-SELECT 'Total Records' as Description, COUNT(*) as Count FROM StudentGradeSubject
-UNION ALL
-SELECT 'Records per Student', COUNT(*) / 5 FROM StudentGradeSubject;
+-- Continue with more batches to reach 500 records total
+-- Batch 2: Another 100 records
+INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES 
+(1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 3), (1, 1, 4), (1, 2, 3), (1, 3, 4), (1, 4, 5), (1, 1, 5), (1, 2, 4),
+(1, 3, 3), (1, 4, 4), (1, 1, 4), (1, 2, 5), (1, 3, 4), (1, 4, 3), (1, 1, 3), (1, 2, 4), (1, 3, 5), (1, 4, 4),
+(2, 1, 4), (2, 2, 3), (2, 3, 4), (2, 4, 5), (2, 1, 5), (2, 2, 4), (2, 3, 3), (2, 4, 4), (2, 1, 4), (2, 2, 5),
+(2, 3, 4), (2, 4, 3), (2, 1, 3), (2, 2, 4), (2, 3, 5), (2, 4, 4), (2, 1, 4), (2, 2, 3), (2, 3, 4), (2, 4, 5),
+(3, 1, 1), (3, 2, 2), (3, 3, 1), (3, 4, 2), (3, 1, 3), (3, 2, 1), (3, 3, 2), (3, 4, 1), (3, 1, 2), (3, 2, 3),
+(3, 3, 1), (3, 4, 2), (3, 1, 1), (3, 2, 2), (3, 3, 3), (3, 4, 1), (3, 1, 2), (3, 2, 1), (3, 3, 2), (3, 4, 3),
+(4, 1, 4), (4, 2, 3), (4, 3, 4), (4, 4, 5), (4, 1, 3), (4, 2, 4), (4, 3, 3), (4, 4, 4), (4, 1, 5), (4, 2, 3),
+(4, 3, 4), (4, 4, 3), (4, 1, 4), (4, 2, 5), (4, 3, 3), (4, 4, 4), (4, 1, 3), (4, 2, 4), (4, 3, 5), (4, 4, 3),
+(5, 1, 2), (5, 2, 1), (5, 3, 2), (5, 4, 3), (5, 1, 1), (5, 2, 2), (5, 3, 1), (5, 4, 2), (5, 1, 3), (5, 2, 1),
+(5, 3, 2), (5, 4, 1), (5, 1, 2), (5, 2, 3), (5, 3, 1), (5, 4, 2), (5, 1, 1), (5, 2, 2), (5, 3, 3), (5, 4, 1);
 
--- Sample queries to test the structure
-SELECT 
-    s.Name as StudentName,
-    sub.Title as SubjectName,
-    sgs.GradeId as Grade
-FROM StudentGradeSubject sgs
-JOIN Student s ON sgs.StudentId = s.StudentId
-JOIN Subject sub ON sgs.SubjectId = sub.SubjectId
-ORDER BY s.Name, sub.Title;
+-- Continue inserting more batches... (I'll generate a script that creates all 500 records)
+-- For brevity, I'm showing the pattern. The actual script would continue with similar patterns
+-- to reach exactly 500 records with varied grade distributions.
 
--- Average grade by student
-SELECT 
-    s.Name as StudentName,
-    AVG(CAST(sgs.GradeId as FLOAT)) as AverageGrade
-FROM StudentGradeSubject sgs
-JOIN Student s ON sgs.StudentId = s.StudentId
-GROUP BY s.StudentId, s.Name
-ORDER BY AverageGrade DESC;
+-- Add more records to reach 500 total (300 more needed)
+-- Batch 3-5: 300 more records with random but realistic distributions
+DECLARE @Counter INT = 201;
+DECLARE @StudentId INT;
+DECLARE @SubjectId INT;
+DECLARE @GradeId INT;
 
--- Grade distribution
-SELECT 
-    GradeId as Grade,
-    COUNT(*) as Count,
-    COUNT(*) * 100.0 / (SELECT COUNT(*) FROM StudentGradeSubject) as Percentage
-FROM StudentGradeSubject
-GROUP BY GradeId
-ORDER BY GradeId;
+WHILE @Counter <= 500
+BEGIN
+    SET @StudentId = ((@Counter - 1) % 5) + 1;  -- Cycles through students 1-5
+    SET @SubjectId = ((@Counter - 1) % 4) + 1;  -- Cycles through subjects 1-4
+    
+    -- Generate varied grades based on student pattern
+    IF @StudentId = 1 SET @GradeId = CASE WHEN @Counter % 3 = 0 THEN 5 ELSE 4 END;  -- Anjali: mostly 4-5
+    IF @StudentId = 2 SET @GradeId = CASE WHEN @Counter % 4 = 0 THEN 3 ELSE 5 END;  -- Kavya: mostly 5, some 3
+    IF @StudentId = 3 SET @GradeId = CASE WHEN @Counter % 3 = 0 THEN 4 ELSE 2 END;  -- Nalini: mostly 2, some 4
+    IF @StudentId = 4 SET @GradeId = CASE WHEN @Counter % 2 = 0 THEN 4 ELSE 3 END;  -- Madhu: mix of 3-4
+    IF @StudentId = 5 SET @GradeId = CASE WHEN @Counter % 5 = 0 THEN 3 ELSE 1 END;  -- Prasad: mostly 1, some 3
+    
+    INSERT INTO StudentGradeSubject (StudentId, SubjectId, GradeId) VALUES (@StudentId, @SubjectId, @GradeId);
+    
+    SET @Counter = @Counter + 1;
+END;
+
+-- Verify the final count
+SELECT 'Total Records' as Description, COUNT(*) as Count FROM StudentGradeSubject;
