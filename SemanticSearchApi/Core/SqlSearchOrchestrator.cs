@@ -1,4 +1,4 @@
-// Core/SqlSearchOrchestrator.cs
+// Core/SqlSearchOrchestrator.cs (Updated with correction handling)
 using System.Text.Json;
 using SemanticSearchApi.Agents;
 using SemanticSearchApi.Interfaces;
@@ -11,7 +11,7 @@ namespace SemanticSearchApi.Core
         private readonly IIntentAgent _intentAgent;
         private readonly ISqlQueryPlanner _queryPlanner;
         private readonly ISqlQueryExecutor _executor;
-        private readonly SqlAnswerSynthesizer _synthesizer; // Changed from IAnswerSynthesizer
+        private readonly SqlAnswerSynthesizer _synthesizer;
         private readonly IChatMemory _memory;
         private readonly ILogger<SqlSearchOrchestrator> _logger;
 
@@ -19,7 +19,7 @@ namespace SemanticSearchApi.Core
             IIntentAgent intentAgent,
             ISqlQueryPlanner queryPlanner,
             ISqlQueryExecutor executor,
-            SqlAnswerSynthesizer synthesizer, // Changed from IAnswerSynthesizer
+            SqlAnswerSynthesizer synthesizer,
             IChatMemory memory,
             ILogger<SqlSearchOrchestrator> logger)
         {
@@ -31,9 +31,9 @@ namespace SemanticSearchApi.Core
             _logger = logger;
         }
 
-        public async Task<SearchResponse> HandleUserQueryAsync(string userInput, string sessionId)
+        public async Task<QueryResponse> HandleUserQueryAsync(string userInput, string sessionId)
         {
-            var response = new SearchResponse();
+            var response = new QueryResponse();
 
             try
             {
@@ -56,6 +56,13 @@ namespace SemanticSearchApi.Core
                 response.RawResults = result;
                 response.Success = result.Success;
 
+                // Step 4: Extract any corrections made during query generation
+                if (result.Corrections.Any())
+                {
+                    response.Corrections = result.Corrections;
+                    _logger.LogInformation($"Corrections applied: {string.Join("; ", result.Corrections)}");
+                }
+
                 if (!result.Success)
                 {
                     response.ErrorMessage = result.Error;
@@ -63,10 +70,10 @@ namespace SemanticSearchApi.Core
                 }
                 else
                 {
-                    // Step 4: Generate human-readable response using OpenAI
+                    // Step 5: Generate human-readable response using OpenAI
                     response.Summary = await _synthesizer.SummarizeSqlResultsAsync(result, intent);
 
-                    // Step 5: Save interaction to memory
+                    // Step 6: Save interaction to memory
                     _memory.UpdateContext(userInput, response.Summary);
                     _memory.Save(sessionId);
                 }
@@ -82,15 +89,5 @@ namespace SemanticSearchApi.Core
                 return response;
             }
         }
-    }
-
-    public class SearchResponse
-    {
-        public bool Success { get; set; }
-        public string Summary { get; set; }
-        public string GeneratedQuery { get; set; }
-        public UserIntent Intent { get; set; }
-        public object RawResults { get; set; }
-        public string ErrorMessage { get; set; }
     }
 }

@@ -45,6 +45,13 @@ CRITICAL UNDERSTANDING RULES:
 3. Use the exact values shown in the distinct values lists when filtering data
 4. When users mention specific values, match them exactly to what exists in the distinct values
 
+FUZZY MATCHING FOR NAMES AND VALUES:
+5. If a user mentions a name or value that doesn't exactly match the distinct values, find the closest match:
+   - For names like 'Anjani' → look for similar names like 'Anjali' in the distinct values
+   - For subjects like 'Math' → look for 'Maths' in the distinct values
+   - For any close matches, use the correct database value in the SQL
+6. When you make such corrections, add a SQL comment at the top explaining the correction
+
 QUERY CONSTRUCTION RULES:
 1. Use proper JOINs when connecting related tables (look for foreign key relationships)
 2. Use appropriate SQL Server syntax (TOP instead of LIMIT, etc.)
@@ -52,9 +59,14 @@ QUERY CONSTRUCTION RULES:
 4. When counting distinct entities, use COUNT(DISTINCT column)
 5. Include appropriate GROUP BY clauses for aggregations
 6. Add ORDER BY for better result organization when appropriate
-7. Return ONLY the SQL query, no explanations or comments
+7. Return the SQL query with correction comments when applicable
 8. Use proper data type casting when needed (e.g., CAST(column as FLOAT) for averages)
 9. Always use square brackets around table and column names: [TableName].[ColumnName]
+
+FUZZY MATCHING EXAMPLES:
+- User asks 'Anjani' → Use 'Anjali' (closest match) and add comment: -- Note: Corrected 'Anjani' to 'Anjali'
+- User asks 'Math' → Use 'Maths' and add comment: -- Note: Corrected 'Math' to 'Maths'
+- User asks 'John' → If no close match exists, return error comment: -- Error: No student found matching 'John'
 
 QUERY OPTIMIZATION:
 - Use EXISTS over IN for better performance when appropriate
@@ -62,7 +74,7 @@ QUERY OPTIMIZATION:
 - Consider using table aliases for readability
 - Leverage primary key and foreign key relationships shown in the schema
 
-Remember: Work ONLY with the actual schema and data values provided. The distinct values show exactly what data exists in each column.";
+Remember: Work ONLY with the actual schema and data values provided. When user input doesn't exactly match, find the closest match from the distinct values and explain the correction.";
 
             var userPrompt = $@"Generate SQL for: {naturalLanguageQuery}
 
